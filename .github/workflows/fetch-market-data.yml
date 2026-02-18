@@ -82,7 +82,14 @@ jobs:
               https.get(url, (res) => {
                 let data = '';
                 res.on('data', chunk => data += chunk);
-                res.on('end', () => resolve(JSON.parse(data)));
+                res.on('end', () => {
+                  try {
+                    resolve(JSON.parse(data));
+                  } catch (e) {
+                    console.log('Parse error for', url, ':', data.substring(0, 100));
+                    resolve(null);
+                  }
+                });
                 res.on('error', reject);
               }).on('error', reject);
             });
@@ -90,6 +97,8 @@ jobs:
 
           async function main() {
             try {
+              console.log('Fetching Binance funding rates...');
+
               const [btcFunding, ethFunding, btcOI, ethOI] = await Promise.all([
                 fetch('https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&limit=1'),
                 fetch('https://fapi.binance.com/fapi/v1/fundingRate?symbol=ETHUSDT&limit=1'),
@@ -97,26 +106,33 @@ jobs:
                 fetch('https://fapi.binance.com/fapi/v1/openInterest?symbol=ETHUSDT'),
               ]);
 
+              console.log('BTC Funding raw:', JSON.stringify(btcFunding));
+              console.log('BTC OI raw:', JSON.stringify(btcOI));
+
               const output = {
                 btc: {
-                  fundingRate: parseFloat(btcFunding[0]?.fundingRate) || 0,
-                  nextFundingTime: btcFunding[0]?.fundingTime || 0,
-                  openInterest: parseFloat(btcOI?.openInterest) || 0,
+                  fundingRate: parseFloat(btcFunding?.[0]?.fundingRate || '0'),
+                  fundingRatePercent: parseFloat(btcFunding?.[0]?.fundingRate || '0') * 100,
+                  nextFundingTime: parseInt(btcFunding?.[0]?.fundingTime || '0'),
+                  markPrice: parseFloat(btcFunding?.[0]?.markPrice || '0'),
+                  openInterest: parseFloat(btcOI?.openInterest || '0'),
                 },
                 eth: {
-                  fundingRate: parseFloat(ethFunding[0]?.fundingRate) || 0,
-                  nextFundingTime: ethFunding[0]?.fundingTime || 0,
-                  openInterest: parseFloat(ethOI?.openInterest) || 0,
+                  fundingRate: parseFloat(ethFunding?.[0]?.fundingRate || '0'),
+                  fundingRatePercent: parseFloat(ethFunding?.[0]?.fundingRate || '0') * 100,
+                  nextFundingTime: parseInt(ethFunding?.[0]?.fundingTime || '0'),
+                  markPrice: parseFloat(ethFunding?.[0]?.markPrice || '0'),
+                  openInterest: parseFloat(ethOI?.openInterest || '0'),
                 },
                 timestamp: Date.now(),
                 updatedAt: new Date().toISOString()
               };
 
               fs.writeFileSync('funding.json', JSON.stringify(output, null, 2));
-              console.log('BTC Funding:', (output.btc.fundingRate * 100).toFixed(4) + '%');
-              console.log('ETH Funding:', (output.eth.fundingRate * 100).toFixed(4) + '%');
+              console.log('BTC Funding:', output.btc.fundingRatePercent.toFixed(4) + '%', 'OI:', output.btc.openInterest);
+              console.log('ETH Funding:', output.eth.fundingRatePercent.toFixed(4) + '%', 'OI:', output.eth.openInterest);
             } catch (e) {
-              console.error('Binance error:', e.message);
+              console.error('Binance error:', e.message, e.stack);
             }
           }
 
