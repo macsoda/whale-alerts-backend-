@@ -30,7 +30,7 @@ jobs:
 
           // Known institutional fund wallets (Ethereum)
           const KNOWN_FUNDS = {
-            // Galaxy Digital
+            // Galaxy Digital - verified active wallets
             '0x15abb66ba754f05cbc0165a64a11cded1543de48': { name: 'Galaxy Digital', logo: '🌌', type: 'Investment Firm' },
             '0x33566c9d8be6cf0b23795e0d380e112be9d75836': { name: 'Galaxy Digital', logo: '🌌', type: 'Investment Firm' },
 
@@ -39,41 +39,37 @@ jobs:
 
             // Wintermute
             '0xdbf5e9c5206d0db70a90108bf936da60221dc080': { name: 'Wintermute', logo: '❄️', type: 'Market Maker' },
-            '0x0000006daea1723962647b7e189d311d757fb793': { name: 'Wintermute', logo: '❄️', type: 'Market Maker' },
 
             // Jump Trading
             '0x9507c04b10486547584c37bcbd931b2a4fee9a41': { name: 'Jump Trading', logo: '🦘', type: 'Trading Firm' },
 
             // Amber Group
             '0x0548f59fee79f8832c299e01dca5c76f034f558e': { name: 'Amber Group', logo: '🟠', type: 'Trading Firm' },
-
-            // Alameda (historical)
-            '0x84d34f4f83a87596cd3fb6887cff8f17bf5a7b83': { name: 'Alameda Research', logo: '📉', type: 'Trading Firm' },
           };
 
-          // Token addresses for price lookup
+          // Major tokens to track
           const TOKENS = {
-            'ETH': { address: 'native', decimals: 18, coingeckoId: 'ethereum' },
-            'WETH': { address: '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2', decimals: 18 },
-            'USDT': { address: '0xdac17f958d2ee523a2206206994597c13d831ec7', decimals: 6 },
-            'USDC': { address: '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48', decimals: 6 },
-            'WBTC': { address: '0x2260fac5e5542a773aa44fbcfedf7c193bc2c599', decimals: 8 },
-            'stETH': { address: '0xae7ab96520de3a18e5e111b5eaab095312d7fe84', decimals: 18 },
+            '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2': { symbol: 'WETH', decimals: 18 },
+            '0xdac17f958d2ee523a2206206994597c13d831ec7': { symbol: 'USDT', decimals: 6 },
+            '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48': { symbol: 'USDC', decimals: 6 },
+            '0x2260fac5e5542a773aa44fbcfedf7c193bc2c599': { symbol: 'WBTC', decimals: 8 },
+            '0xae7ab96520de3a18e5e111b5eaab095312d7fe84': { symbol: 'stETH', decimals: 18 },
+            '0x6b175474e89094c44da98b954eedeac495271d0f': { symbol: 'DAI', decimals: 18 },
           };
 
-          const TOKEN_BY_ADDRESS = {};
-          for (const [symbol, info] of Object.entries(TOKENS)) {
-            if (info.address !== 'native') {
-              TOKEN_BY_ADDRESS[info.address.toLowerCase()] = { symbol, ...info };
-            }
-          }
-
-          function fetch(url) {
+          function fetchUrl(url) {
             return new Promise((resolve, reject) => {
               https.get(url, (res) => {
                 let data = '';
                 res.on('data', chunk => data += chunk);
-                res.on('end', () => resolve(JSON.parse(data)));
+                res.on('end', () => {
+                  try {
+                    resolve(JSON.parse(data));
+                  } catch (e) {
+                    console.log('Parse error, raw:', data.substring(0, 200));
+                    reject(e);
+                  }
+                });
                 res.on('error', reject);
               }).on('error', reject);
             });
@@ -81,36 +77,39 @@ jobs:
 
           async function getEthPrice() {
             try {
-              const data = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd');
-              return data.ethereum?.usd || 2500;
+              const data = await fetchUrl('https://api.coingecko.com/api/v3/simple/price?ids=ethereum,bitcoin&vs_currencies=usd');
+              console.log('Prices:', JSON.stringify(data));
+              return { eth: data.ethereum?.usd || 2700, btc: data.bitcoin?.usd || 97000 };
             } catch (e) {
-              return 2500; // fallback
+              console.log('Price fetch error:', e.message);
+              return { eth: 2700, btc: 97000 };
             }
           }
 
-          async function getTokenTransfers(address) {
-            const apiKey = process.env.ETHERSCAN_API_KEY || '';
-            if (!apiKey) {
-              console.log('Warning: No Etherscan API key, using limited access');
-            }
-
-            const url = `https://api.etherscan.io/api?module=account&action=tokentx&address=${address}&page=1&offset=50&sort=desc${apiKey ? '&apikey=' + apiKey : ''}`;
+          async function getTokenTransfers(address, apiKey) {
+            const url = `https://api.etherscan.io/api?module=account&action=tokentx&address=${address}&page=1&offset=100&sort=desc&apikey=${apiKey}`;
 
             try {
-              const data = await fetch(url);
-              if (data.status === '1' && data.result) {
+              const data = await fetchUrl(url);
+              console.log(`  API response status: ${data.status}, message: ${data.message}, results: ${data.result?.length || 0}`);
+
+              if (data.status === '1' && Array.isArray(data.result)) {
                 return data.result;
               }
+              return [];
             } catch (e) {
-              console.error(`Error fetching for ${address}:`, e.message);
+              console.error(`  Error: ${e.message}`);
+              return [];
             }
-            return [];
           }
 
           async function main() {
+            const apiKey = process.env.ETHERSCAN_API_KEY;
+            console.log('API Key configured:', apiKey ? 'YES (' + apiKey.substring(0,4) + '...)' : 'NO');
+
             console.log('Fetching fund activity...');
-            const ethPrice = await getEthPrice();
-            console.log(`ETH price: $${ethPrice}`);
+            const prices = await getEthPrice();
+            console.log(`ETH: $${prices.eth}, BTC: $${prices.btc}`);
 
             const activities = [];
             const fundAddresses = Object.keys(KNOWN_FUNDS);
@@ -119,32 +118,34 @@ jobs:
               const fund = KNOWN_FUNDS[address];
               console.log(`Checking ${fund.name} (${address.slice(0, 10)}...)`);
 
-              const transfers = await getTokenTransfers(address);
+              const transfers = await getTokenTransfers(address, apiKey);
+              let matched = 0;
 
               for (const tx of transfers) {
-                const tokenAddress = tx.contractAddress.toLowerCase();
-                const tokenInfo = TOKEN_BY_ADDRESS[tokenAddress];
+                const tokenAddr = tx.contractAddress?.toLowerCase();
+                const tokenInfo = TOKENS[tokenAddr];
 
-                if (!tokenInfo) continue; // Skip unknown tokens
+                if (!tokenInfo) continue;
 
                 const decimals = parseInt(tx.tokenDecimal) || tokenInfo.decimals;
                 const amount = parseFloat(tx.value) / Math.pow(10, decimals);
 
                 // Calculate USD value
                 let amountUsd = amount;
-                if (tokenInfo.symbol === 'WETH' || tokenInfo.symbol === 'stETH') {
-                  amountUsd = amount * ethPrice;
+                if (['WETH', 'stETH'].includes(tokenInfo.symbol)) {
+                  amountUsd = amount * prices.eth;
                 } else if (tokenInfo.symbol === 'WBTC') {
-                  amountUsd = amount * 97000; // Approximate BTC price
+                  amountUsd = amount * prices.btc;
                 }
 
-                // Only include $100k+ transactions
+                // Only $100k+ transactions
                 if (amountUsd < 100000) continue;
 
-                const isIncoming = tx.to.toLowerCase() === address.toLowerCase();
+                const isIncoming = tx.to?.toLowerCase() === address.toLowerCase();
+                matched++;
 
                 activities.push({
-                  id: `fund-${tx.hash.slice(0, 16)}-${tokenInfo.symbol}`,
+                  id: `fund-${tx.hash?.slice(0, 16)}-${tokenInfo.symbol}`,
                   timestamp: parseInt(tx.timeStamp) * 1000,
                   fund: fund.name,
                   logo: fund.logo,
@@ -159,42 +160,35 @@ jobs:
                 });
               }
 
-              // Rate limit - wait between requests
-              await new Promise(r => setTimeout(r, 250));
+              console.log(`  Found ${matched} qualifying transactions`);
+
+              // Rate limit
+              await new Promise(r => setTimeout(r, 200));
             }
 
-            // Sort by timestamp descending
+            console.log(`Total new activities: ${activities.length}`);
+
+            // Sort by timestamp
             activities.sort((a, b) => b.timestamp - a.timestamp);
 
-            // Load existing and merge
-            let existing = [];
-            try {
-              const data = fs.readFileSync('fund-activity.json', 'utf8');
-              existing = JSON.parse(data).activities || [];
-            } catch (e) {}
+            // Save (replace old data if we have new data)
+            if (activities.length > 0) {
+              const output = {
+                lastUpdated: new Date().toISOString(),
+                count: activities.length,
+                minValueUsd: 100000,
+                activities: activities.slice(0, 100)
+              };
 
-            // Merge and dedupe
-            const seen = new Set();
-            const merged = [...activities, ...existing].filter(a => {
-              if (seen.has(a.id)) return false;
-              seen.add(a.id);
-              return true;
-            }).slice(0, 100);
-
-            const output = {
-              lastUpdated: new Date().toISOString(),
-              count: merged.length,
-              minValueUsd: 100000,
-              ethPriceUsed: ethPrice,
-              activities: merged
-            };
-
-            fs.writeFileSync('fund-activity.json', JSON.stringify(output, null, 2));
-            console.log(`Saved ${merged.length} fund activities`);
+              fs.writeFileSync('fund-activity.json', JSON.stringify(output, null, 2));
+              console.log(`Saved ${activities.length} fund activities`);
+            } else {
+              console.log('No new activities found, keeping existing data');
+            }
           }
 
           main().catch(e => {
-            console.error('Error:', e);
+            console.error('Fatal error:', e);
             process.exit(1);
           });
           EOF
