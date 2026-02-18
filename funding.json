@@ -1,0 +1,39 @@
+{
+  "rates": {
+    "BTCUSDT": {
+      "symbol": "BTCUSDT",
+      "fundingRate": 0.0001,
+      "fundingRatePercent": 0.01,
+      "markPrice": 97500,
+      "indexPrice": 97480,
+      "nextFundingTime": 1739865600000,
+      "sentiment": "neutral",
+      "signal": "neutral",
+      "openInterest": 85000000000
+    },
+    "ETHUSDT": {
+      "symbol": "ETHUSDT",
+      "fundingRate": 0.00015,
+      "fundingRatePercent": 0.015,
+      "markPrice": 2750,
+      "indexPrice": 2748,
+      "nextFundingTime": 1739865600000,
+      "sentiment": "neutral",
+      "signal": "neutral",
+      "openInterest": 12000000000
+    },
+    "SOLUSDT": {
+      "symbol": "SOLUSDT",
+      "fundingRate": 0.0002,
+      "fundingRatePercent": 0.02,
+      "markPrice": 175,
+      "indexPrice": 174.8,
+      "nextFundingTime": 1739865600000,
+      "sentiment": "greed",
+      "signal": "bearish",
+      "openInterest": 3500000000
+    }
+  },
+  "timestamp": 1739836800000,
+  "updatedAt": "2026-02-18T00:00:00Z"
+}
