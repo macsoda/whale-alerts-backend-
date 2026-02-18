@@ -46,78 +46,87 @@ jobs:
           function parseMessages(html) {
             const alerts = [];
 
-            // Match message blocks
-            const messageRegex = /<div class="tgme_widget_message_bubble"[\s\S]*?<div class="tgme_widget_message_text[^"]*"[^>]*>([\s\S]*?)<\/div>[\s\S]*?<time[^>]*datetime="([^"]+)"/g;
+            // Split by message blocks
+            const blocks = html.split('tgme_widget_message_wrap');
 
-            let match;
-            while ((match = messageRegex.exec(html)) !== null) {
-              const text = match[1].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
-              const datetime = match[2];
+            for (const block of blocks) {
+              // Extract text content (removing HTML tags)
+              const textMatch = block.match(/tgme_widget_message_text[^>]*>([\s\S]*?)<\/div>/);
+              if (!textMatch) continue;
 
-              // Parse whale alert format: "1,234 #BTC ... $123,456,789"
-              const amountMatch = text.match(/([\d,]+(?:\.\d+)?)\s*#([A-Z]{2,10})/i);
-              const usdMatch = text.match(/\$\s*([\d,]+(?:\.\d+)?)/);
+              // Clean HTML tags and get plain text
+              const rawText = textMatch[1]
+                .replace(/<a[^>]*>#([^<]+)<\/a>/g, '#$1')  // Keep hashtags
+                .replace(/<br\/?>/g, ' ')
+                .replace(/<[^>]+>/g, '')
+                .replace(/\s+/g, ' ')
+                .trim();
 
-              if (amountMatch && usdMatch) {
-                const symbol = amountMatch[2].toUpperCase();
-                const amount = parseFloat(amountMatch[1].replace(/,/g, ''));
-                const amountUsd = parseFloat(usdMatch[1].replace(/,/g, ''));
+              // Extract datetime
+              const timeMatch = block.match(/datetime="([^"]+)"/);
+              if (!timeMatch) continue;
+              const timestamp = Date.parse(timeMatch[1]);
 
-                // Only $1M+ transactions
-                if (amountUsd < 1000000) continue;
+              // Parse: "43,066,770 #XLM (7,142,667 USD) transferred from #Kraken to unknown wallet"
+              const mainMatch = rawText.match(/([\d,]+(?:\.\d+)?)\s*#([A-Z]{2,10})\s*\(([\d,]+(?:\.\d+)?)\s*USD\)/i);
+              if (!mainMatch) continue;
 
-                // Determine blockchain
-                let blockchain = 'unknown';
-                if (['BTC', 'WBTC'].includes(symbol)) blockchain = 'bitcoin';
-                else if (['ETH', 'WETH', 'stETH'].includes(symbol)) blockchain = 'ethereum';
-                else if (['USDT', 'USDC', 'DAI', 'BUSD'].includes(symbol)) blockchain = 'stablecoin';
-                else if (symbol === 'SOL') blockchain = 'solana';
-                else if (symbol === 'XRP') blockchain = 'ripple';
-                else if (symbol === 'TRX') blockchain = 'tron';
-                else if (symbol === 'BNB') blockchain = 'binance';
+              const amount = parseFloat(mainMatch[1].replace(/,/g, ''));
+              const symbol = mainMatch[2].toUpperCase();
+              const amountUsd = parseFloat(mainMatch[3].replace(/,/g, ''));
 
-                // Parse from/to
-                let fromOwner = 'unknown';
-                let toOwner = 'unknown';
-                let fromType = 'unknown';
-                let toType = 'unknown';
+              // Only $1M+ transactions
+              if (amountUsd < 1000000) continue;
 
-                const transferMatch = text.match(/from\s+([#\w\.\-]+)\s+(?:to|→)\s+([#\w\.\-]+)/i) ||
-                                     text.match(/([#\w\.\-]+)\s+(?:to|→)\s+([#\w\.\-]+)/i);
+              // Determine blockchain
+              let blockchain = 'unknown';
+              if (['BTC', 'WBTC'].includes(symbol)) blockchain = 'bitcoin';
+              else if (['ETH', 'WETH', 'stETH'].includes(symbol)) blockchain = 'ethereum';
+              else if (['USDT', 'USDC', 'DAI', 'BUSD'].includes(symbol)) blockchain = 'stablecoin';
+              else if (symbol === 'SOL') blockchain = 'solana';
+              else if (symbol === 'XRP') blockchain = 'ripple';
+              else if (symbol === 'XLM') blockchain = 'stellar';
+              else if (symbol === 'TRX') blockchain = 'tron';
+              else if (symbol === 'BNB') blockchain = 'binance';
+              else if (symbol === 'DOGE') blockchain = 'dogecoin';
+              else if (symbol === 'ADA') blockchain = 'cardano';
 
-                if (transferMatch) {
-                  fromOwner = transferMatch[1].replace(/#/g, '').trim();
-                  toOwner = transferMatch[2].replace(/#/g, '').trim();
-                }
+              // Parse from/to
+              let fromOwner = 'unknown';
+              let toOwner = 'unknown';
+              let fromType = 'unknown';
+              let toType = 'unknown';
 
-                // Detect exchanges
-                const exchanges = ['binance', 'coinbase', 'kraken', 'bitfinex', 'huobi', 'okx', 'okex', 'bybit', 'kucoin', 'gemini', 'bitstamp', 'crypto.com', 'gate.io', 'bitget', 'mexc'];
-                if (exchanges.some(e => fromOwner.toLowerCase().includes(e))) fromType = 'exchange';
-                if (exchanges.some(e => toOwner.toLowerCase().includes(e))) toType = 'exchange';
+              // "from #Kraken to unknown wallet" or "from unknown wallet to #Binance"
+              const fromMatch = rawText.match(/from\s+#?(\w+)/i);
+              const toMatch = rawText.match(/to\s+#?(\w+)/i);
 
-                // Detect known wallets
-                if (fromOwner.toLowerCase().includes('unknown')) fromType = 'unknown';
-                if (toOwner.toLowerCase().includes('unknown')) toType = 'unknown';
+              if (fromMatch) fromOwner = fromMatch[1];
+              if (toMatch) toOwner = toMatch[1];
 
-                // Significance
-                let significance = 'high';
-                if (amountUsd >= 500000000) significance = 'extreme';
-                else if (amountUsd >= 100000000) significance = 'very_high';
+              // Detect exchanges
+              const exchanges = ['binance', 'coinbase', 'kraken', 'bitfinex', 'huobi', 'okx', 'okex', 'bybit', 'kucoin', 'gemini', 'bitstamp', 'cryptocom', 'gateio', 'bitget', 'mexc', 'upbit', 'bithumb'];
+              if (exchanges.some(e => fromOwner.toLowerCase().includes(e))) fromType = 'exchange';
+              if (exchanges.some(e => toOwner.toLowerCase().includes(e))) toType = 'exchange';
 
-                alerts.push({
-                  id: `whale-${Date.parse(datetime)}-${symbol}-${Math.random().toString(36).substr(2, 6)}`,
-                  timestamp: Date.parse(datetime),
-                  blockchain,
-                  symbol,
-                  amount,
-                  amountUsd,
-                  from: { address: '', owner: fromOwner, ownerType: fromType },
-                  to: { address: '', owner: toOwner, ownerType: toType },
-                  transactionType: 'transfer',
-                  hash: '',
-                  significance
-                });
-              }
+              // Significance
+              let significance = 'high';
+              if (amountUsd >= 500000000) significance = 'extreme';
+              else if (amountUsd >= 100000000) significance = 'very_high';
+
+              alerts.push({
+                id: `whale-${timestamp}-${symbol}-${Math.random().toString(36).substr(2, 6)}`,
+                timestamp,
+                blockchain,
+                symbol,
+                amount,
+                amountUsd,
+                from: { address: '', owner: fromOwner, ownerType: fromType },
+                to: { address: '', owner: toOwner, ownerType: toType },
+                transactionType: 'transfer',
+                hash: '',
+                significance
+              });
             }
 
             return alerts;
@@ -127,38 +136,31 @@ jobs:
             try {
               console.log('Fetching Telegram channel...');
               const html = await fetchPage(TELEGRAM_URL);
-
               console.log(`Got ${html.length} bytes`);
 
               const alerts = parseMessages(html);
+              console.log(`Parsed ${alerts.length} alerts from page`);
 
               // Sort by timestamp descending
               alerts.sort((a, b) => b.timestamp - a.timestamp);
-
-              // Keep unique (by symbol + timestamp combo)
-              const seen = new Set();
-              const uniqueAlerts = alerts.filter(a => {
-                const key = `${a.symbol}-${a.timestamp}-${a.amountUsd}`;
-                if (seen.has(key)) return false;
-                seen.add(key);
-                return true;
-              });
 
               // Load existing alerts
               let existingAlerts = [];
               try {
                 const existing = fs.readFileSync('alerts.json', 'utf8');
                 existingAlerts = JSON.parse(existing).alerts || [];
+                console.log(`Loaded ${existingAlerts.length} existing alerts`);
               } catch (e) {
-                // File doesn't exist yet
+                console.log('No existing alerts file');
               }
 
-              // Merge with existing, keeping last 200
-              const allAlerts = [...uniqueAlerts, ...existingAlerts];
-              const seenIds = new Set();
+              // Merge, keeping unique by timestamp+symbol+amount
+              const seen = new Set();
+              const allAlerts = [...alerts, ...existingAlerts];
               const finalAlerts = allAlerts.filter(a => {
-                if (seenIds.has(a.id)) return false;
-                seenIds.add(a.id);
+                const key = `${a.timestamp}-${a.symbol}-${a.amountUsd}`;
+                if (seen.has(key)) return false;
+                seen.add(key);
                 return true;
               }).slice(0, 200);
 
@@ -170,10 +172,11 @@ jobs:
               };
 
               fs.writeFileSync('alerts.json', JSON.stringify(output, null, 2));
-              console.log(`Saved ${finalAlerts.length} whale alerts (${uniqueAlerts.length} new)`);
+              console.log(`Saved ${finalAlerts.length} whale alerts`);
 
             } catch (error) {
               console.error('Error:', error.message);
+              console.error(error.stack);
               process.exit(1);
             }
           }
