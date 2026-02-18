@@ -1,0 +1,208 @@
+name: Fetch Fund Activity
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'  # Every 10 minutes
+  workflow_dispatch:  # Manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch Fund Activity from Etherscan
+        env:
+          ETHERSCAN_API_KEY: ${{ secrets.ETHERSCAN_API_KEY }}
+        run: |
+          node << 'EOF'
+          const https = require('https');
+          const fs = require('fs');
+
+          // Known institutional fund wallets (Ethereum)
+          const KNOWN_FUNDS = {
+            // Galaxy Digital
+            '0x15abb66ba754f05cbc0165a64a11cded1543de48': { name: 'Galaxy Digital', logo: '🌌', type: 'Investment Firm' },
+            '0x33566c9d8be6cf0b23795e0d380e112be9d75836': { name: 'Galaxy Digital', logo: '🌌', type: 'Investment Firm' },
+
+            // DWF Labs
+            '0x53c902a9ef069f3b85e5e71f918c4d582f3063fa': { name: 'DWF Labs', logo: '🔷', type: 'Market Maker' },
+
+            // Wintermute
+            '0xdbf5e9c5206d0db70a90108bf936da60221dc080': { name: 'Wintermute', logo: '❄️', type: 'Market Maker' },
+            '0x0000006daea1723962647b7e189d311d757fb793': { name: 'Wintermute', logo: '❄️', type: 'Market Maker' },
+
+            // Jump Trading
+            '0x9507c04b10486547584c37bcbd931b2a4fee9a41': { name: 'Jump Trading', logo: '🦘', type: 'Trading Firm' },
+
+            // Amber Group
+            '0x0548f59fee79f8832c299e01dca5c76f034f558e': { name: 'Amber Group', logo: '🟠', type: 'Trading Firm' },
+
+            // Alameda (historical)
+            '0x84d34f4f83a87596cd3fb6887cff8f17bf5a7b83': { name: 'Alameda Research', logo: '📉', type: 'Trading Firm' },
+          };
+
+          // Token addresses for price lookup
+          const TOKENS = {
+            'ETH': { address: 'native', decimals: 18, coingeckoId: 'ethereum' },
+            'WETH': { address: '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2', decimals: 18 },
+            'USDT': { address: '0xdac17f958d2ee523a2206206994597c13d831ec7', decimals: 6 },
+            'USDC': { address: '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48', decimals: 6 },
+            'WBTC': { address: '0x2260fac5e5542a773aa44fbcfedf7c193bc2c599', decimals: 8 },
+            'stETH': { address: '0xae7ab96520de3a18e5e111b5eaab095312d7fe84', decimals: 18 },
+          };
+
+          const TOKEN_BY_ADDRESS = {};
+          for (const [symbol, info] of Object.entries(TOKENS)) {
+            if (info.address !== 'native') {
+              TOKEN_BY_ADDRESS[info.address.toLowerCase()] = { symbol, ...info };
+            }
+          }
+
+          function fetch(url) {
+            return new Promise((resolve, reject) => {
+              https.get(url, (res) => {
+                let data = '';
+                res.on('data', chunk => data += chunk);
+                res.on('end', () => resolve(JSON.parse(data)));
+                res.on('error', reject);
+              }).on('error', reject);
+            });
+          }
+
+          async function getEthPrice() {
+            try {
+              const data = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd');
+              return data.ethereum?.usd || 2500;
+            } catch (e) {
+              return 2500; // fallback
+            }
+          }
+
+          async function getTokenTransfers(address) {
+            const apiKey = process.env.ETHERSCAN_API_KEY || '';
+            if (!apiKey) {
+              console.log('Warning: No Etherscan API key, using limited access');
+            }
+
+            const url = `https://api.etherscan.io/api?module=account&action=tokentx&address=${address}&page=1&offset=50&sort=desc${apiKey ? '&apikey=' + apiKey : ''}`;
+
+            try {
+              const data = await fetch(url);
+              if (data.status === '1' && data.result) {
+                return data.result;
+              }
+            } catch (e) {
+              console.error(`Error fetching for ${address}:`, e.message);
+            }
+            return [];
+          }
+
+          async function main() {
+            console.log('Fetching fund activity...');
+            const ethPrice = await getEthPrice();
+            console.log(`ETH price: $${ethPrice}`);
+
+            const activities = [];
+            const fundAddresses = Object.keys(KNOWN_FUNDS);
+
+            for (const address of fundAddresses) {
+              const fund = KNOWN_FUNDS[address];
+              console.log(`Checking ${fund.name} (${address.slice(0, 10)}...)`);
+
+              const transfers = await getTokenTransfers(address);
+
+              for (const tx of transfers) {
+                const tokenAddress = tx.contractAddress.toLowerCase();
+                const tokenInfo = TOKEN_BY_ADDRESS[tokenAddress];
+
+                if (!tokenInfo) continue; // Skip unknown tokens
+
+                const decimals = parseInt(tx.tokenDecimal) || tokenInfo.decimals;
+                const amount = parseFloat(tx.value) / Math.pow(10, decimals);
+
+                // Calculate USD value
+                let amountUsd = amount;
+                if (tokenInfo.symbol === 'WETH' || tokenInfo.symbol === 'stETH') {
+                  amountUsd = amount * ethPrice;
+                } else if (tokenInfo.symbol === 'WBTC') {
+                  amountUsd = amount * 97000; // Approximate BTC price
+                }
+
+                // Only include $100k+ transactions
+                if (amountUsd < 100000) continue;
+
+                const isIncoming = tx.to.toLowerCase() === address.toLowerCase();
+
+                activities.push({
+                  id: `fund-${tx.hash.slice(0, 16)}-${tokenInfo.symbol}`,
+                  timestamp: parseInt(tx.timeStamp) * 1000,
+                  fund: fund.name,
+                  logo: fund.logo,
+                  type: fund.type,
+                  action: isIncoming ? 'buy' : 'sell',
+                  symbol: tokenInfo.symbol,
+                  amount: amount,
+                  amountUsd: amountUsd,
+                  hash: tx.hash,
+                  from: tx.from,
+                  to: tx.to,
+                });
+              }
+
+              // Rate limit - wait between requests
+              await new Promise(r => setTimeout(r, 250));
+            }
+
+            // Sort by timestamp descending
+            activities.sort((a, b) => b.timestamp - a.timestamp);
+
+            // Load existing and merge
+            let existing = [];
+            try {
+              const data = fs.readFileSync('fund-activity.json', 'utf8');
+              existing = JSON.parse(data).activities || [];
+            } catch (e) {}
+
+            // Merge and dedupe
+            const seen = new Set();
+            const merged = [...activities, ...existing].filter(a => {
+              if (seen.has(a.id)) return false;
+              seen.add(a.id);
+              return true;
+            }).slice(0, 100);
+
+            const output = {
+              lastUpdated: new Date().toISOString(),
+              count: merged.length,
+              minValueUsd: 100000,
+              ethPriceUsed: ethPrice,
+              activities: merged
+            };
+
+            fs.writeFileSync('fund-activity.json', JSON.stringify(output, null, 2));
+            console.log(`Saved ${merged.length} fund activities`);
+          }
+
+          main().catch(e => {
+            console.error('Error:', e);
+            process.exit(1);
+          });
+          EOF
+
+      - name: Commit and Push
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add fund-activity.json
+          git diff --staged --quiet || git commit -m "Update fund activity $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push
