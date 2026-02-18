@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-02-18T00:00:00Z",
+  "lastUpdated": "2026-02-18T12:00:00Z",
   "count": 3,
   "minValueUsd": 1000000,
   "activities": [
     {
       "id": "fa-001",
-      "timestamp": 1739833200000,
+      "timestamp": 1771431198000,
       "fund": "BlackRock",
       "logo": "🏦",
       "type": "ETF",
@@ -21,7 +21,7 @@
     },
     {
       "id": "fa-002",
-      "timestamp": 1739829600000,
+      "timestamp": 1771416798000,
       "fund": "Fidelity",
       "logo": "💚",
       "type": "ETF",
@@ -37,14 +37,14 @@
     },
     {
       "id": "fa-003",
-      "timestamp": 1739826000000,
+      "timestamp": 1771395198000,
       "fund": "Wintermute",
       "logo": "❄️",
       "type": "Market Maker",
-      "action": "transfer",
-      "symbol": "USDT",
-      "amount": 50000000,
-      "amountUsd": 50000000,
+      "action": "sell",
+      "symbol": "ETH",
+      "amount": 8000,
+      "amountUsd": 22000000,
       "hash": "0xghi789...",
       "from": "Wintermute Hot Wallet",
       "fromLabel": "Market Maker",
