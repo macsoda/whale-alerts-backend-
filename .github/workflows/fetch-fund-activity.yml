@@ -87,7 +87,8 @@ jobs:
           }
 
           async function getTokenTransfers(address, apiKey) {
-            const url = `https://api.etherscan.io/api?module=account&action=tokentx&address=${address}&page=1&offset=100&sort=desc&apikey=${apiKey}`;
+            // Using Etherscan V2 API (V1 is deprecated)
+            const url = `https://api.etherscan.io/v2/api?chainid=1&module=account&action=tokentx&address=${address}&page=1&offset=100&sort=desc&apikey=${apiKey}`;
 
             try {
               const data = await fetchUrl(url);
