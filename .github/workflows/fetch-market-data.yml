@@ -1,0 +1,132 @@
+name: Fetch Market Data
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'  # Every 15 minutes
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch Fear & Greed Index
+        run: |
+          curl -s "https://api.alternative.me/fng/?limit=1" | \
+          node -e "
+            let data = '';
+            process.stdin.on('data', c => data += c);
+            process.stdin.on('end', () => {
+              const json = JSON.parse(data);
+              const fng = json.data?.[0];
+              if (fng) {
+                const output = {
+                  value: parseInt(fng.value),
+                  text: fng.value_classification,
+                  timestamp: fng.timestamp,
+                  updatedAt: new Date().toISOString()
+                };
+                require('fs').writeFileSync('feargreed.json', JSON.stringify(output, null, 2));
+                console.log('Fear & Greed:', output.value, output.text);
+              }
+            });
+          "
+
+      - name: Fetch Dominance & Market Cap
+        run: |
+          curl -s "https://api.coingecko.com/api/v3/global" | \
+          node -e "
+            let data = '';
+            process.stdin.on('data', c => data += c);
+            process.stdin.on('end', () => {
+              try {
+                const json = JSON.parse(data);
+                const d = json.data;
+                if (d) {
+                  const output = {
+                    btcDominance: parseFloat(d.market_cap_percentage?.btc?.toFixed(2)) || 0,
+                    ethDominance: parseFloat(d.market_cap_percentage?.eth?.toFixed(2)) || 0,
+                    usdtDominance: parseFloat(d.market_cap_percentage?.usdt?.toFixed(2)) || 0,
+                    totalMarketCap: d.total_market_cap?.usd || 0,
+                    marketCapChange24h: parseFloat(d.market_cap_change_percentage_24h_usd?.toFixed(2)) || 0,
+                    timestamp: Date.now(),
+                    updatedAt: new Date().toISOString()
+                  };
+                  require('fs').writeFileSync('dominance.json', JSON.stringify(output, null, 2));
+                  console.log('BTC.D:', output.btcDominance + '%', 'MCap:', (output.totalMarketCap/1e12).toFixed(2) + 'T');
+                }
+              } catch (e) {
+                console.error('CoinGecko error:', e.message);
+              }
+            });
+          "
+
+      - name: Fetch Funding Rates
+        run: |
+          node << 'EOF'
+          const https = require('https');
+          const fs = require('fs');
+
+          function fetch(url) {
+            return new Promise((resolve, reject) => {
+              https.get(url, (res) => {
+                let data = '';
+                res.on('data', chunk => data += chunk);
+                res.on('end', () => resolve(JSON.parse(data)));
+                res.on('error', reject);
+              }).on('error', reject);
+            });
+          }
+
+          async function main() {
+            try {
+              const [btcFunding, ethFunding, btcOI, ethOI] = await Promise.all([
+                fetch('https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&limit=1'),
+                fetch('https://fapi.binance.com/fapi/v1/fundingRate?symbol=ETHUSDT&limit=1'),
+                fetch('https://fapi.binance.com/fapi/v1/openInterest?symbol=BTCUSDT'),
+                fetch('https://fapi.binance.com/fapi/v1/openInterest?symbol=ETHUSDT'),
+              ]);
+
+              const output = {
+                btc: {
+                  fundingRate: parseFloat(btcFunding[0]?.fundingRate) || 0,
+                  nextFundingTime: btcFunding[0]?.fundingTime || 0,
+                  openInterest: parseFloat(btcOI?.openInterest) || 0,
+                },
+                eth: {
+                  fundingRate: parseFloat(ethFunding[0]?.fundingRate) || 0,
+                  nextFundingTime: ethFunding[0]?.fundingTime || 0,
+                  openInterest: parseFloat(ethOI?.openInterest) || 0,
+                },
+                timestamp: Date.now(),
+                updatedAt: new Date().toISOString()
+              };
+
+              fs.writeFileSync('funding.json', JSON.stringify(output, null, 2));
+              console.log('BTC Funding:', (output.btc.fundingRate * 100).toFixed(4) + '%');
+              console.log('ETH Funding:', (output.eth.fundingRate * 100).toFixed(4) + '%');
+            } catch (e) {
+              console.error('Binance error:', e.message);
+            }
+          }
+
+          main();
+          EOF
+
+      - name: Commit and Push
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add feargreed.json dominance.json funding.json
+          git diff --staged --quiet || git commit -m "Update market data $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push
