@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-02-21T12:35:49.463Z",
-  "count": 84,
+  "lastUpdated": "2026-02-21T13:00:00.337Z",
+  "count": 83,
   "minValueUsd": 100000,
   "activities": [
     {
@@ -1164,20 +1164,6 @@
       "hash": "0xd43f6bcbe53e80b1d0958f69c823f333abf3161a8add24e3e0d2807c57366a91",
       "from": "0x9507c04b10486547584c37bcbd931b2a4fee9a41",
       "to": "0x11b815efb8f581194ae79006d24e0d814b7697f6"
-    },
-    {
-      "id": "fund-0xd43f6bcbe53e80-WETH",
-      "timestamp": 1690319207000,
-      "fund": "Jump Trading",
-      "logo": "🦘",
-      "type": "Trading Firm",
-      "action": "buy",
-      "symbol": "WETH",
-      "amount": 57.34756107816396,
-      "amountUsd": 154838.4149110427,
-      "hash": "0xd43f6bcbe53e80b1d0958f69c823f333abf3161a8add24e3e0d2807c57366a91",
-      "from": "0x11b815efb8f581194ae79006d24e0d814b7697f6",
-      "to": "0x9507c04b10486547584c37bcbd931b2a4fee9a41"
     }
   ]
 }
