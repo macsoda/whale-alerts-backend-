@@ -71,6 +71,43 @@ jobs:
             });
           "
 
+      - name: Fetch Top 100 Coins (for Crypto Bubbles)
+        run: |
+          curl -s "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false&price_change_percentage=1h,24h,7d,30d" | \
+          node -e "
+            let data = '';
+            process.stdin.on('data', c => data += c);
+            process.stdin.on('end', () => {
+              try {
+                const coins = JSON.parse(data);
+                if (Array.isArray(coins) && coins.length > 0) {
+                  const output = {
+                    coins: coins.map(c => ({
+                      id: c.id,
+                      symbol: c.symbol,
+                      name: c.name,
+                      image: c.image,
+                      current_price: c.current_price,
+                      market_cap: c.market_cap,
+                      market_cap_rank: c.market_cap_rank,
+                      price_change_percentage_1h: c.price_change_percentage_1h_in_currency,
+                      price_change_percentage_24h: c.price_change_percentage_24h,
+                      price_change_percentage_7d: c.price_change_percentage_7d_in_currency,
+                      price_change_percentage_30d: c.price_change_percentage_30d_in_currency,
+                    })),
+                    count: coins.length,
+                    timestamp: Date.now(),
+                    updatedAt: new Date().toISOString()
+                  };
+                  require('fs').writeFileSync('coins.json', JSON.stringify(output, null, 2));
+                  console.log('Coins fetched:', output.count);
+                }
+              } catch (e) {
+                console.error('Coins fetch error:', e.message);
+              }
+            });
+          "
+
       - name: Fetch Funding Rates
         run: |
           node << 'EOF'
@@ -143,6 +180,6 @@ jobs:
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add feargreed.json dominance.json funding.json
+          git add feargreed.json dominance.json funding.json coins.json
           git diff --staged --quiet || git commit -m "Update market data $(date -u +%Y-%m-%dT%H:%M:%SZ)"
           git push
