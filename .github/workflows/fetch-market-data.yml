@@ -182,4 +182,5 @@ jobs:
           git config user.email "actions@github.com"
           git add feargreed.json dominance.json funding.json coins.json
           git diff --staged --quiet || git commit -m "Update market data $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git pull --rebase origin main || true
           git push
