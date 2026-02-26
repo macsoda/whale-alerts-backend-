@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-02-26T15:25:15.488Z",
-  "count": 85,
+  "lastUpdated": "2026-02-26T15:46:41.442Z",
+  "count": 88,
   "minValueUsd": 100000,
   "activities": [
     {
@@ -648,18 +648,60 @@
       "to": "0x0b74331d044f38f18b171ebb2764d430ad486495"
     },
     {
-      "id": "fund-0xe93f9ec15f617d-USDT",
-      "timestamp": 1771852883000,
-      "fund": "DWF Labs",
-      "logo": "🔷",
+      "id": "fund-0x2fe8728ba778f8-USDC",
+      "timestamp": 1758881927000,
+      "fund": "Wintermute",
+      "logo": "❄️",
+      "type": "Market Maker",
+      "action": "sell",
+      "symbol": "USDC",
+      "amount": 394536.690205,
+      "amountUsd": 394536.690205,
+      "hash": "0x2fe8728ba778f88895072d73e05ad6629540f3683bce6692fcba0c612f76e98b",
+      "from": "0xdbf5e9c5206d0db70a90108bf936da60221dc080",
+      "to": "0xf8191d98ae98d2f7abdfb63a9b0b812b93c873aa"
+    },
+    {
+      "id": "fund-0xca7b8aff5c1247-USDC",
+      "timestamp": 1758881003000,
+      "fund": "Wintermute",
+      "logo": "❄️",
+      "type": "Market Maker",
+      "action": "buy",
+      "symbol": "USDC",
+      "amount": 394536.690205,
+      "amountUsd": 394536.690205,
+      "hash": "0xca7b8aff5c124750c9479f241f2bb5be39fc787b032b0386cee6f10a6b804325",
+      "from": "0xce84449a8ebec019ac110a4b6662e55d0fd9f228",
+      "to": "0xdbf5e9c5206d0db70a90108bf936da60221dc080"
+    },
+    {
+      "id": "fund-0xbab0f0c7129c03-USDT",
+      "timestamp": 1754363675000,
+      "fund": "Wintermute",
+      "logo": "❄️",
+      "type": "Market Maker",
+      "action": "sell",
+      "symbol": "USDT",
+      "amount": 100000,
+      "amountUsd": 100000,
+      "hash": "0xbab0f0c7129c03119942b14bb87077ae91070d6754d2dd7d3bc981b9c4eee88b",
+      "from": "0xdbf5e9c5206d0db70a90108bf936da60221dc080",
+      "to": "0xf8191d98ae98d2f7abdfb63a9b0b812b93c873aa"
+    },
+    {
+      "id": "fund-0x883a638cfa801b-USDT",
+      "timestamp": 1754363627000,
+      "fund": "Wintermute",
+      "logo": "❄️",
       "type": "Market Maker",
       "action": "buy",
       "symbol": "USDT",
-      "amount": 500000,
-      "amountUsd": 500000,
-      "hash": "0xe93f9ec15f617d46673d7327642940319862f9ea21a0d6127ac62b3da5fd96b5",
-      "from": "0x0d0707963952f2fba59dd06f2b425ace40b492fe",
-      "to": "0x53c902a9ef069f3b85e5e71f918c4d582f3063fa"
+      "amount": 100000,
+      "amountUsd": 100000,
+      "hash": "0x883a638cfa801bf70d9253904eb29a801dd16e56719ed805118e5833d82ed1c5",
+      "from": "0xce84449a8ebec019ac110a4b6662e55d0fd9f228",
+      "to": "0xdbf5e9c5206d0db70a90108bf936da60221dc080"
     },
     {
       "id": "fund-0x71bb71a7792daa-WBTC",
