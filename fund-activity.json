@@ -1,8 +1,22 @@
 {
-  "lastUpdated": "2026-02-27T02:14:50.957Z",
-  "count": 86,
+  "lastUpdated": "2026-02-27T03:14:30.896Z",
+  "count": 85,
   "minValueUsd": 100000,
   "activities": [
+    {
+      "id": "fund-0x6b0a38f973e2f0-USDC",
+      "timestamp": 1772159243000,
+      "fund": "Galaxy Digital",
+      "logo": "🌌",
+      "type": "Investment Firm",
+      "action": "sell",
+      "symbol": "USDC",
+      "amount": 4000000,
+      "amountUsd": 4000000,
+      "hash": "0x6b0a38f973e2f0a0086dd2adbdc0f10979b5c613b2f36a467238db170cd77f89",
+      "from": "0x33566c9d8be6cf0b23795e0d380e112be9d75836",
+      "to": "0x16f6d15381bee4a25b25f0d1c4161b78f7f21fde"
+    },
     {
       "id": "fund-0xd580aa00f82a8e-USDC",
       "timestamp": 1772141831000,
@@ -284,20 +298,6 @@
       "to": "0x15abb66ba754f05cbc0165a64a11cded1543de48"
     },
     {
-      "id": "fund-0xe85e2bbb86adcb-USDT",
-      "timestamp": 1772056571000,
-      "fund": "Galaxy Digital",
-      "logo": "🌌",
-      "type": "Investment Firm",
-      "action": "sell",
-      "symbol": "USDT",
-      "amount": 5000000,
-      "amountUsd": 5000000,
-      "hash": "0xe85e2bbb86adcb992d548df0cc48f07508d6719b471b0666b09e8f85a8e32848",
-      "from": "0x33566c9d8be6cf0b23795e0d380e112be9d75836",
-      "to": "0x16f6d15381bee4a25b25f0d1c4161b78f7f21fde"
-    },
-    {
       "id": "fund-0xb00f61fbbdcbff-USDC",
       "timestamp": 1772051975000,
       "fund": "Galaxy Digital",
@@ -310,20 +310,6 @@
       "hash": "0xb00f61fbbdcbffb90cb415493d44ba82592ea1c9bcc21222f25438d9025a01fa",
       "from": "0x15abb66ba754f05cbc0165a64a11cded1543de48",
       "to": "0xe88f2f28de98177712844c24572ea55223f2dca9"
-    },
-    {
-      "id": "fund-0x5257fcad00e514-USDC",
-      "timestamp": 1772050499000,
-      "fund": "Galaxy Digital",
-      "logo": "🌌",
-      "type": "Investment Firm",
-      "action": "buy",
-      "symbol": "USDC",
-      "amount": 2000000,
-      "amountUsd": 2000000,
-      "hash": "0x5257fcad00e514ae9b14b9ef064fc3ba9e50a8fbc41d088830e94de56c658d17",
-      "from": "0x16f6d15381bee4a25b25f0d1c4161b78f7f21fde",
-      "to": "0x33566c9d8be6cf0b23795e0d380e112be9d75836"
     },
     {
       "id": "fund-0x4339a449f010b1-USDT",
