@@ -1,8 +1,22 @@
 {
-  "lastUpdated": "2026-02-28T06:15:31.545Z",
-  "count": 88,
+  "lastUpdated": "2026-02-28T06:31:17.104Z",
+  "count": 89,
   "minValueUsd": 100000,
   "activities": [
+    {
+      "id": "fund-0x6acbc284235776-USDT",
+      "timestamp": 1772259827000,
+      "fund": "DWF Labs",
+      "logo": "🔷",
+      "type": "Market Maker",
+      "action": "buy",
+      "symbol": "USDT",
+      "amount": 275000,
+      "amountUsd": 275000,
+      "hash": "0x6acbc2842357761c0e0332ce9c4022665bfe47674b13590ecaedd9f7558c2e51",
+      "from": "0x1ab4973a48dc892cd9971ece8e01dcc7688f8f23",
+      "to": "0x53c902a9ef069f3b85e5e71f918c4d582f3063fa"
+    },
     {
       "id": "fund-0x918ef49e87dab9-USDT",
       "timestamp": 1772258591000,
