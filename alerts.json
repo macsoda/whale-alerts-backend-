@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-03-03T06:15:38.935Z",
+  "lastUpdated": "2026-03-03T06:33:26.776Z",
   "count": 200,
   "minValueUsd": 1000000,
   "alerts": [
     {
-      "id": "whale-1772515958000-BTC-77bncw",
+      "id": "whale-1772515958000-BTC-524dc3",
       "timestamp": 1772515958000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -25,7 +25,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1772513803000-USDC-tbbd8z",
+      "id": "whale-1772513803000-USDC-espjz6",
       "timestamp": 1772513803000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -46,7 +46,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1772513638000-USDC-m8zrel",
+      "id": "whale-1772513638000-USDC-twwzak",
       "timestamp": 1772513638000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -67,7 +67,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1772513273000-BTC-44g9qs",
+      "id": "whale-1772513273000-BTC-rbtefg",
       "timestamp": 1772513273000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -88,7 +88,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1772496409000-USDC-cm68r3",
+      "id": "whale-1772496409000-USDC-q5ptji",
       "timestamp": 1772496409000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -109,7 +109,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1772496224000-USDC-yw8jkp",
+      "id": "whale-1772496224000-USDC-otztkp",
       "timestamp": 1772496224000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -130,7 +130,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1772495188000-USDC-zsxq4t",
+      "id": "whale-1772495188000-USDC-0bqvdj",
       "timestamp": 1772495188000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -151,7 +151,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1772494872000-BTC-h5mpjt",
+      "id": "whale-1772494872000-BTC-aznl8h",
       "timestamp": 1772494872000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -172,7 +172,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1772494858000-USDC-sz3uvh",
+      "id": "whale-1772494858000-USDC-akg3gr",
       "timestamp": 1772494858000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -193,7 +193,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1772492214000-BTC-09evx8",
+      "id": "whale-1772492214000-BTC-hjr4vi",
       "timestamp": 1772492214000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -214,7 +214,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1772492148000-BTC-dv31cz",
+      "id": "whale-1772492148000-BTC-xz2wdy",
       "timestamp": 1772492148000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -235,7 +235,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1772491908000-BTC-p7fn5j",
+      "id": "whale-1772491908000-BTC-k9zxcu",
       "timestamp": 1772491908000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -256,7 +256,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1772483084000-WETH-zj82y3",
+      "id": "whale-1772483084000-WETH-i1hgh9",
       "timestamp": 1772483084000,
       "blockchain": "ethereum",
       "symbol": "WETH",
@@ -277,7 +277,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1772477813000-WETH-wk4fg8",
+      "id": "whale-1772477813000-WETH-ff0ve9",
       "timestamp": 1772477813000,
       "blockchain": "ethereum",
       "symbol": "WETH",
@@ -298,7 +298,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1772474958000-WETH-as1kf7",
+      "id": "whale-1772474958000-WETH-eh0g79",
       "timestamp": 1772474958000,
       "blockchain": "ethereum",
       "symbol": "WETH",
@@ -319,7 +319,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1772473908000-USDC-1ocho3",
+      "id": "whale-1772473908000-USDC-jha9we",
       "timestamp": 1772473908000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -340,7 +340,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1772473625000-WETH-awsioy",
+      "id": "whale-1772473625000-WETH-xym2bi",
       "timestamp": 1772473625000,
       "blockchain": "ethereum",
       "symbol": "WETH",
