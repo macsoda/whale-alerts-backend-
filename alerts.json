@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-03-05T18:52:45.247Z",
+  "lastUpdated": "2026-03-05T19:23:16.081Z",
   "count": 200,
   "minValueUsd": 1000000,
   "alerts": [
     {
-      "id": "whale-1772735181000-USDC-l67ged",
+      "id": "whale-1772735181000-USDC-an7qtu",
       "timestamp": 1772735181000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -25,7 +25,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1772735090000-USDC-70up3d",
+      "id": "whale-1772735090000-USDC-pllrwu",
       "timestamp": 1772735090000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -46,7 +46,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1772734997000-USDC-x3kat4",
+      "id": "whale-1772734997000-USDC-mkycp5",
       "timestamp": 1772734997000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -67,7 +67,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1772734020000-USDC-oqt4so",
+      "id": "whale-1772734020000-USDC-yqgvs0",
       "timestamp": 1772734020000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -88,7 +88,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1772731835000-USDC-2gwykg",
+      "id": "whale-1772731835000-USDC-oxl6mu",
       "timestamp": 1772731835000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -109,7 +109,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1772731431000-BTC-vbz5kp",
+      "id": "whale-1772731431000-BTC-xodklb",
       "timestamp": 1772731431000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -130,7 +130,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1772730925000-USDC-749zmf",
+      "id": "whale-1772730925000-USDC-csabsz",
       "timestamp": 1772730925000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -151,7 +151,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1772730600000-USDC-1jm61l",
+      "id": "whale-1772730600000-USDC-kvfeqm",
       "timestamp": 1772730600000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -172,7 +172,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1772729425000-USDT-62vu1r",
+      "id": "whale-1772729425000-USDT-8mqua4",
       "timestamp": 1772729425000,
       "blockchain": "stablecoin",
       "symbol": "USDT",
@@ -193,7 +193,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1772728752000-USDT-md3cat",
+      "id": "whale-1772728752000-USDT-fhwf8g",
       "timestamp": 1772728752000,
       "blockchain": "stablecoin",
       "symbol": "USDT",
@@ -214,7 +214,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1772727352000-BTC-sm5tl1",
+      "id": "whale-1772727352000-BTC-2tm7wa",
       "timestamp": 1772727352000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -235,7 +235,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1772727119000-USDC-1h2gtu",
+      "id": "whale-1772727119000-USDC-tuabua",
       "timestamp": 1772727119000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -256,7 +256,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1772722926000-SOL-34y76c",
+      "id": "whale-1772722926000-SOL-1ru65d",
       "timestamp": 1772722926000,
       "blockchain": "solana",
       "symbol": "SOL",
@@ -277,7 +277,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1772722857000-SOL-bzoqsb",
+      "id": "whale-1772722857000-SOL-h4egrl",
       "timestamp": 1772722857000,
       "blockchain": "solana",
       "symbol": "SOL",
@@ -298,7 +298,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1772722413000-SOL-479tn1",
+      "id": "whale-1772722413000-SOL-cebhmh",
       "timestamp": 1772722413000,
       "blockchain": "solana",
       "symbol": "SOL",
@@ -319,7 +319,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1772721553000-SOL-o1mfwf",
+      "id": "whale-1772721553000-SOL-wm9qjg",
       "timestamp": 1772721553000,
       "blockchain": "solana",
       "symbol": "SOL",
@@ -340,7 +340,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1772721414000-SOL-6kqvqv",
+      "id": "whale-1772721414000-SOL-m3fhcd",
       "timestamp": 1772721414000,
       "blockchain": "solana",
       "symbol": "SOL",
@@ -361,7 +361,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1772721277000-SOL-hmyqiw",
+      "id": "whale-1772721277000-SOL-3nr02l",
       "timestamp": 1772721277000,
       "blockchain": "solana",
       "symbol": "SOL",
