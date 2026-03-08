@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-08T14:50:36.012Z",
-  "count": 66,
+  "lastUpdated": "2026-03-08T15:04:11.024Z",
+  "count": 63,
   "minValueUsd": 100000,
   "activities": [
     {
@@ -88,20 +88,6 @@
       "to": "0x33566c9d8be6cf0b23795e0d380e112be9d75836"
     },
     {
-      "id": "fund-0x3e3958f95422f8-USDC",
-      "timestamp": 1772820287000,
-      "fund": "Galaxy Digital",
-      "logo": "🌌",
-      "type": "Investment Firm",
-      "action": "buy",
-      "symbol": "USDC",
-      "amount": 596491,
-      "amountUsd": 596491,
-      "hash": "0x3e3958f95422f8d8585adb8ed033b323a31ba6448d4fe0d405a60922257861c8",
-      "from": "0xff43c5727fbfc31cb96e605dfd7546eb8862064c",
-      "to": "0x15abb66ba754f05cbc0165a64a11cded1543de48"
-    },
-    {
       "id": "fund-0xa165d1fc8ddb81-USDC",
       "timestamp": 1772812175000,
       "fund": "Galaxy Digital",
@@ -156,20 +142,6 @@
       "hash": "0x83bf0736630544214bdc4f2dca70bb34db1ab3983846c2026e4c34c590df2075",
       "from": "0x16f6d15381bee4a25b25f0d1c4161b78f7f21fde",
       "to": "0x33566c9d8be6cf0b23795e0d380e112be9d75836"
-    },
-    {
-      "id": "fund-0xf0e03d12a624ec-USDC",
-      "timestamp": 1772788703000,
-      "fund": "Galaxy Digital",
-      "logo": "🌌",
-      "type": "Investment Firm",
-      "action": "buy",
-      "symbol": "USDC",
-      "amount": 104159.7,
-      "amountUsd": 104159.7,
-      "hash": "0xf0e03d12a624ec4a497fa87ed8396fb0aa826c694607fa03348c065f17f65873",
-      "from": "0xba58b1f7a7302e662a197d578e68828d6a14e7ff",
-      "to": "0x15abb66ba754f05cbc0165a64a11cded1543de48"
     },
     {
       "id": "fund-0xbfa389dec3ba2a-USDC",
@@ -324,20 +296,6 @@
       "hash": "0xb820f64d9b8770d0d048ec4780383223f015b8e099c364955c7667e0e5a12f6d",
       "from": "0x1ab4973a48dc892cd9971ece8e01dcc7688f8f23",
       "to": "0x53c902a9ef069f3b85e5e71f918c4d582f3063fa"
-    },
-    {
-      "id": "fund-0x4d7e8f1cf01ba0-USDC",
-      "timestamp": 1772722763000,
-      "fund": "Galaxy Digital",
-      "logo": "🌌",
-      "type": "Investment Firm",
-      "action": "sell",
-      "symbol": "USDC",
-      "amount": 311111.08,
-      "amountUsd": 311111.08,
-      "hash": "0x4d7e8f1cf01ba0ad9f2bed2f7966809380ff213c2aee52bc8d756a9b45c12a55",
-      "from": "0x15abb66ba754f05cbc0165a64a11cded1543de48",
-      "to": "0x9a5cdb9ba2edfaf35b74276fa480572f7cfcd5f2"
     },
     {
       "id": "fund-0x2fe8728ba778f8-USDC",
