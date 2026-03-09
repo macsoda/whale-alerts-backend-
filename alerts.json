@@ -1,10 +1,31 @@
 {
-  "lastUpdated": "2026-03-09T11:52:59.842Z",
+  "lastUpdated": "2026-03-09T12:02:29.556Z",
   "count": 200,
   "minValueUsd": 1000000,
   "alerts": [
     {
-      "id": "whale-1773054503000-BTC-jewkq2",
+      "id": "whale-1773057302000-DOGE-ctpz3h",
+      "timestamp": 1773057302000,
+      "blockchain": "dogecoin",
+      "symbol": "DOGE",
+      "amount": 314563371,
+      "amountUsd": 28432244,
+      "from": {
+        "address": "",
+        "owner": "Kraken",
+        "ownerType": "exchange"
+      },
+      "to": {
+        "address": "",
+        "owner": "unknown",
+        "ownerType": "unknown"
+      },
+      "transactionType": "transfer",
+      "hash": "",
+      "significance": "high"
+    },
+    {
+      "id": "whale-1773054503000-BTC-eewxcu",
       "timestamp": 1773054503000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -25,7 +46,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1773053625000-USDT-m7lgor",
+      "id": "whale-1773053625000-USDT-tcabdk",
       "timestamp": 1773053625000,
       "blockchain": "stablecoin",
       "symbol": "USDT",
@@ -46,7 +67,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1773053519000-USDT-imgouo",
+      "id": "whale-1773053519000-USDT-k4056z",
       "timestamp": 1773053519000,
       "blockchain": "stablecoin",
       "symbol": "USDT",
@@ -67,7 +88,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1773052788000-BTC-e0y2ir",
+      "id": "whale-1773052788000-BTC-ier8p5",
       "timestamp": 1773052788000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -88,7 +109,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1773042946000-BTC-y6nvvm",
+      "id": "whale-1773042946000-BTC-g0i47g",
       "timestamp": 1773042946000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -109,7 +130,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1773041466000-BTC-owkktj",
+      "id": "whale-1773041466000-BTC-c9ckef",
       "timestamp": 1773041466000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -130,7 +151,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1773041336000-BTC-o41s7f",
+      "id": "whale-1773041336000-BTC-p5x4nd",
       "timestamp": 1773041336000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -151,7 +172,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1773039106000-BTC-hfa0uz",
+      "id": "whale-1773039106000-BTC-p3jsu3",
       "timestamp": 1773039106000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -172,7 +193,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1773038446000-BTC-2tv48a",
+      "id": "whale-1773038446000-BTC-7aw85l",
       "timestamp": 1773038446000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -193,7 +214,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1773028121000-SOL-oqgdes",
+      "id": "whale-1773028121000-SOL-yi39sl",
       "timestamp": 1773028121000,
       "blockchain": "solana",
       "symbol": "SOL",
@@ -214,7 +235,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1773028017000-SOL-2nobku",
+      "id": "whale-1773028017000-SOL-ln1l37",
       "timestamp": 1773028017000,
       "blockchain": "solana",
       "symbol": "SOL",
@@ -235,7 +256,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1773027934000-SOL-pfdo7h",
+      "id": "whale-1773027934000-SOL-l13p6q",
       "timestamp": 1773027934000,
       "blockchain": "solana",
       "symbol": "SOL",
@@ -256,7 +277,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1773014870000-USDC-0p307h",
+      "id": "whale-1773014870000-USDC-qn2qch",
       "timestamp": 1773014870000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -277,7 +298,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1773014705000-USDC-f2cf58",
+      "id": "whale-1773014705000-USDC-mua730",
       "timestamp": 1773014705000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -298,7 +319,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1773014632000-USDC-un129y",
+      "id": "whale-1773014632000-USDC-6q97kz",
       "timestamp": 1773014632000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -319,7 +340,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1773013848000-USDC-danynq",
+      "id": "whale-1773013848000-USDC-5rkiaq",
       "timestamp": 1773013848000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -4176,27 +4197,6 @@
       "to": {
         "address": "",
         "owner": "unknown",
-        "ownerType": "unknown"
-      },
-      "transactionType": "transfer",
-      "hash": "",
-      "significance": "very_high"
-    },
-    {
-      "id": "whale-1772215764000-USDC-rg9m6z",
-      "timestamp": 1772215764000,
-      "blockchain": "stablecoin",
-      "symbol": "USDC",
-      "amount": 109959651,
-      "amountUsd": 109959321,
-      "from": {
-        "address": "",
-        "owner": "unknown",
-        "ownerType": "unknown"
-      },
-      "to": {
-        "address": "",
-        "owner": "USDC",
         "ownerType": "unknown"
       },
       "transactionType": "transfer",
