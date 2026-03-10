@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-10T17:46:49.222Z",
-  "count": 80,
+  "lastUpdated": "2026-03-10T18:04:45.692Z",
+  "count": 79,
   "minValueUsd": 100000,
   "activities": [
     {
@@ -492,20 +492,6 @@
       "hash": "0xee4c35a347a0e708d36b5831163d9b82b65f7256801e9c574e73f1997269a67f",
       "from": "0x33566c9d8be6cf0b23795e0d380e112be9d75836",
       "to": "0x8c67371b21e45faae5d8ae888d0a6aac55ae53fc"
-    },
-    {
-      "id": "fund-0xbc396bd09c942b-USDC",
-      "timestamp": 1773087179000,
-      "fund": "Galaxy Digital",
-      "logo": "🌌",
-      "type": "Investment Firm",
-      "action": "buy",
-      "symbol": "USDC",
-      "amount": 4981369.84,
-      "amountUsd": 4981369.84,
-      "hash": "0xbc396bd09c942bc44cf4625d57a6b616f131306955b1fe651689791de084478d",
-      "from": "0x2f49615a6fed8395bc064adc00f24dd3feb906c4",
-      "to": "0x33566c9d8be6cf0b23795e0d380e112be9d75836"
     },
     {
       "id": "fund-0x3e3958f95422f8-USDC",
