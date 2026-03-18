@@ -1,8 +1,36 @@
 {
-  "lastUpdated": "2026-03-18T20:01:13.703Z",
-  "count": 100,
+  "lastUpdated": "2026-03-18T20:21:26.342Z",
+  "count": 102,
   "minValueUsd": 100000,
   "activities": [
+    {
+      "id": "fund-0x074c115ad6e00f-USDC",
+      "timestamp": 1773864947000,
+      "fund": "Galaxy Digital",
+      "logo": "🌌",
+      "type": "Investment Firm",
+      "action": "sell",
+      "symbol": "USDC",
+      "amount": 2000000,
+      "amountUsd": 2000000,
+      "hash": "0x074c115ad6e00f6974d57b3b9969b8a02b105d089ba0947bdf093b0311ee4b5c",
+      "from": "0x33566c9d8be6cf0b23795e0d380e112be9d75836",
+      "to": "0xcb8df8746aaf35bc5783416186fa5ff85be03680"
+    },
+    {
+      "id": "fund-0xdc6cbe42ae2ead-USDC",
+      "timestamp": 1773864143000,
+      "fund": "Galaxy Digital",
+      "logo": "🌌",
+      "type": "Investment Firm",
+      "action": "buy",
+      "symbol": "USDC",
+      "amount": 2000000,
+      "amountUsd": 2000000,
+      "hash": "0xdc6cbe42ae2eada5d26c4f224ff299d9908bf93207cbe07f8dd8fd391df01e54",
+      "from": "0x16f6d15381bee4a25b25f0d1c4161b78f7f21fde",
+      "to": "0x33566c9d8be6cf0b23795e0d380e112be9d75836"
+    },
     {
       "id": "fund-0x85b83503aa1024-USDC",
       "timestamp": 1773861347000,
@@ -1374,34 +1402,6 @@
       "hash": "0x2dcf609fc9d1039d8966c7a67ed8b8c07d5b06fd54649cfa1dc40325373be40e",
       "from": "0x9507c04b10486547584c37bcbd931b2a4fee9a41",
       "to": "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640"
-    },
-    {
-      "id": "fund-0x131387b33195e9-WBTC",
-      "timestamp": 1690320491000,
-      "fund": "Jump Trading",
-      "logo": "🦘",
-      "type": "Trading Firm",
-      "action": "sell",
-      "symbol": "WBTC",
-      "amount": 1.4280948,
-      "amountUsd": 138525.1956,
-      "hash": "0x131387b33195e96abd2a23b6b7e954378fa5fa70e353564efe489c28097ecc4f",
-      "from": "0x9507c04b10486547584c37bcbd931b2a4fee9a41",
-      "to": "0x4585fe77225b41b697c938b018e2ac67ac5a20c0"
-    },
-    {
-      "id": "fund-0xf67ebf168bd286-WBTC",
-      "timestamp": 1690319507000,
-      "fund": "Jump Trading",
-      "logo": "🦘",
-      "type": "Trading Firm",
-      "action": "sell",
-      "symbol": "WBTC",
-      "amount": 1.90256916,
-      "amountUsd": 184549.20852000001,
-      "hash": "0xf67ebf168bd286c449f901ecba48f47961c78b4a57721a07e3dde793fb26f9d8",
-      "from": "0x9507c04b10486547584c37bcbd931b2a4fee9a41",
-      "to": "0x4585fe77225b41b697c938b018e2ac67ac5a20c0"
     }
   ]
 }
