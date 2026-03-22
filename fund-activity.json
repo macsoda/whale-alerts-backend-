@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-22T22:30:42.340Z",
-  "count": 65,
+  "lastUpdated": "2026-03-22T22:47:30.285Z",
+  "count": 68,
   "minValueUsd": 100000,
   "activities": [
     {
@@ -284,6 +284,20 @@
       "to": "0x15abb66ba754f05cbc0165a64a11cded1543de48"
     },
     {
+      "id": "fund-0x1ec83442f1f791-USDT",
+      "timestamp": 1773834203000,
+      "fund": "DWF Labs",
+      "logo": "🔷",
+      "type": "Market Maker",
+      "action": "buy",
+      "symbol": "USDT",
+      "amount": 150000,
+      "amountUsd": 150000,
+      "hash": "0x1ec83442f1f791abad0a82a7a947fc03a5e1d5d7ca5d2b369d3e706c2b77cf1e",
+      "from": "0xdfd5293d8e347dfe59e90efd55b2956a1343963d",
+      "to": "0x53c902a9ef069f3b85e5e71f918c4d582f3063fa"
+    },
+    {
       "id": "fund-0xa30a1ec16918fd-USDC",
       "timestamp": 1773811355000,
       "fund": "Galaxy Digital",
@@ -324,6 +338,34 @@
       "hash": "0x469b9067ae48a57929feecd4c296abe11da8a4f459ee8fe1fc407ed54d46667c",
       "from": "0x8fa4ee1776032b612206e754ec2382b534d4ac6f",
       "to": "0x15abb66ba754f05cbc0165a64a11cded1543de48"
+    },
+    {
+      "id": "fund-0xc7de08f7dc6485-USDT",
+      "timestamp": 1773760331000,
+      "fund": "DWF Labs",
+      "logo": "🔷",
+      "type": "Market Maker",
+      "action": "sell",
+      "symbol": "USDT",
+      "amount": 100000,
+      "amountUsd": 100000,
+      "hash": "0xc7de08f7dc6485bfca8d416fae4ae5d168d9172b24d3f291a3e7f36e6a40f68b",
+      "from": "0x53c902a9ef069f3b85e5e71f918c4d582f3063fa",
+      "to": "0x977d6f077df841f09cf6b70a0b1285e1a7e5d8a9"
+    },
+    {
+      "id": "fund-0xfc35d32a7503c0-USDT",
+      "timestamp": 1773759335000,
+      "fund": "DWF Labs",
+      "logo": "🔷",
+      "type": "Market Maker",
+      "action": "buy",
+      "symbol": "USDT",
+      "amount": 150000,
+      "amountUsd": 150000,
+      "hash": "0xfc35d32a7503c010fa97ac85ce1d07b024a7ac95df05e46b9c03aeb6c194c7f3",
+      "from": "0x1ab4973a48dc892cd9971ece8e01dcc7688f8f23",
+      "to": "0x53c902a9ef069f3b85e5e71f918c4d582f3063fa"
     },
     {
       "id": "fund-0x2fe8728ba778f8-USDC",
