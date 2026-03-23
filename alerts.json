@@ -1,10 +1,31 @@
 {
-  "lastUpdated": "2026-03-23T16:28:31.619Z",
+  "lastUpdated": "2026-03-23T16:50:25.567Z",
   "count": 200,
   "minValueUsd": 1000000,
   "alerts": [
     {
-      "id": "whale-1774279518000-BTC-rtltsk",
+      "id": "whale-1774284242000-USDC-nuzuz4",
+      "timestamp": 1774284242000,
+      "blockchain": "stablecoin",
+      "symbol": "USDC",
+      "amount": 90000000,
+      "amountUsd": 90011924,
+      "from": {
+        "address": "",
+        "owner": "unknown",
+        "ownerType": "unknown"
+      },
+      "to": {
+        "address": "",
+        "owner": "unknown",
+        "ownerType": "unknown"
+      },
+      "transactionType": "transfer",
+      "hash": "",
+      "significance": "high"
+    },
+    {
+      "id": "whale-1774279518000-BTC-tl2gb3",
       "timestamp": 1774279518000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -25,7 +46,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1774259766000-USDT-1qbz8s",
+      "id": "whale-1774259766000-USDT-p9ogfu",
       "timestamp": 1774259766000,
       "blockchain": "stablecoin",
       "symbol": "USDT",
@@ -46,7 +67,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1774258642000-BTC-dfu9kb",
+      "id": "whale-1774258642000-BTC-7o50d9",
       "timestamp": 1774258642000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -67,7 +88,7 @@
       "significance": "extreme"
     },
     {
-      "id": "whale-1774258573000-BTC-ye4ehi",
+      "id": "whale-1774258573000-BTC-641btw",
       "timestamp": 1774258573000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -88,7 +109,7 @@
       "significance": "extreme"
     },
     {
-      "id": "whale-1774236256000-USDC-6xm0tb",
+      "id": "whale-1774236256000-USDC-qqjc5t",
       "timestamp": 1774236256000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -109,7 +130,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1774224382000-USDC-ph5ptq",
+      "id": "whale-1774224382000-USDC-fiyux8",
       "timestamp": 1774224382000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -130,7 +151,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1774224252000-USDC-9ljhh1",
+      "id": "whale-1774224252000-USDC-5niitz",
       "timestamp": 1774224252000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -151,7 +172,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1774222772000-USDC-007scg",
+      "id": "whale-1774222772000-USDC-39efwh",
       "timestamp": 1774222772000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -172,7 +193,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1774222612000-USDC-nwtjek",
+      "id": "whale-1774222612000-USDC-i40cb6",
       "timestamp": 1774222612000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -193,7 +214,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1774178996000-USDT-jp2nnp",
+      "id": "whale-1774178996000-USDT-viu0ql",
       "timestamp": 1774178996000,
       "blockchain": "stablecoin",
       "symbol": "USDT",
@@ -214,7 +235,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1774178597000-USDT-qtlhox",
+      "id": "whale-1774178597000-USDT-deqa2d",
       "timestamp": 1774178597000,
       "blockchain": "stablecoin",
       "symbol": "USDT",
@@ -4168,27 +4189,6 @@
       "symbol": "USDC",
       "amount": 396666036,
       "amountUsd": 396588686,
-      "from": {
-        "address": "",
-        "owner": "unknown",
-        "ownerType": "unknown"
-      },
-      "to": {
-        "address": "",
-        "owner": "unknown",
-        "ownerType": "unknown"
-      },
-      "transactionType": "transfer",
-      "hash": "",
-      "significance": "very_high"
-    },
-    {
-      "id": "whale-1773531632000-USDC-zjrow3",
-      "timestamp": 1773531632000,
-      "blockchain": "stablecoin",
-      "symbol": "USDC",
-      "amount": 300029431,
-      "amountUsd": 300013530,
       "from": {
         "address": "",
         "owner": "unknown",
