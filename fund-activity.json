@@ -1,8 +1,50 @@
 {
-  "lastUpdated": "2026-03-25T06:41:41.037Z",
-  "count": 77,
+  "lastUpdated": "2026-03-25T07:13:19.882Z",
+  "count": 80,
   "minValueUsd": 100000,
   "activities": [
+    {
+      "id": "fund-0xba5532890052ac-USDT",
+      "timestamp": 1774422347000,
+      "fund": "DWF Labs",
+      "logo": "🔷",
+      "type": "Market Maker",
+      "action": "sell",
+      "symbol": "USDT",
+      "amount": 102620,
+      "amountUsd": 102620,
+      "hash": "0xba5532890052accc3b4982355c3e0e2e899b83a79b77feefb13b5105c7f7d489",
+      "from": "0x53c902a9ef069f3b85e5e71f918c4d582f3063fa",
+      "to": "0x10de7a0a13d1dd94150d438e2b3977ead6123793"
+    },
+    {
+      "id": "fund-0x3cbf0daeec4a45-USDT",
+      "timestamp": 1774422107000,
+      "fund": "DWF Labs",
+      "logo": "🔷",
+      "type": "Market Maker",
+      "action": "buy",
+      "symbol": "USDT",
+      "amount": 522000,
+      "amountUsd": 522000,
+      "hash": "0x3cbf0daeec4a45a85026f1c1404964b24c627c0e9267c2f9c53da7787a02d25e",
+      "from": "0x1ab4973a48dc892cd9971ece8e01dcc7688f8f23",
+      "to": "0x53c902a9ef069f3b85e5e71f918c4d582f3063fa"
+    },
+    {
+      "id": "fund-0x9edc681b9abe10-USDT",
+      "timestamp": 1774421303000,
+      "fund": "Galaxy Digital",
+      "logo": "🌌",
+      "type": "Investment Firm",
+      "action": "buy",
+      "symbol": "USDT",
+      "amount": 3000000,
+      "amountUsd": 3000000,
+      "hash": "0x9edc681b9abe10d8ad127c7dc0f130a286fe36330d7e97fae3af6483c70a1200",
+      "from": "0xdd6f987ec76ac433b6eb8869c132af8e37f71133",
+      "to": "0x33566c9d8be6cf0b23795e0d380e112be9d75836"
+    },
     {
       "id": "fund-0xf10cbff433595b-USDT",
       "timestamp": 1774396187000,
