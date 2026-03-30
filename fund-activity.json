@@ -1,8 +1,22 @@
 {
-  "lastUpdated": "2026-03-30T15:49:56.894Z",
-  "count": 80,
+  "lastUpdated": "2026-03-30T16:14:06.656Z",
+  "count": 79,
   "minValueUsd": 100000,
   "activities": [
+    {
+      "id": "fund-0xbfd314c1796a9f-USDC",
+      "timestamp": 1774885883000,
+      "fund": "Galaxy Digital",
+      "logo": "🌌",
+      "type": "Investment Firm",
+      "action": "sell",
+      "symbol": "USDC",
+      "amount": 2000000,
+      "amountUsd": 2000000,
+      "hash": "0xbfd314c1796a9f7ccbf387dec27f1148a401ce1ab72a7d9ab7473012342e9854",
+      "from": "0x33566c9d8be6cf0b23795e0d380e112be9d75836",
+      "to": "0xcb8df8746aaf35bc5783416186fa5ff85be03680"
+    },
     {
       "id": "fund-0x3fcfe4f3108458-USDC",
       "timestamp": 1774885079000,
@@ -368,20 +382,6 @@
       "to": "0x15abb66ba754f05cbc0165a64a11cded1543de48"
     },
     {
-      "id": "fund-0xa716c1e842a5a1-USDT",
-      "timestamp": 1774600763000,
-      "fund": "Galaxy Digital",
-      "logo": "🌌",
-      "type": "Investment Firm",
-      "action": "sell",
-      "symbol": "USDT",
-      "amount": 2000000,
-      "amountUsd": 2000000,
-      "hash": "0xa716c1e842a5a1f13c46f1bcdafcad462f30e6b8bd089ab10f243009744b63f5",
-      "from": "0x33566c9d8be6cf0b23795e0d380e112be9d75836",
-      "to": "0x16f6d15381bee4a25b25f0d1c4161b78f7f21fde"
-    },
-    {
       "id": "fund-0x3f1aef5ae9ea7a-USDT",
       "timestamp": 1774599131000,
       "fund": "DWF Labs",
@@ -408,20 +408,6 @@
       "hash": "0xfbbe276b6bfbf418ec39a017548166347bf2e62e32d9fd607e0bfc1296d8bd74",
       "from": "0xd48573cda0fed7144f2455c5270ffa16be389d04",
       "to": "0x15abb66ba754f05cbc0165a64a11cded1543de48"
-    },
-    {
-      "id": "fund-0x7672e1578fd14d-USDC",
-      "timestamp": 1774566743000,
-      "fund": "Galaxy Digital",
-      "logo": "🌌",
-      "type": "Investment Firm",
-      "action": "buy",
-      "symbol": "USDC",
-      "amount": 175087.5438,
-      "amountUsd": 175087.5438,
-      "hash": "0x7672e1578fd14dcda52d44b4f840653f883ae314fcee12b5ca6a5e68cf161272",
-      "from": "0x1ebe365e970cf063c2d712e1f7ca693f45388b58",
-      "to": "0x33566c9d8be6cf0b23795e0d380e112be9d75836"
     },
     {
       "id": "fund-0x50f744fe216b46-WBTC",
