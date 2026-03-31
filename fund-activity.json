@@ -1,8 +1,22 @@
 {
-  "lastUpdated": "2026-03-31T22:01:15.239Z",
-  "count": 80,
+  "lastUpdated": "2026-03-31T22:20:40.633Z",
+  "count": 81,
   "minValueUsd": 100000,
   "activities": [
+    {
+      "id": "fund-0xdd0bde245332fb-WBTC",
+      "timestamp": 1774995395000,
+      "fund": "Galaxy Digital",
+      "logo": "🌌",
+      "type": "Investment Firm",
+      "action": "sell",
+      "symbol": "WBTC",
+      "amount": 42.8796282,
+      "amountUsd": 4159323.9354,
+      "hash": "0xdd0bde245332fb1ef3aa075822138841827a848be01e1c6682e5b13d5053c3c3",
+      "from": "0x15abb66ba754f05cbc0165a64a11cded1543de48",
+      "to": "0xd48573cda0fed7144f2455c5270ffa16be389d04"
+    },
     {
       "id": "fund-0x854b07a0c0bdba-USDC",
       "timestamp": 1774989143000,
