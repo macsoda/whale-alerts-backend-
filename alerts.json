@@ -1,10 +1,52 @@
 {
-  "lastUpdated": "2026-04-02T16:36:32.070Z",
+  "lastUpdated": "2026-04-02T17:00:10.565Z",
   "count": 200,
   "minValueUsd": 1000000,
   "alerts": [
     {
-      "id": "whale-1775144729000-USDC-p9wu3f",
+      "id": "whale-1775148142000-USDC-i54eid",
+      "timestamp": 1775148142000,
+      "blockchain": "stablecoin",
+      "symbol": "USDC",
+      "amount": 199999995,
+      "amountUsd": 200009994,
+      "from": {
+        "address": "",
+        "owner": "unknown",
+        "ownerType": "unknown"
+      },
+      "to": {
+        "address": "",
+        "owner": "unknown",
+        "ownerType": "unknown"
+      },
+      "transactionType": "transfer",
+      "hash": "",
+      "significance": "very_high"
+    },
+    {
+      "id": "whale-1775147970000-BTC-iq6fi6",
+      "timestamp": 1775147970000,
+      "blockchain": "bitcoin",
+      "symbol": "BTC",
+      "amount": 1211,
+      "amountUsd": 81314150,
+      "from": {
+        "address": "",
+        "owner": "unknown",
+        "ownerType": "unknown"
+      },
+      "to": {
+        "address": "",
+        "owner": "Kraken",
+        "ownerType": "exchange"
+      },
+      "transactionType": "transfer",
+      "hash": "",
+      "significance": "high"
+    },
+    {
+      "id": "whale-1775144729000-USDC-3lfjn9",
       "timestamp": 1775144729000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -25,7 +67,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1775144662000-USDC-aj0xno",
+      "id": "whale-1775144662000-USDC-odiswy",
       "timestamp": 1775144662000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -46,7 +88,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1775144093000-SOL-q01sbk",
+      "id": "whale-1775144093000-SOL-yqehdf",
       "timestamp": 1775144093000,
       "blockchain": "solana",
       "symbol": "SOL",
@@ -67,7 +109,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1775143747000-USDC-xc3xec",
+      "id": "whale-1775143747000-USDC-b8huhe",
       "timestamp": 1775143747000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -88,7 +130,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1775141020000-BTC-21lzsu",
+      "id": "whale-1775141020000-BTC-neu05o",
       "timestamp": 1775141020000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -109,7 +151,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1775140440000-USDC-6xa8ah",
+      "id": "whale-1775140440000-USDC-yatlin",
       "timestamp": 1775140440000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -130,7 +172,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1775140369000-USDC-8pbbwi",
+      "id": "whale-1775140369000-USDC-ils7nv",
       "timestamp": 1775140369000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -151,7 +193,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1775139610000-BTC-jfq0zy",
+      "id": "whale-1775139610000-BTC-r11ibi",
       "timestamp": 1775139610000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -172,7 +214,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1775138594000-SOL-65qdtr",
+      "id": "whale-1775138594000-SOL-dgnjm7",
       "timestamp": 1775138594000,
       "blockchain": "solana",
       "symbol": "SOL",
@@ -193,7 +235,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1775137460000-SOL-cmr1ey",
+      "id": "whale-1775137460000-SOL-e1qoh5",
       "timestamp": 1775137460000,
       "blockchain": "solana",
       "symbol": "SOL",
@@ -214,7 +256,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1775132981000-SOL-vxopv0",
+      "id": "whale-1775132981000-SOL-ubcs8o",
       "timestamp": 1775132981000,
       "blockchain": "solana",
       "symbol": "SOL",
@@ -235,7 +277,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1775130020000-BTC-sqdz83",
+      "id": "whale-1775130020000-BTC-og1uf8",
       "timestamp": 1775130020000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -256,7 +298,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1775127085000-BTC-j36v18",
+      "id": "whale-1775127085000-BTC-lsqa2l",
       "timestamp": 1775127085000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -277,7 +319,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1775121557000-USDC-fdl7fu",
+      "id": "whale-1775121557000-USDC-31e2d9",
       "timestamp": 1775121557000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -298,7 +340,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1775116359000-SOL-caotam",
+      "id": "whale-1775116359000-SOL-ibl5e4",
       "timestamp": 1775116359000,
       "blockchain": "solana",
       "symbol": "SOL",
@@ -4160,48 +4202,6 @@
       "transactionType": "transfer",
       "hash": "",
       "significance": "very_high"
-    },
-    {
-      "id": "whale-1774548055000-USDC-h2jtme",
-      "timestamp": 1774548055000,
-      "blockchain": "stablecoin",
-      "symbol": "USDC",
-      "amount": 50001353,
-      "amountUsd": 50007603,
-      "from": {
-        "address": "",
-        "owner": "unknown",
-        "ownerType": "unknown"
-      },
-      "to": {
-        "address": "",
-        "owner": "unknown",
-        "ownerType": "unknown"
-      },
-      "transactionType": "transfer",
-      "hash": "",
-      "significance": "high"
-    },
-    {
-      "id": "whale-1774547988000-USDC-rimgtm",
-      "timestamp": 1774547988000,
-      "blockchain": "stablecoin",
-      "symbol": "USDC",
-      "amount": 98637926,
-      "amountUsd": 98650256,
-      "from": {
-        "address": "",
-        "owner": "unknown",
-        "ownerType": "unknown"
-      },
-      "to": {
-        "address": "",
-        "owner": "unknown",
-        "ownerType": "unknown"
-      },
-      "transactionType": "transfer",
-      "hash": "",
-      "significance": "high"
     }
   ]
 }
