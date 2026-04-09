@@ -1,10 +1,31 @@
 {
-  "lastUpdated": "2026-04-09T18:07:56.955Z",
+  "lastUpdated": "2026-04-09T18:32:50.717Z",
   "count": 200,
   "minValueUsd": 1000000,
   "alerts": [
     {
-      "id": "whale-1775750511000-USDC-b5sx3g",
+      "id": "whale-1775759186000-ETH-2oifly",
+      "timestamp": 1775759186000,
+      "blockchain": "ethereum",
+      "symbol": "ETH",
+      "amount": 30582,
+      "amountUsd": 67415013,
+      "from": {
+        "address": "",
+        "owner": "unknown",
+        "ownerType": "unknown"
+      },
+      "to": {
+        "address": "",
+        "owner": "Coinbase",
+        "ownerType": "exchange"
+      },
+      "transactionType": "transfer",
+      "hash": "",
+      "significance": "high"
+    },
+    {
+      "id": "whale-1775750511000-USDC-6325wn",
       "timestamp": 1775750511000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -25,7 +46,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1775740914000-DOGE-kt4khz",
+      "id": "whale-1775740914000-DOGE-kzkz0q",
       "timestamp": 1775740914000,
       "blockchain": "dogecoin",
       "symbol": "DOGE",
@@ -46,7 +67,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1775731251000-USDT-0o7adt",
+      "id": "whale-1775731251000-USDT-8w21jo",
       "timestamp": 1775731251000,
       "blockchain": "stablecoin",
       "symbol": "USDT",
@@ -67,7 +88,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1775704926000-USDT-y310f4",
+      "id": "whale-1775704926000-USDT-hetjfm",
       "timestamp": 1775704926000,
       "blockchain": "stablecoin",
       "symbol": "USDT",
@@ -88,7 +109,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1775693651000-USDC-zq1lls",
+      "id": "whale-1775693651000-USDC-sc2meh",
       "timestamp": 1775693651000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -109,7 +130,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1775691265000-USDC-8mo8ax",
+      "id": "whale-1775691265000-USDC-9oguja",
       "timestamp": 1775691265000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -130,7 +151,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1775668972000-BTC-1bu5ch",
+      "id": "whale-1775668972000-BTC-53st9k",
       "timestamp": 1775668972000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -151,7 +172,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1775667177000-BTC-vhu7m9",
+      "id": "whale-1775667177000-BTC-q9o52y",
       "timestamp": 1775667177000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -172,7 +193,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1775658320000-USDC-sxbp9o",
+      "id": "whale-1775658320000-USDC-dnom6m",
       "timestamp": 1775658320000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -193,7 +214,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1775655856000-USDC-c6rxkz",
+      "id": "whale-1775655856000-USDC-0jh94r",
       "timestamp": 1775655856000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -214,7 +235,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1775655711000-USDC-6u85vj",
+      "id": "whale-1775655711000-USDC-0k4bh1",
       "timestamp": 1775655711000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -4181,27 +4202,6 @@
       "transactionType": "transfer",
       "hash": "",
       "significance": "very_high"
-    },
-    {
-      "id": "whale-1774918370000-USDC-f76sdk",
-      "timestamp": 1774918370000,
-      "blockchain": "stablecoin",
-      "symbol": "USDC",
-      "amount": 50000000,
-      "amountUsd": 50002475,
-      "from": {
-        "address": "",
-        "owner": "unknown",
-        "ownerType": "unknown"
-      },
-      "to": {
-        "address": "",
-        "owner": "unknown",
-        "ownerType": "unknown"
-      },
-      "transactionType": "transfer",
-      "hash": "",
-      "significance": "high"
     }
   ]
 }
