@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-04-10T10:55:45.449Z",
+  "lastUpdated": "2026-04-10T11:36:12.529Z",
   "count": 200,
   "minValueUsd": 1000000,
   "alerts": [
     {
-      "id": "whale-1775818087000-BTC-qqm3ci",
+      "id": "whale-1775818087000-BTC-sqv54r",
       "timestamp": 1775818087000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -25,7 +25,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1775780321000-USDC-moqm76",
+      "id": "whale-1775780321000-USDC-7hjcuo",
       "timestamp": 1775780321000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -46,7 +46,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1775777626000-USDC-aem8jd",
+      "id": "whale-1775777626000-USDC-si270c",
       "timestamp": 1775777626000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -67,7 +67,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1775767741000-USDT-c63ty5",
+      "id": "whale-1775767741000-USDT-owj564",
       "timestamp": 1775767741000,
       "blockchain": "stablecoin",
       "symbol": "USDT",
@@ -88,7 +88,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1775759186000-ETH-mph9x9",
+      "id": "whale-1775759186000-ETH-kuqem0",
       "timestamp": 1775759186000,
       "blockchain": "ethereum",
       "symbol": "ETH",
@@ -109,7 +109,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1775750511000-USDC-6sk9rq",
+      "id": "whale-1775750511000-USDC-azm7bo",
       "timestamp": 1775750511000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -130,7 +130,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1775740914000-DOGE-dwprj5",
+      "id": "whale-1775740914000-DOGE-xb4gft",
       "timestamp": 1775740914000,
       "blockchain": "dogecoin",
       "symbol": "DOGE",
@@ -151,7 +151,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1775731251000-USDT-8z3lq6",
+      "id": "whale-1775731251000-USDT-kipg96",
       "timestamp": 1775731251000,
       "blockchain": "stablecoin",
       "symbol": "USDT",
@@ -172,7 +172,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1775704926000-USDT-96b1yt",
+      "id": "whale-1775704926000-USDT-9uojm3",
       "timestamp": 1775704926000,
       "blockchain": "stablecoin",
       "symbol": "USDT",
