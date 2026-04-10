@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-04-10T08:10:44.224Z",
-  "count": 81,
+  "lastUpdated": "2026-04-10T08:49:28.087Z",
+  "count": 78,
   "minValueUsd": 100000,
   "activities": [
     {
@@ -298,34 +298,6 @@
       "to": "0xcb8df8746aaf35bc5783416186fa5ff85be03680"
     },
     {
-      "id": "fund-0x22a0dd33089454-USDC",
-      "timestamp": 1775669219000,
-      "fund": "Galaxy Digital",
-      "logo": "🌌",
-      "type": "Investment Firm",
-      "action": "sell",
-      "symbol": "USDC",
-      "amount": 2000000,
-      "amountUsd": 2000000,
-      "hash": "0x22a0dd33089454787e5566bf422fca4437883e308de4d4c47a2a60b69faf13e1",
-      "from": "0x33566c9d8be6cf0b23795e0d380e112be9d75836",
-      "to": "0x16f6d15381bee4a25b25f0d1c4161b78f7f21fde"
-    },
-    {
-      "id": "fund-0x884b78ad51e109-USDC",
-      "timestamp": 1775669015000,
-      "fund": "Galaxy Digital",
-      "logo": "🌌",
-      "type": "Investment Firm",
-      "action": "buy",
-      "symbol": "USDC",
-      "amount": 10000000,
-      "amountUsd": 10000000,
-      "hash": "0x884b78ad51e109fa6c8c923e41ebba67ab0071726afae045a5a465b3ff89eb24",
-      "from": "0xdd6f987ec76ac433b6eb8869c132af8e37f71133",
-      "to": "0x33566c9d8be6cf0b23795e0d380e112be9d75836"
-    },
-    {
       "id": "fund-0x35b7154b0c6ea8-USDC",
       "timestamp": 1775611019000,
       "fund": "Galaxy Digital",
@@ -476,20 +448,6 @@
       "amount": 65000000,
       "amountUsd": 65000000,
       "hash": "0x41ab4c43b9885893669175674c1114817d1f27835d2bb13cff1e8eea0167c316",
-      "from": "0x15abb66ba754f05cbc0165a64a11cded1543de48",
-      "to": "0xd48573cda0fed7144f2455c5270ffa16be389d04"
-    },
-    {
-      "id": "fund-0x12c11274fcc188-USDT",
-      "timestamp": 1775155919000,
-      "fund": "Galaxy Digital",
-      "logo": "🌌",
-      "type": "Investment Firm",
-      "action": "sell",
-      "symbol": "USDT",
-      "amount": 76000000,
-      "amountUsd": 76000000,
-      "hash": "0x12c11274fcc18852d3b7a0f5365604ff65ea5dbde1959253f227e3ffeedf4282",
       "from": "0x15abb66ba754f05cbc0165a64a11cded1543de48",
       "to": "0xd48573cda0fed7144f2455c5270ffa16be389d04"
     },
