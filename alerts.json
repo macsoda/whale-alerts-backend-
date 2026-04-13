@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-04-13T18:46:54.719Z",
+  "lastUpdated": "2026-04-13T19:16:33.822Z",
   "count": 200,
   "minValueUsd": 1000000,
   "alerts": [
     {
-      "id": "whale-1776105509000-BTC-q3j7nj",
+      "id": "whale-1776105509000-BTC-oofses",
       "timestamp": 1776105509000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -25,7 +25,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1776105304000-BTC-vowg5i",
+      "id": "whale-1776105304000-BTC-klebaf",
       "timestamp": 1776105304000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -46,7 +46,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1776103439000-BTC-u65igq",
+      "id": "whale-1776103439000-BTC-zddu56",
       "timestamp": 1776103439000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -67,7 +67,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1776100942000-ETH-e5etev",
+      "id": "whale-1776100942000-ETH-qwz15j",
       "timestamp": 1776100942000,
       "blockchain": "ethereum",
       "symbol": "ETH",
@@ -88,7 +88,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1776099329000-BTC-psygc8",
+      "id": "whale-1776099329000-BTC-9x2a79",
       "timestamp": 1776099329000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -109,7 +109,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1776097866000-USDT-5fevmk",
+      "id": "whale-1776097866000-USDT-46ig7m",
       "timestamp": 1776097866000,
       "blockchain": "stablecoin",
       "symbol": "USDT",
@@ -130,7 +130,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1776097169000-BTC-ulm4d4",
+      "id": "whale-1776097169000-BTC-135xba",
       "timestamp": 1776097169000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -151,7 +151,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1776095479000-DOGE-2ntoq8",
+      "id": "whale-1776095479000-DOGE-49iiu9",
       "timestamp": 1776095479000,
       "blockchain": "dogecoin",
       "symbol": "DOGE",
@@ -172,7 +172,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1776095200000-USDC-b61c1l",
+      "id": "whale-1776095200000-USDC-afop6w",
       "timestamp": 1776095200000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -193,7 +193,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1776095169000-DOGE-376ufw",
+      "id": "whale-1776095169000-DOGE-f727qi",
       "timestamp": 1776095169000,
       "blockchain": "dogecoin",
       "symbol": "DOGE",
@@ -214,7 +214,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1776093962000-USDT-q3cm99",
+      "id": "whale-1776093962000-USDT-2keljs",
       "timestamp": 1776093962000,
       "blockchain": "stablecoin",
       "symbol": "USDT",
@@ -235,7 +235,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1776093524000-BTC-zhbrsg",
+      "id": "whale-1776093524000-BTC-34z2kf",
       "timestamp": 1776093524000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -256,7 +256,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1776091912000-USDT-oa266n",
+      "id": "whale-1776091912000-USDT-ek9a9x",
       "timestamp": 1776091912000,
       "blockchain": "stablecoin",
       "symbol": "USDT",
@@ -277,7 +277,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1776083792000-XLM-8mbj2z",
+      "id": "whale-1776083792000-XLM-cc5fef",
       "timestamp": 1776083792000,
       "blockchain": "stellar",
       "symbol": "XLM",
@@ -298,7 +298,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1776080440000-XRP-608rnw",
+      "id": "whale-1776080440000-XRP-ycvq76",
       "timestamp": 1776080440000,
       "blockchain": "ripple",
       "symbol": "XRP",
@@ -319,7 +319,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1776080331000-XRP-g7qw02",
+      "id": "whale-1776080331000-XRP-hrpwsb",
       "timestamp": 1776080331000,
       "blockchain": "ripple",
       "symbol": "XRP",
