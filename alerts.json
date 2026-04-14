@@ -1,10 +1,31 @@
 {
-  "lastUpdated": "2026-04-14T20:54:24.004Z",
+  "lastUpdated": "2026-04-14T21:12:35.160Z",
   "count": 200,
   "minValueUsd": 1000000,
   "alerts": [
     {
-      "id": "whale-1776199876000-USDT-qtc1xu",
+      "id": "whale-1776200457000-USDC-5vc3e6",
+      "timestamp": 1776200457000,
+      "blockchain": "stablecoin",
+      "symbol": "USDC",
+      "amount": 150000000,
+      "amountUsd": 149889000,
+      "from": {
+        "address": "",
+        "owner": "USDC",
+        "ownerType": "unknown"
+      },
+      "to": {
+        "address": "",
+        "owner": "Coinbase",
+        "ownerType": "exchange"
+      },
+      "transactionType": "transfer",
+      "hash": "",
+      "significance": "very_high"
+    },
+    {
+      "id": "whale-1776199876000-USDT-4qrcta",
       "timestamp": 1776199876000,
       "blockchain": "stablecoin",
       "symbol": "USDT",
@@ -25,7 +46,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1776197451000-USDT-hgja6q",
+      "id": "whale-1776197451000-USDT-f8ihj4",
       "timestamp": 1776197451000,
       "blockchain": "stablecoin",
       "symbol": "USDT",
@@ -46,7 +67,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1776196877000-USDT-nqrl1y",
+      "id": "whale-1776196877000-USDT-9we1ku",
       "timestamp": 1776196877000,
       "blockchain": "stablecoin",
       "symbol": "USDT",
@@ -67,7 +88,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1776196331000-BTC-w92ko5",
+      "id": "whale-1776196331000-BTC-xh00zx",
       "timestamp": 1776196331000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -88,7 +109,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1776196265000-BTC-cnufrn",
+      "id": "whale-1776196265000-BTC-ictnt0",
       "timestamp": 1776196265000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -109,7 +130,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1776194806000-USDT-r0xney",
+      "id": "whale-1776194806000-USDT-hpwkzn",
       "timestamp": 1776194806000,
       "blockchain": "stablecoin",
       "symbol": "USDT",
@@ -130,7 +151,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1776194506000-USDT-mijb7i",
+      "id": "whale-1776194506000-USDT-p51ayi",
       "timestamp": 1776194506000,
       "blockchain": "stablecoin",
       "symbol": "USDT",
@@ -151,7 +172,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1776193451000-USDT-dc4yyy",
+      "id": "whale-1776193451000-USDT-gtvnxo",
       "timestamp": 1776193451000,
       "blockchain": "stablecoin",
       "symbol": "USDT",
@@ -172,7 +193,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1776193196000-BTC-vni6vg",
+      "id": "whale-1776193196000-BTC-xw1ma5",
       "timestamp": 1776193196000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -193,7 +214,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1776192818000-SHIB-1t9l1w",
+      "id": "whale-1776192818000-SHIB-0evf1y",
       "timestamp": 1776192818000,
       "blockchain": "unknown",
       "symbol": "SHIB",
@@ -214,7 +235,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1776192752000-SHIB-spispu",
+      "id": "whale-1776192752000-SHIB-hczo5o",
       "timestamp": 1776192752000,
       "blockchain": "unknown",
       "symbol": "SHIB",
@@ -235,7 +256,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1776192661000-UNI-i542lh",
+      "id": "whale-1776192661000-UNI-x2fyfo",
       "timestamp": 1776192661000,
       "blockchain": "unknown",
       "symbol": "UNI",
@@ -256,7 +277,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1776192566000-BTC-qv6ggg",
+      "id": "whale-1776192566000-BTC-e67398",
       "timestamp": 1776192566000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -277,7 +298,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1776192504000-XLM-mz61r1",
+      "id": "whale-1776192504000-XLM-5mwono",
       "timestamp": 1776192504000,
       "blockchain": "stellar",
       "symbol": "XLM",
@@ -298,7 +319,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1776192482000-BTC-le4jem",
+      "id": "whale-1776192482000-BTC-50pwid",
       "timestamp": 1776192482000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -319,7 +340,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1776192478000-XLM-hjofcf",
+      "id": "whale-1776192478000-XLM-9q54qj",
       "timestamp": 1776192478000,
       "blockchain": "stellar",
       "symbol": "XLM",
@@ -340,7 +361,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1776192415000-BTC-k9qu4n",
+      "id": "whale-1776192415000-BTC-uoh2fg",
       "timestamp": 1776192415000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -361,7 +382,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1776192311000-LINK-xo52c3",
+      "id": "whale-1776192311000-LINK-06mx9q",
       "timestamp": 1776192311000,
       "blockchain": "unknown",
       "symbol": "LINK",
@@ -382,7 +403,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1776192236000-COMP-ay3foe",
+      "id": "whale-1776192236000-COMP-66his0",
       "timestamp": 1776192236000,
       "blockchain": "unknown",
       "symbol": "COMP",
@@ -4168,27 +4189,6 @@
       "symbol": "BTC",
       "amount": 1345,
       "amountUsd": 90101927,
-      "from": {
-        "address": "",
-        "owner": "unknown",
-        "ownerType": "unknown"
-      },
-      "to": {
-        "address": "",
-        "owner": "Coinbase",
-        "ownerType": "exchange"
-      },
-      "transactionType": "transfer",
-      "hash": "",
-      "significance": "high"
-    },
-    {
-      "id": "whale-1775169775000-BTC-243vk1",
-      "timestamp": 1775169775000,
-      "blockchain": "bitcoin",
-      "symbol": "BTC",
-      "amount": 1398,
-      "amountUsd": 93648326,
       "from": {
         "address": "",
         "owner": "unknown",
