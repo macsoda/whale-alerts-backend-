@@ -1,10 +1,31 @@
 {
-  "lastUpdated": "2026-04-16T00:02:04.975Z",
+  "lastUpdated": "2026-04-16T01:01:25.106Z",
   "count": 200,
   "minValueUsd": 1000000,
   "alerts": [
     {
-      "id": "whale-1776296122000-USDC-1ql1tf",
+      "id": "whale-1776298567000-USDC-83mgl5",
+      "timestamp": 1776298567000,
+      "blockchain": "stablecoin",
+      "symbol": "USDC",
+      "amount": 103051016,
+      "amountUsd": 103027933,
+      "from": {
+        "address": "",
+        "owner": "Unknown",
+        "ownerType": "unknown"
+      },
+      "to": {
+        "address": "",
+        "owner": "Aave",
+        "ownerType": "unknown"
+      },
+      "transactionType": "transfer",
+      "hash": "",
+      "significance": "very_high"
+    },
+    {
+      "id": "whale-1776296122000-USDC-qjdwua",
       "timestamp": 1776296122000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -25,7 +46,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1776287942000-USDT-1rtmmu",
+      "id": "whale-1776287942000-USDT-2z30if",
       "timestamp": 1776287942000,
       "blockchain": "stablecoin",
       "symbol": "USDT",
@@ -46,7 +67,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1776287919000-USDT-oct6sl",
+      "id": "whale-1776287919000-USDT-179di9",
       "timestamp": 1776287919000,
       "blockchain": "stablecoin",
       "symbol": "USDT",
@@ -67,7 +88,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1776287842000-USDT-393bh0",
+      "id": "whale-1776287842000-USDT-xzhk54",
       "timestamp": 1776287842000,
       "blockchain": "stablecoin",
       "symbol": "USDT",
@@ -88,7 +109,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1776287502000-USDT-3aq2vp",
+      "id": "whale-1776287502000-USDT-n38i4a",
       "timestamp": 1776287502000,
       "blockchain": "stablecoin",
       "symbol": "USDT",
@@ -109,7 +130,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1776287182000-ETH-kttmlu",
+      "id": "whale-1776287182000-ETH-yz6ulm",
       "timestamp": 1776287182000,
       "blockchain": "ethereum",
       "symbol": "ETH",
@@ -130,7 +151,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1776283197000-BTC-7aizkw",
+      "id": "whale-1776283197000-BTC-8yx92q",
       "timestamp": 1776283197000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -151,7 +172,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1776282344000-BTC-hwj1kx",
+      "id": "whale-1776282344000-BTC-t8eba8",
       "timestamp": 1776282344000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -172,7 +193,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1776281867000-ETH-e0oxh4",
+      "id": "whale-1776281867000-ETH-t43mbp",
       "timestamp": 1776281867000,
       "blockchain": "ethereum",
       "symbol": "ETH",
@@ -193,7 +214,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1776280408000-BTC-cplous",
+      "id": "whale-1776280408000-BTC-tjinh5",
       "timestamp": 1776280408000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -214,7 +235,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1776278805000-ETH-zcum37",
+      "id": "whale-1776278805000-ETH-g392cl",
       "timestamp": 1776278805000,
       "blockchain": "ethereum",
       "symbol": "ETH",
@@ -235,7 +256,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1776276013000-BTC-g836gg",
+      "id": "whale-1776276013000-BTC-4umdqo",
       "timestamp": 1776276013000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -256,7 +277,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1776275190000-USDC-64tqxo",
+      "id": "whale-1776275190000-USDC-e3ei53",
       "timestamp": 1776275190000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -277,7 +298,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1776275119000-USDC-8hzgjg",
+      "id": "whale-1776275119000-USDC-7av00z",
       "timestamp": 1776275119000,
       "blockchain": "stablecoin",
       "symbol": "USDC",
@@ -298,7 +319,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1776272768000-BTC-o0q1at",
+      "id": "whale-1776272768000-BTC-4h57s9",
       "timestamp": 1776272768000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -319,7 +340,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1776272338000-BTC-sm7u4e",
+      "id": "whale-1776272338000-BTC-u63h6t",
       "timestamp": 1776272338000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -340,7 +361,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1776266674000-BTC-xabzq8",
+      "id": "whale-1776266674000-BTC-w4ry4r",
       "timestamp": 1776266674000,
       "blockchain": "bitcoin",
       "symbol": "BTC",
@@ -361,7 +382,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1776266304000-ETH-80vrmz",
+      "id": "whale-1776266304000-ETH-8vjnvu",
       "timestamp": 1776266304000,
       "blockchain": "ethereum",
       "symbol": "ETH",
@@ -382,7 +403,7 @@
       "significance": "very_high"
     },
     {
-      "id": "whale-1776263658000-SOL-mo4cs8",
+      "id": "whale-1776263658000-SOL-wssbck",
       "timestamp": 1776263658000,
       "blockchain": "solana",
       "symbol": "SOL",
@@ -4181,27 +4202,6 @@
       "transactionType": "transfer",
       "hash": "",
       "significance": "high"
-    },
-    {
-      "id": "whale-1775460716000-USDT-e8xzsn",
-      "timestamp": 1775460716000,
-      "blockchain": "stablecoin",
-      "symbol": "USDT",
-      "amount": 102619773,
-      "amountUsd": 102584984,
-      "from": {
-        "address": "",
-        "owner": "Ceffu",
-        "ownerType": "unknown"
-      },
-      "to": {
-        "address": "",
-        "owner": "Binance",
-        "ownerType": "exchange"
-      },
-      "transactionType": "transfer",
-      "hash": "",
-      "significance": "very_high"
     }
   ]
 }
