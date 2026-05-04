@@ -1,8 +1,36 @@
 {
-  "lastUpdated": "2026-05-04T17:17:24.501Z",
-  "count": 112,
+  "lastUpdated": "2026-05-04T17:53:38.728Z",
+  "count": 114,
   "minValueUsd": 100000,
   "activities": [
+    {
+      "id": "fund-0xd6561647379cb7-USDT",
+      "timestamp": 1777916387000,
+      "fund": "DWF Labs",
+      "logo": "🔷",
+      "type": "Market Maker",
+      "action": "buy",
+      "symbol": "USDT",
+      "amount": 225000,
+      "amountUsd": 225000,
+      "hash": "0xd6561647379cb75086f21d26f44fe5582beb5319ed8b3b902bce3b79ead7e344",
+      "from": "0xdfd5293d8e347dfe59e90efd55b2956a1343963d",
+      "to": "0x53c902a9ef069f3b85e5e71f918c4d582f3063fa"
+    },
+    {
+      "id": "fund-0xfc75ee45a1e457-USDT",
+      "timestamp": 1777916219000,
+      "fund": "DWF Labs",
+      "logo": "🔷",
+      "type": "Market Maker",
+      "action": "buy",
+      "symbol": "USDT",
+      "amount": 200000,
+      "amountUsd": 200000,
+      "hash": "0xfc75ee45a1e45710ad86ebe6eaf4454e201c49eb4c903c52a2ede7842a85a9e9",
+      "from": "0xba7141e20758f6c7b92d21027ce410dc05f18f70",
+      "to": "0x53c902a9ef069f3b85e5e71f918c4d582f3063fa"
+    },
     {
       "id": "fund-0x54a2581561ffba-USDC",
       "timestamp": 1777914635000,
@@ -1372,34 +1400,6 @@
       "amount": 1.65354254,
       "amountUsd": 160393.62638,
       "hash": "0xb698caceaa2eb20c28f76acf12516e248ae33d0b1c18915fce95066115bd49c5",
-      "from": "0x4585fe77225b41b697c938b018e2ac67ac5a20c0",
-      "to": "0x9507c04b10486547584c37bcbd931b2a4fee9a41"
-    },
-    {
-      "id": "fund-0xa17f6fe6d4cbc4-WETH",
-      "timestamp": 1690327283000,
-      "fund": "Jump Trading",
-      "logo": "🦘",
-      "type": "Trading Firm",
-      "action": "sell",
-      "symbol": "WETH",
-      "amount": 40.405309351947345,
-      "amountUsd": 109094.33525025783,
-      "hash": "0xa17f6fe6d4cbc41f34aa7cefe8d8be06a18524b086941ef4119510ed1a810355",
-      "from": "0x9507c04b10486547584c37bcbd931b2a4fee9a41",
-      "to": "0x4585fe77225b41b697c938b018e2ac67ac5a20c0"
-    },
-    {
-      "id": "fund-0xa17f6fe6d4cbc4-WBTC",
-      "timestamp": 1690327283000,
-      "fund": "Jump Trading",
-      "logo": "🦘",
-      "type": "Trading Firm",
-      "action": "buy",
-      "symbol": "WBTC",
-      "amount": 2.56966458,
-      "amountUsd": 249257.46426,
-      "hash": "0xa17f6fe6d4cbc41f34aa7cefe8d8be06a18524b086941ef4119510ed1a810355",
       "from": "0x4585fe77225b41b697c938b018e2ac67ac5a20c0",
       "to": "0x9507c04b10486547584c37bcbd931b2a4fee9a41"
     }
