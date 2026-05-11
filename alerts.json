@@ -1,8 +1,50 @@
 {
-  "lastUpdated": "2026-05-11T11:12:56.786Z",
+  "lastUpdated": "2026-05-11T12:20:15.459Z",
   "count": 200,
   "minValueUsd": 1000000,
   "alerts": [
+    {
+      "id": "whale-1778498360000-XLM-cq0v6t",
+      "timestamp": 1778498360000,
+      "blockchain": "stellar",
+      "symbol": "XLM",
+      "amount": 30000000,
+      "amountUsd": 5013712,
+      "from": {
+        "address": "",
+        "owner": "Coinbase",
+        "ownerType": "exchange"
+      },
+      "to": {
+        "address": "",
+        "owner": "unknown",
+        "ownerType": "unknown"
+      },
+      "transactionType": "transfer",
+      "hash": "",
+      "significance": "high"
+    },
+    {
+      "id": "whale-1778498315000-XLM-sxzpbe",
+      "timestamp": 1778498315000,
+      "blockchain": "stellar",
+      "symbol": "XLM",
+      "amount": 30000000,
+      "amountUsd": 5013712,
+      "from": {
+        "address": "",
+        "owner": "unknown",
+        "ownerType": "unknown"
+      },
+      "to": {
+        "address": "",
+        "owner": "Coinbase",
+        "ownerType": "exchange"
+      },
+      "transactionType": "transfer",
+      "hash": "",
+      "significance": "high"
+    },
     {
       "id": "whale-1778214379000-XLM-mg0r4s",
       "timestamp": 1778214379000,
@@ -4160,48 +4202,6 @@
       "transactionType": "transfer",
       "hash": "",
       "significance": "extreme"
-    },
-    {
-      "id": "whale-1775503891000-USDC-c7ee2s",
-      "timestamp": 1775503891000,
-      "blockchain": "stablecoin",
-      "symbol": "USDC",
-      "amount": 250000000,
-      "amountUsd": 249976125,
-      "from": {
-        "address": "",
-        "owner": "unknown",
-        "ownerType": "unknown"
-      },
-      "to": {
-        "address": "",
-        "owner": "unknown",
-        "ownerType": "unknown"
-      },
-      "transactionType": "transfer",
-      "hash": "",
-      "significance": "very_high"
-    },
-    {
-      "id": "whale-1775498281000-USDC-353d4x",
-      "timestamp": 1775498281000,
-      "blockchain": "stablecoin",
-      "symbol": "USDC",
-      "amount": 430000000,
-      "amountUsd": 429938510,
-      "from": {
-        "address": "",
-        "owner": "unknown",
-        "ownerType": "unknown"
-      },
-      "to": {
-        "address": "",
-        "owner": "unknown",
-        "ownerType": "unknown"
-      },
-      "transactionType": "transfer",
-      "hash": "",
-      "significance": "very_high"
     }
   ]
 }
