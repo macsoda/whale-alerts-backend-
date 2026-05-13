@@ -1,8 +1,29 @@
 {
-  "lastUpdated": "2026-05-13T17:48:01.973Z",
+  "lastUpdated": "2026-05-13T18:26:40.497Z",
   "count": 200,
   "minValueUsd": 1000000,
   "alerts": [
+    {
+      "id": "whale-1778695767000-XLM-qs07mz",
+      "timestamp": 1778695767000,
+      "blockchain": "stellar",
+      "symbol": "XLM",
+      "amount": 104030476,
+      "amountUsd": 16491044,
+      "from": {
+        "address": "",
+        "owner": "Kraken",
+        "ownerType": "exchange"
+      },
+      "to": {
+        "address": "",
+        "owner": "unknown",
+        "ownerType": "unknown"
+      },
+      "transactionType": "transfer",
+      "hash": "",
+      "significance": "high"
+    },
     {
       "id": "whale-1778546658000-XLM-e7yse8",
       "timestamp": 1778546658000,
@@ -4181,27 +4202,6 @@
       "transactionType": "transfer",
       "hash": "",
       "significance": "very_high"
-    },
-    {
-      "id": "whale-1775507106000-PYUSD-lmfec0",
-      "timestamp": 1775507106000,
-      "blockchain": "unknown",
-      "symbol": "PYUSD",
-      "amount": 529999900,
-      "amountUsd": 529899532,
-      "from": {
-        "address": "",
-        "owner": "unknown",
-        "ownerType": "unknown"
-      },
-      "to": {
-        "address": "",
-        "owner": "unknown",
-        "ownerType": "unknown"
-      },
-      "transactionType": "transfer",
-      "hash": "",
-      "significance": "extreme"
     }
   ]
 }
