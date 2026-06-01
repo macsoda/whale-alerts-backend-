@@ -1,8 +1,29 @@
 {
-  "lastUpdated": "2026-06-01T12:27:30.862Z",
+  "lastUpdated": "2026-06-01T14:32:47.592Z",
   "count": 200,
   "minValueUsd": 1000000,
   "alerts": [
+    {
+      "id": "whale-1780319786000-XLM-u2yig9",
+      "timestamp": 1780319786000,
+      "blockchain": "stellar",
+      "symbol": "XLM",
+      "amount": 50000000,
+      "amountUsd": 13171398,
+      "from": {
+        "address": "",
+        "owner": "unknown",
+        "ownerType": "unknown"
+      },
+      "to": {
+        "address": "",
+        "owner": "Kraken",
+        "ownerType": "exchange"
+      },
+      "transactionType": "transfer",
+      "hash": "",
+      "significance": "high"
+    },
     {
       "id": "whale-1780098823000-XLM-km3f6v",
       "timestamp": 1780098823000,
@@ -4176,27 +4197,6 @@
       "to": {
         "address": "",
         "owner": "unknown",
-        "ownerType": "unknown"
-      },
-      "transactionType": "transfer",
-      "hash": "",
-      "significance": "very_high"
-    },
-    {
-      "id": "whale-1775544936000-USDC-3za0bi",
-      "timestamp": 1775544936000,
-      "blockchain": "stablecoin",
-      "symbol": "USDC",
-      "amount": 106428385,
-      "amountUsd": 106417051,
-      "from": {
-        "address": "",
-        "owner": "Binance",
-        "ownerType": "exchange"
-      },
-      "to": {
-        "address": "",
-        "owner": "Ceffu",
         "ownerType": "unknown"
       },
       "transactionType": "transfer",
