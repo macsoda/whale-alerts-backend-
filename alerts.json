@@ -1,10 +1,31 @@
 {
-  "lastUpdated": "2026-06-03T14:01:15.788Z",
+  "lastUpdated": "2026-06-03T15:45:26.257Z",
   "count": 200,
   "minValueUsd": 1000000,
   "alerts": [
     {
-      "id": "whale-1780490424000-XLM-hx60ng",
+      "id": "whale-1780500309000-XLM-g31emj",
+      "timestamp": 1780500309000,
+      "blockchain": "stellar",
+      "symbol": "XLM",
+      "amount": 44050931,
+      "amountUsd": 9974366,
+      "from": {
+        "address": "",
+        "owner": "unknown",
+        "ownerType": "unknown"
+      },
+      "to": {
+        "address": "",
+        "owner": "unknown",
+        "ownerType": "unknown"
+      },
+      "transactionType": "transfer",
+      "hash": "",
+      "significance": "high"
+    },
+    {
+      "id": "whale-1780490424000-XLM-qaj1q6",
       "timestamp": 1780490424000,
       "blockchain": "stellar",
       "symbol": "XLM",
@@ -4177,27 +4198,6 @@
         "address": "",
         "owner": "Binance",
         "ownerType": "exchange"
-      },
-      "transactionType": "transfer",
-      "hash": "",
-      "significance": "very_high"
-    },
-    {
-      "id": "whale-1775568228000-USDT-lcy1l8",
-      "timestamp": 1775568228000,
-      "blockchain": "stablecoin",
-      "symbol": "USDT",
-      "amount": 500000000,
-      "amountUsd": 499969499,
-      "from": {
-        "address": "",
-        "owner": "unknown",
-        "ownerType": "unknown"
-      },
-      "to": {
-        "address": "",
-        "owner": "unknown",
-        "ownerType": "unknown"
       },
       "transactionType": "transfer",
       "hash": "",
