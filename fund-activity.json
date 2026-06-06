@@ -1,8 +1,36 @@
 {
-  "lastUpdated": "2026-06-06T10:36:41.956Z",
-  "count": 116,
+  "lastUpdated": "2026-06-06T11:10:15.676Z",
+  "count": 117,
   "minValueUsd": 100000,
   "activities": [
+    {
+      "id": "fund-0x0ce6c9f02af079-USDC",
+      "timestamp": 1780743935000,
+      "fund": "Galaxy Digital",
+      "logo": "🌌",
+      "type": "Investment Firm",
+      "action": "sell",
+      "symbol": "USDC",
+      "amount": 5000000,
+      "amountUsd": 5000000,
+      "hash": "0x0ce6c9f02af07973be6ee32bbab2d905f19565d522fa3227cbe6fdfecf168b70",
+      "from": "0x33566c9d8be6cf0b23795e0d380e112be9d75836",
+      "to": "0x16f6d15381bee4a25b25f0d1c4161b78f7f21fde"
+    },
+    {
+      "id": "fund-0xaebf4bb78991d2-USDC",
+      "timestamp": 1780742915000,
+      "fund": "Galaxy Digital",
+      "logo": "🌌",
+      "type": "Investment Firm",
+      "action": "buy",
+      "symbol": "USDC",
+      "amount": 5000000,
+      "amountUsd": 5000000,
+      "hash": "0xaebf4bb78991d2b29b194fe04f026fd1bfb9dce1f3186ee3c67ac9be8300bd7c",
+      "from": "0xa9d1e08c7793af67e9d92fe308d5697fb81d3e43",
+      "to": "0x33566c9d8be6cf0b23795e0d380e112be9d75836"
+    },
     {
       "id": "fund-0x5d94d66a059f43-USDT",
       "timestamp": 1780706747000,
@@ -732,20 +760,6 @@
       "to": "0x15abb66ba754f05cbc0165a64a11cded1543de48"
     },
     {
-      "id": "fund-0x119fe0aa8f1039-USDC",
-      "timestamp": 1780434719000,
-      "fund": "Galaxy Digital",
-      "logo": "🌌",
-      "type": "Investment Firm",
-      "action": "sell",
-      "symbol": "USDC",
-      "amount": 30000000,
-      "amountUsd": 30000000,
-      "hash": "0x119fe0aa8f103989a8d360047071cfd6ec41cf0fe0fa59cd423423a86f3fd8c0",
-      "from": "0x33566c9d8be6cf0b23795e0d380e112be9d75836",
-      "to": "0x15abb66ba754f05cbc0165a64a11cded1543de48"
-    },
-    {
       "id": "fund-0x81d79be1dd067d-USDC",
       "timestamp": 1780326491000,
       "fund": "Galaxy Digital",
@@ -1388,20 +1402,6 @@
       "hash": "0x064173bbe8558d70ca31ac0f75654729cf770e3f657f9e9c8f469db42219268c",
       "from": "0x4585fe77225b41b697c938b018e2ac67ac5a20c0",
       "to": "0x9507c04b10486547584c37bcbd931b2a4fee9a41"
-    },
-    {
-      "id": "fund-0x73008febd50b17-WETH",
-      "timestamp": 1690328147000,
-      "fund": "Jump Trading",
-      "logo": "🦘",
-      "type": "Trading Firm",
-      "action": "sell",
-      "symbol": "WETH",
-      "amount": 45.75439046221183,
-      "amountUsd": 123536.85424797195,
-      "hash": "0x73008febd50b170b091059521b26c1b5afa2f56b614e8c5910cfa58423abd80e",
-      "from": "0x9507c04b10486547584c37bcbd931b2a4fee9a41",
-      "to": "0x4585fe77225b41b697c938b018e2ac67ac5a20c0"
     }
   ]
 }
