@@ -1,8 +1,50 @@
 {
-  "lastUpdated": "2026-06-08T19:51:15.567Z",
+  "lastUpdated": "2026-06-08T20:38:18.492Z",
   "count": 200,
   "minValueUsd": 1000000,
   "alerts": [
+    {
+      "id": "whale-1780950986000-XLM-c4m7ui",
+      "timestamp": 1780950986000,
+      "blockchain": "stellar",
+      "symbol": "XLM",
+      "amount": 26060324,
+      "amountUsd": 5249119,
+      "from": {
+        "address": "",
+        "owner": "Coinbase",
+        "ownerType": "exchange"
+      },
+      "to": {
+        "address": "",
+        "owner": "Coinbase",
+        "ownerType": "exchange"
+      },
+      "transactionType": "transfer",
+      "hash": "",
+      "significance": "high"
+    },
+    {
+      "id": "whale-1780950937000-XLM-o2tps4",
+      "timestamp": 1780950937000,
+      "blockchain": "stellar",
+      "symbol": "XLM",
+      "amount": 26060324,
+      "amountUsd": 5284331,
+      "from": {
+        "address": "",
+        "owner": "unknown",
+        "ownerType": "unknown"
+      },
+      "to": {
+        "address": "",
+        "owner": "Coinbase",
+        "ownerType": "exchange"
+      },
+      "transactionType": "transfer",
+      "hash": "",
+      "significance": "high"
+    },
     {
       "id": "whale-1780500309000-XLM-wbav73",
       "timestamp": 1780500309000,
@@ -4156,48 +4198,6 @@
         "address": "",
         "owner": "unknown",
         "ownerType": "unknown"
-      },
-      "transactionType": "transfer",
-      "hash": "",
-      "significance": "very_high"
-    },
-    {
-      "id": "whale-1775572759000-USDC-8tevs4",
-      "timestamp": 1775572759000,
-      "blockchain": "stablecoin",
-      "symbol": "USDC",
-      "amount": 250000000,
-      "amountUsd": 249966250,
-      "from": {
-        "address": "",
-        "owner": "unknown",
-        "ownerType": "unknown"
-      },
-      "to": {
-        "address": "",
-        "owner": "unknown",
-        "ownerType": "unknown"
-      },
-      "transactionType": "transfer",
-      "hash": "",
-      "significance": "very_high"
-    },
-    {
-      "id": "whale-1775568733000-USDT-y2k985",
-      "timestamp": 1775568733000,
-      "blockchain": "stablecoin",
-      "symbol": "USDT",
-      "amount": 500000000,
-      "amountUsd": 499965000,
-      "from": {
-        "address": "",
-        "owner": "unknown",
-        "ownerType": "unknown"
-      },
-      "to": {
-        "address": "",
-        "owner": "Binance",
-        "ownerType": "exchange"
       },
       "transactionType": "transfer",
       "hash": "",
