@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-06-09T14:45:30.029Z",
-  "count": 116,
+  "lastUpdated": "2026-06-09T15:47:32.050Z",
+  "count": 115,
   "minValueUsd": 100000,
   "activities": [
     {
@@ -1026,20 +1026,6 @@
       "to": "0x50a240fd088915a80d8ee788d31c3dccc826eb30"
     },
     {
-      "id": "fund-0xcafa2458b0f2cd-USDT",
-      "timestamp": 1779349571000,
-      "fund": "DWF Labs",
-      "logo": "🔷",
-      "type": "Market Maker",
-      "action": "sell",
-      "symbol": "USDT",
-      "amount": 300000,
-      "amountUsd": 300000,
-      "hash": "0xcafa2458b0f2cd5a7ff5c3bb0a8d65e91ef9d309fb45c8d9fae942c97d2e5cf2",
-      "from": "0x53c902a9ef069f3b85e5e71f918c4d582f3063fa",
-      "to": "0x50a240fd088915a80d8ee788d31c3dccc826eb30"
-    },
-    {
       "id": "fund-0x2fe8728ba778f8-USDC",
       "timestamp": 1758881927000,
       "fund": "Wintermute",
@@ -1402,6 +1388,20 @@
       "hash": "0x73008febd50b170b091059521b26c1b5afa2f56b614e8c5910cfa58423abd80e",
       "from": "0x9507c04b10486547584c37bcbd931b2a4fee9a41",
       "to": "0x4585fe77225b41b697c938b018e2ac67ac5a20c0"
+    },
+    {
+      "id": "fund-0x73008febd50b17-WBTC",
+      "timestamp": 1690328147000,
+      "fund": "Jump Trading",
+      "logo": "🦘",
+      "type": "Trading Firm",
+      "action": "buy",
+      "symbol": "WBTC",
+      "amount": 2.90886653,
+      "amountUsd": 282160.05341,
+      "hash": "0x73008febd50b170b091059521b26c1b5afa2f56b614e8c5910cfa58423abd80e",
+      "from": "0x4585fe77225b41b697c938b018e2ac67ac5a20c0",
+      "to": "0x9507c04b10486547584c37bcbd931b2a4fee9a41"
     }
   ]
 }
