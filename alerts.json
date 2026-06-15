@@ -1,10 +1,31 @@
 {
-  "lastUpdated": "2026-06-15T22:03:09.298Z",
+  "lastUpdated": "2026-06-15T22:49:34.518Z",
   "count": 200,
   "minValueUsd": 1000000,
   "alerts": [
     {
-      "id": "whale-1781406269000-ICX-ks7cvo",
+      "id": "whale-1781562040000-ICX-diuqdv",
+      "timestamp": 1781562040000,
+      "blockchain": "unknown",
+      "symbol": "ICX",
+      "amount": 46874073,
+      "amountUsd": 1368995,
+      "from": {
+        "address": "",
+        "owner": "unknown",
+        "ownerType": "unknown"
+      },
+      "to": {
+        "address": "",
+        "owner": "Binance",
+        "ownerType": "exchange"
+      },
+      "transactionType": "transfer",
+      "hash": "",
+      "significance": "high"
+    },
+    {
+      "id": "whale-1781406269000-ICX-axfcxt",
       "timestamp": 1781406269000,
       "blockchain": "unknown",
       "symbol": "ICX",
@@ -4181,27 +4202,6 @@
       "transactionType": "transfer",
       "hash": "",
       "significance": "high"
-    },
-    {
-      "id": "whale-1775572966000-USDC-m207f2",
-      "timestamp": 1775572966000,
-      "blockchain": "stablecoin",
-      "symbol": "USDC",
-      "amount": 200116698,
-      "amountUsd": 200126704,
-      "from": {
-        "address": "",
-        "owner": "USDC",
-        "ownerType": "unknown"
-      },
-      "to": {
-        "address": "",
-        "owner": "unknown",
-        "ownerType": "unknown"
-      },
-      "transactionType": "transfer",
-      "hash": "",
-      "significance": "very_high"
     }
   ]
 }
