@@ -1,8 +1,50 @@
 {
-  "lastUpdated": "2026-06-20T17:13:02.216Z",
+  "lastUpdated": "2026-06-20T17:47:38.181Z",
   "count": 200,
   "minValueUsd": 1000000,
   "alerts": [
+    {
+      "id": "whale-1781975725000-XLM-vpwx9w",
+      "timestamp": 1781975725000,
+      "blockchain": "stellar",
+      "symbol": "XLM",
+      "amount": 24627851,
+      "amountUsd": 5229190,
+      "from": {
+        "address": "",
+        "owner": "Coinbase",
+        "ownerType": "exchange"
+      },
+      "to": {
+        "address": "",
+        "owner": "unknown",
+        "ownerType": "unknown"
+      },
+      "transactionType": "transfer",
+      "hash": "",
+      "significance": "high"
+    },
+    {
+      "id": "whale-1781975681000-XLM-eiqs40",
+      "timestamp": 1781975681000,
+      "blockchain": "stellar",
+      "symbol": "XLM",
+      "amount": 24627851,
+      "amountUsd": 5287766,
+      "from": {
+        "address": "",
+        "owner": "unknown",
+        "ownerType": "unknown"
+      },
+      "to": {
+        "address": "",
+        "owner": "Coinbase",
+        "ownerType": "exchange"
+      },
+      "transactionType": "transfer",
+      "hash": "",
+      "significance": "high"
+    },
     {
       "id": "whale-1781562040000-ICX-olcjoq",
       "timestamp": 1781562040000,
@@ -4155,48 +4197,6 @@
       "to": {
         "address": "",
         "owner": "Kraken",
-        "ownerType": "exchange"
-      },
-      "transactionType": "transfer",
-      "hash": "",
-      "significance": "high"
-    },
-    {
-      "id": "whale-1775577622000-BTC-svqipr",
-      "timestamp": 1775577622000,
-      "blockchain": "bitcoin",
-      "symbol": "BTC",
-      "amount": 1303,
-      "amountUsd": 88849831,
-      "from": {
-        "address": "",
-        "owner": "unknown",
-        "ownerType": "unknown"
-      },
-      "to": {
-        "address": "",
-        "owner": "Coinbase",
-        "ownerType": "exchange"
-      },
-      "transactionType": "transfer",
-      "hash": "",
-      "significance": "high"
-    },
-    {
-      "id": "whale-1775573687000-BTC-xox9iy",
-      "timestamp": 1775573687000,
-      "blockchain": "bitcoin",
-      "symbol": "BTC",
-      "amount": 948,
-      "amountUsd": 64494341,
-      "from": {
-        "address": "",
-        "owner": "unknown",
-        "ownerType": "unknown"
-      },
-      "to": {
-        "address": "",
-        "owner": "Coinbase",
         "ownerType": "exchange"
       },
       "transactionType": "transfer",
