@@ -1,8 +1,22 @@
 {
-  "lastUpdated": "2026-06-22T14:30:38.621Z",
-  "count": 98,
+  "lastUpdated": "2026-06-22T16:13:13.684Z",
+  "count": 97,
   "minValueUsd": 100000,
   "activities": [
+    {
+      "id": "fund-0x2ce512f25fe4ee-USDC",
+      "timestamp": 1782140159000,
+      "fund": "Galaxy Digital",
+      "logo": "🌌",
+      "type": "Investment Firm",
+      "action": "buy",
+      "symbol": "USDC",
+      "amount": 3649999.4,
+      "amountUsd": 3649999.4,
+      "hash": "0x2ce512f25fe4eec08fda4c631e4f13899d2edf8afd9a49c44fa6a707ea2ef2e1",
+      "from": "0xee7ae85f2fe2239e27d9c1e23fffe168d63b4055",
+      "to": "0x15abb66ba754f05cbc0165a64a11cded1543de48"
+    },
     {
       "id": "fund-0x25c77d19767cb2-USDT",
       "timestamp": 1782138023000,
@@ -508,20 +522,6 @@
       "to": "0x29c623566ecb5441fdbb2e80e77a0eda6d074442"
     },
     {
-      "id": "fund-0x4bb37a8aca4ae0-USDC",
-      "timestamp": 1781624351000,
-      "fund": "Galaxy Digital",
-      "logo": "🌌",
-      "type": "Investment Firm",
-      "action": "buy",
-      "symbol": "USDC",
-      "amount": 3000000,
-      "amountUsd": 3000000,
-      "hash": "0x4bb37a8aca4ae02b1f32b1ede57350af68f0959598051e52db1263a31f6efc86",
-      "from": "0x1e4e7ef632f2075f43a99a43799d380be1558c7d",
-      "to": "0x33566c9d8be6cf0b23795e0d380e112be9d75836"
-    },
-    {
       "id": "fund-0x6d546bd1392199-USDC",
       "timestamp": 1781554091000,
       "fund": "Galaxy Digital",
@@ -770,20 +770,6 @@
       "amount": 260000,
       "amountUsd": 260000,
       "hash": "0x370eedc3c789e1d65ba8b4e922467da8a4b7d7c31bb145a6f14ddffc6dc07bc4",
-      "from": "0x53c902a9ef069f3b85e5e71f918c4d582f3063fa",
-      "to": "0x879e0c8cdfe4df51216562cc8cb30a38345a8c45"
-    },
-    {
-      "id": "fund-0x3b141f1a8635c1-USDT",
-      "timestamp": 1780058927000,
-      "fund": "DWF Labs",
-      "logo": "🔷",
-      "type": "Market Maker",
-      "action": "sell",
-      "symbol": "USDT",
-      "amount": 100000,
-      "amountUsd": 100000,
-      "hash": "0x3b141f1a8635c173e573b6282cc0a152f04a3b8c220988cbb7b02e37227f75cd",
       "from": "0x53c902a9ef069f3b85e5e71f918c4d582f3063fa",
       "to": "0x879e0c8cdfe4df51216562cc8cb30a38345a8c45"
     },
