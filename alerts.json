@@ -1,10 +1,31 @@
 {
-  "lastUpdated": "2026-06-22T05:26:39.172Z",
+  "lastUpdated": "2026-06-22T07:16:46.416Z",
   "count": 200,
   "minValueUsd": 1000000,
   "alerts": [
     {
-      "id": "whale-1781975725000-XLM-hfbs5r",
+      "id": "whale-1782107124000-XLM-wnsknm",
+      "timestamp": 1782107124000,
+      "blockchain": "stellar",
+      "symbol": "XLM",
+      "amount": 100000000,
+      "amountUsd": 21092152,
+      "from": {
+        "address": "",
+        "owner": "unknown",
+        "ownerType": "unknown"
+      },
+      "to": {
+        "address": "",
+        "owner": "Kraken",
+        "ownerType": "exchange"
+      },
+      "transactionType": "transfer",
+      "hash": "",
+      "significance": "high"
+    },
+    {
+      "id": "whale-1781975725000-XLM-mpxwli",
       "timestamp": 1781975725000,
       "blockchain": "stellar",
       "symbol": "XLM",
@@ -25,7 +46,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1781975681000-XLM-sw5z3l",
+      "id": "whale-1781975681000-XLM-lry6xy",
       "timestamp": 1781975681000,
       "blockchain": "stellar",
       "symbol": "XLM",
@@ -4177,27 +4198,6 @@
         "address": "",
         "owner": "unknown",
         "ownerType": "unknown"
-      },
-      "transactionType": "transfer",
-      "hash": "",
-      "significance": "high"
-    },
-    {
-      "id": "whale-1775577688000-BTC-c7ghz4",
-      "timestamp": 1775577688000,
-      "blockchain": "bitcoin",
-      "symbol": "BTC",
-      "amount": 937,
-      "amountUsd": 63854365,
-      "from": {
-        "address": "",
-        "owner": "unknown",
-        "ownerType": "unknown"
-      },
-      "to": {
-        "address": "",
-        "owner": "Kraken",
-        "ownerType": "exchange"
       },
       "transactionType": "transfer",
       "hash": "",
