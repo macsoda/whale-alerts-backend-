@@ -1,8 +1,36 @@
 {
-  "lastUpdated": "2026-06-23T12:17:36.161Z",
-  "count": 98,
+  "lastUpdated": "2026-06-23T13:19:31.539Z",
+  "count": 99,
   "minValueUsd": 100000,
   "activities": [
+    {
+      "id": "fund-0x099322d1f4f8d2-USDT",
+      "timestamp": 1782220283000,
+      "fund": "DWF Labs",
+      "logo": "🔷",
+      "type": "Market Maker",
+      "action": "buy",
+      "symbol": "USDT",
+      "amount": 249900,
+      "amountUsd": 249900,
+      "hash": "0x099322d1f4f8d2d78e3ec199a3092c6094345c39e59cdcad936cf6c4e0fdb923",
+      "from": "0xba7141e20758f6c7b92d21027ce410dc05f18f70",
+      "to": "0x53c902a9ef069f3b85e5e71f918c4d582f3063fa"
+    },
+    {
+      "id": "fund-0x06e0622667277c-USDT",
+      "timestamp": 1782218783000,
+      "fund": "Galaxy Digital",
+      "logo": "🌌",
+      "type": "Investment Firm",
+      "action": "sell",
+      "symbol": "USDT",
+      "amount": 220000,
+      "amountUsd": 220000,
+      "hash": "0x06e0622667277ced55b44edb41e90f222ec7c3fdb1ddabaff215b54370dd2a02",
+      "from": "0x33566c9d8be6cf0b23795e0d380e112be9d75836",
+      "to": "0x5797f722b1fee36e3d2c3481d938d1372bcd99a7"
+    },
     {
       "id": "fund-0x33230037c0ce79-USDC",
       "timestamp": 1782210611000,
@@ -520,20 +548,6 @@
       "hash": "0x20d35a00d97c9e4dba9d023b16343560bbf08281fefbaa6d9bd812b422dd7554",
       "from": "0x7f604d597c15b2e2f60dc645844f68b1d781b752",
       "to": "0x33566c9d8be6cf0b23795e0d380e112be9d75836"
-    },
-    {
-      "id": "fund-0xe40269c6724553-USDC",
-      "timestamp": 1781630735000,
-      "fund": "Galaxy Digital",
-      "logo": "🌌",
-      "type": "Investment Firm",
-      "action": "sell",
-      "symbol": "USDC",
-      "amount": 5000000,
-      "amountUsd": 5000000,
-      "hash": "0xe40269c6724553ec052c1e724dc04a1fbdaa340e0d18c47c1bcc22c30774fa60",
-      "from": "0x33566c9d8be6cf0b23795e0d380e112be9d75836",
-      "to": "0x5797f722b1fee36e3d2c3481d938d1372bcd99a7"
     },
     {
       "id": "fund-0x6d546bd1392199-USDC",
