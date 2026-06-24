@@ -1,8 +1,50 @@
 {
-  "lastUpdated": "2026-06-24T10:32:14.351Z",
+  "lastUpdated": "2026-06-24T11:31:00.942Z",
   "count": 200,
   "minValueUsd": 1000000,
   "alerts": [
+    {
+      "id": "whale-1782299179000-XLM-tfffcs",
+      "timestamp": 1782299179000,
+      "blockchain": "stellar",
+      "symbol": "XLM",
+      "amount": 27692508,
+      "amountUsd": 5275938,
+      "from": {
+        "address": "",
+        "owner": "Coinbase",
+        "ownerType": "exchange"
+      },
+      "to": {
+        "address": "",
+        "owner": "unknown",
+        "ownerType": "unknown"
+      },
+      "transactionType": "transfer",
+      "hash": "",
+      "significance": "high"
+    },
+    {
+      "id": "whale-1782299140000-XLM-t9nx2o",
+      "timestamp": 1782299140000,
+      "blockchain": "stellar",
+      "symbol": "XLM",
+      "amount": 27692508,
+      "amountUsd": 5269556,
+      "from": {
+        "address": "",
+        "owner": "unknown",
+        "ownerType": "unknown"
+      },
+      "to": {
+        "address": "",
+        "owner": "Coinbase",
+        "ownerType": "exchange"
+      },
+      "transactionType": "transfer",
+      "hash": "",
+      "significance": "high"
+    },
     {
       "id": "whale-1782107124000-XLM-056awt",
       "timestamp": 1782107124000,
@@ -4160,48 +4202,6 @@
       "transactionType": "transfer",
       "hash": "",
       "significance": "very_high"
-    },
-    {
-      "id": "whale-1775604936000-USDC-48zea2",
-      "timestamp": 1775604936000,
-      "blockchain": "stablecoin",
-      "symbol": "USDC",
-      "amount": 102692878,
-      "amountUsd": 102659503,
-      "from": {
-        "address": "",
-        "owner": "Aave",
-        "ownerType": "unknown"
-      },
-      "to": {
-        "address": "",
-        "owner": "Unknown",
-        "ownerType": "unknown"
-      },
-      "transactionType": "transfer",
-      "hash": "",
-      "significance": "very_high"
-    },
-    {
-      "id": "whale-1775579802000-BTC-b4z9je",
-      "timestamp": 1775579802000,
-      "blockchain": "bitcoin",
-      "symbol": "BTC",
-      "amount": 754,
-      "amountUsd": 51532465,
-      "from": {
-        "address": "",
-        "owner": "Coinbase",
-        "ownerType": "exchange"
-      },
-      "to": {
-        "address": "",
-        "owner": "unknown",
-        "ownerType": "unknown"
-      },
-      "transactionType": "transfer",
-      "hash": "",
-      "significance": "high"
     }
   ]
 }
