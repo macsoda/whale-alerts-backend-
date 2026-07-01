@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-01T22:38:34.348Z",
-  "count": 137,
+  "lastUpdated": "2026-07-01T23:05:39.567Z",
+  "count": 132,
   "minValueUsd": 100000,
   "activities": [
     {
@@ -1110,20 +1110,6 @@
       "to": "0x936dc23be745befe40b1a72f7f244bc5627788ec"
     },
     {
-      "id": "fund-0xc69dd2bb52da4e-USDC",
-      "timestamp": 1782332891000,
-      "fund": "Galaxy Digital",
-      "logo": "🌌",
-      "type": "Investment Firm",
-      "action": "sell",
-      "symbol": "USDC",
-      "amount": 10000000,
-      "amountUsd": 10000000,
-      "hash": "0xc69dd2bb52da4ea1d30fa680e8c59f5086ccf366848cde05bfde07980d2bf176",
-      "from": "0x33566c9d8be6cf0b23795e0d380e112be9d75836",
-      "to": "0x1efc6e18b56024cde0c562de4f2f35006bd93b29"
-    },
-    {
       "id": "fund-0x98baf0f664c4f4-USDT",
       "timestamp": 1782245759000,
       "fund": "Galaxy Digital",
@@ -1334,62 +1320,6 @@
       "to": "0x53c902a9ef069f3b85e5e71f918c4d582f3063fa"
     },
     {
-      "id": "fund-0x2fe8728ba778f8-USDC",
-      "timestamp": 1758881927000,
-      "fund": "Wintermute",
-      "logo": "❄️",
-      "type": "Market Maker",
-      "action": "sell",
-      "symbol": "USDC",
-      "amount": 394536.690205,
-      "amountUsd": 394536.690205,
-      "hash": "0x2fe8728ba778f88895072d73e05ad6629540f3683bce6692fcba0c612f76e98b",
-      "from": "0xdbf5e9c5206d0db70a90108bf936da60221dc080",
-      "to": "0xf8191d98ae98d2f7abdfb63a9b0b812b93c873aa"
-    },
-    {
-      "id": "fund-0xca7b8aff5c1247-USDC",
-      "timestamp": 1758881003000,
-      "fund": "Wintermute",
-      "logo": "❄️",
-      "type": "Market Maker",
-      "action": "buy",
-      "symbol": "USDC",
-      "amount": 394536.690205,
-      "amountUsd": 394536.690205,
-      "hash": "0xca7b8aff5c124750c9479f241f2bb5be39fc787b032b0386cee6f10a6b804325",
-      "from": "0xce84449a8ebec019ac110a4b6662e55d0fd9f228",
-      "to": "0xdbf5e9c5206d0db70a90108bf936da60221dc080"
-    },
-    {
-      "id": "fund-0xbab0f0c7129c03-USDT",
-      "timestamp": 1754363675000,
-      "fund": "Wintermute",
-      "logo": "❄️",
-      "type": "Market Maker",
-      "action": "sell",
-      "symbol": "USDT",
-      "amount": 100000,
-      "amountUsd": 100000,
-      "hash": "0xbab0f0c7129c03119942b14bb87077ae91070d6754d2dd7d3bc981b9c4eee88b",
-      "from": "0xdbf5e9c5206d0db70a90108bf936da60221dc080",
-      "to": "0xf8191d98ae98d2f7abdfb63a9b0b812b93c873aa"
-    },
-    {
-      "id": "fund-0x883a638cfa801b-USDT",
-      "timestamp": 1754363627000,
-      "fund": "Wintermute",
-      "logo": "❄️",
-      "type": "Market Maker",
-      "action": "buy",
-      "symbol": "USDT",
-      "amount": 100000,
-      "amountUsd": 100000,
-      "hash": "0x883a638cfa801bf70d9253904eb29a801dd16e56719ed805118e5833d82ed1c5",
-      "from": "0xce84449a8ebec019ac110a4b6662e55d0fd9f228",
-      "to": "0xdbf5e9c5206d0db70a90108bf936da60221dc080"
-    },
-    {
       "id": "fund-0x71bb71a7792daa-WBTC",
       "timestamp": 1690339727000,
       "fund": "Jump Trading",
@@ -1402,6 +1332,76 @@
       "hash": "0x71bb71a7792daaff7ab52140a6cb09ebe9b843010d38554fb4a90ac5e493ab9c",
       "from": "0x9507c04b10486547584c37bcbd931b2a4fee9a41",
       "to": "0xf584f8728b874a6a5c7a8d4d387c9aae9172d621"
+    },
+    {
+      "id": "fund-0xc1d7ff607f2a32-WETH",
+      "timestamp": 1690339475000,
+      "fund": "Jump Trading",
+      "logo": "🦘",
+      "type": "Trading Firm",
+      "action": "sell",
+      "symbol": "WETH",
+      "amount": 1187,
+      "amountUsd": 3204900,
+      "hash": "0xc1d7ff607f2a32fe406d937026d35a51a9ffd66b05667f5bdf9cdd2b6dffc515",
+      "from": "0x9507c04b10486547584c37bcbd931b2a4fee9a41",
+      "to": "0xf584f8728b874a6a5c7a8d4d387c9aae9172d621"
+    },
+    {
+      "id": "fund-0x8859fd1b9ca250-USDC",
+      "timestamp": 1690339403000,
+      "fund": "Jump Trading",
+      "logo": "🦘",
+      "type": "Trading Firm",
+      "action": "sell",
+      "symbol": "USDC",
+      "amount": 1374757,
+      "amountUsd": 1374757,
+      "hash": "0x8859fd1b9ca250d845e638e32d11d20c30edb8be3a915698eec66f4cd3f831e7",
+      "from": "0x9507c04b10486547584c37bcbd931b2a4fee9a41",
+      "to": "0xf584f8728b874a6a5c7a8d4d387c9aae9172d621"
+    },
+    {
+      "id": "fund-0x5611c1950de17d-DAI",
+      "timestamp": 1690339235000,
+      "fund": "Jump Trading",
+      "logo": "🦘",
+      "type": "Trading Firm",
+      "action": "sell",
+      "symbol": "DAI",
+      "amount": 129651,
+      "amountUsd": 129651,
+      "hash": "0x5611c1950de17d45755948d238797fd171d1ffd148082e70f473a222ec1b2bb0",
+      "from": "0x9507c04b10486547584c37bcbd931b2a4fee9a41",
+      "to": "0xf584f8728b874a6a5c7a8d4d387c9aae9172d621"
+    },
+    {
+      "id": "fund-0xadae59f17f3850-USDT",
+      "timestamp": 1690338983000,
+      "fund": "Jump Trading",
+      "logo": "🦘",
+      "type": "Trading Firm",
+      "action": "sell",
+      "symbol": "USDT",
+      "amount": 699994.74,
+      "amountUsd": 699994.74,
+      "hash": "0xadae59f17f3850604cd06ee2f75f99701283b9c69124b982de2d8f4460222dd3",
+      "from": "0x9507c04b10486547584c37bcbd931b2a4fee9a41",
+      "to": "0xf584f8728b874a6a5c7a8d4d387c9aae9172d621"
+    },
+    {
+      "id": "fund-0xc86395730115bd-USDT",
+      "timestamp": 1690337747000,
+      "fund": "Jump Trading",
+      "logo": "🦘",
+      "type": "Trading Firm",
+      "action": "buy",
+      "symbol": "USDT",
+      "amount": 123421.37,
+      "amountUsd": 123421.37,
+      "hash": "0xc86395730115bd0b760ac07efd053857daa1f2cf0bebfc5612b4484c4af89e5b",
+      "from": "0x9696f59e4d72e237be84ffd425dcad154bf96976",
+      "to": "0x9507c04b10486547584c37bcbd931b2a4fee9a41"
     }
   ]
 }
