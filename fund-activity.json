@@ -1,8 +1,22 @@
 {
-  "lastUpdated": "2026-07-01T02:17:25.555Z",
-  "count": 134,
+  "lastUpdated": "2026-07-01T03:33:12.600Z",
+  "count": 135,
   "minValueUsd": 100000,
   "activities": [
+    {
+      "id": "fund-0x44003f62bd6392-USDC",
+      "timestamp": 1782874511000,
+      "fund": "Galaxy Digital",
+      "logo": "🌌",
+      "type": "Investment Firm",
+      "action": "buy",
+      "symbol": "USDC",
+      "amount": 841911.1846,
+      "amountUsd": 841911.1846,
+      "hash": "0x44003f62bd6392f7d8bc717482a21e49528038abe2b10165502e7aafb7118741",
+      "from": "0x5797f722b1fee36e3d2c3481d938d1372bcd99a7",
+      "to": "0x33566c9d8be6cf0b23795e0d380e112be9d75836"
+    },
     {
       "id": "fund-0x4b0988b15a0084-USDC",
       "timestamp": 1782854687000,
@@ -1386,20 +1400,6 @@
       "amount": 1374757,
       "amountUsd": 1374757,
       "hash": "0x8859fd1b9ca250d845e638e32d11d20c30edb8be3a915698eec66f4cd3f831e7",
-      "from": "0x9507c04b10486547584c37bcbd931b2a4fee9a41",
-      "to": "0xf584f8728b874a6a5c7a8d4d387c9aae9172d621"
-    },
-    {
-      "id": "fund-0x5611c1950de17d-DAI",
-      "timestamp": 1690339235000,
-      "fund": "Jump Trading",
-      "logo": "🦘",
-      "type": "Trading Firm",
-      "action": "sell",
-      "symbol": "DAI",
-      "amount": 129651,
-      "amountUsd": 129651,
-      "hash": "0x5611c1950de17d45755948d238797fd171d1ffd148082e70f473a222ec1b2bb0",
       "from": "0x9507c04b10486547584c37bcbd931b2a4fee9a41",
       "to": "0xf584f8728b874a6a5c7a8d4d387c9aae9172d621"
     }
