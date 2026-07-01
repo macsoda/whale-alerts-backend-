@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-01T20:18:13.100Z",
-  "count": 139,
+  "lastUpdated": "2026-07-01T20:55:06.367Z",
+  "count": 138,
   "minValueUsd": 100000,
   "activities": [
     {
@@ -1138,20 +1138,6 @@
       "to": "0x552f422ae202c91f2d3ad16c24a93d6dfb0345a3"
     },
     {
-      "id": "fund-0xe8b4778dc9a3e8-USDC",
-      "timestamp": 1782327143000,
-      "fund": "Galaxy Digital",
-      "logo": "🌌",
-      "type": "Investment Firm",
-      "action": "sell",
-      "symbol": "USDC",
-      "amount": 603201.4951,
-      "amountUsd": 603201.4951,
-      "hash": "0xe8b4778dc9a3e83cbe77528423aa40b121e649136ca54a7225b826e7398f0630",
-      "from": "0x33566c9d8be6cf0b23795e0d380e112be9d75836",
-      "to": "0x4495d92b0d2e4db5358916e44daa78bd87036a93"
-    },
-    {
       "id": "fund-0x98baf0f664c4f4-USDT",
       "timestamp": 1782245759000,
       "fund": "Galaxy Digital",
@@ -1402,6 +1388,20 @@
       "hash": "0xbab0f0c7129c03119942b14bb87077ae91070d6754d2dd7d3bc981b9c4eee88b",
       "from": "0xdbf5e9c5206d0db70a90108bf936da60221dc080",
       "to": "0xf8191d98ae98d2f7abdfb63a9b0b812b93c873aa"
+    },
+    {
+      "id": "fund-0x883a638cfa801b-USDT",
+      "timestamp": 1754363627000,
+      "fund": "Wintermute",
+      "logo": "❄️",
+      "type": "Market Maker",
+      "action": "buy",
+      "symbol": "USDT",
+      "amount": 100000,
+      "amountUsd": 100000,
+      "hash": "0x883a638cfa801bf70d9253904eb29a801dd16e56719ed805118e5833d82ed1c5",
+      "from": "0xce84449a8ebec019ac110a4b6662e55d0fd9f228",
+      "to": "0xdbf5e9c5206d0db70a90108bf936da60221dc080"
     }
   ]
 }
