@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-07-07T08:40:01.264Z",
+  "lastUpdated": "2026-07-07T11:27:26.797Z",
   "count": 200,
   "minValueUsd": 1000000,
   "alerts": [
     {
-      "id": "whale-1783402996000-XLM-mstayx",
+      "id": "whale-1783402996000-XLM-sb749m",
       "timestamp": 1783402996000,
       "blockchain": "stellar",
       "symbol": "XLM",
@@ -19,6 +19,48 @@
         "address": "",
         "owner": "Kraken",
         "ownerType": "exchange"
+      },
+      "transactionType": "transfer",
+      "hash": "",
+      "significance": "high"
+    },
+    {
+      "id": "whale-1783356170000-XLM-2padef",
+      "timestamp": 1783356170000,
+      "blockchain": "stellar",
+      "symbol": "XLM",
+      "amount": 100000000,
+      "amountUsd": 19967261,
+      "from": {
+        "address": "",
+        "owner": "SDF",
+        "ownerType": "unknown"
+      },
+      "to": {
+        "address": "",
+        "owner": "SDF",
+        "ownerType": "unknown"
+      },
+      "transactionType": "transfer",
+      "hash": "",
+      "significance": "high"
+    },
+    {
+      "id": "whale-1783356170000-XLM-pzyt81",
+      "timestamp": 1783356170000,
+      "blockchain": "stellar",
+      "symbol": "XLM",
+      "amount": 50000000,
+      "amountUsd": 9983631,
+      "from": {
+        "address": "",
+        "owner": "SDF",
+        "ownerType": "unknown"
+      },
+      "to": {
+        "address": "",
+        "owner": "SDF",
+        "ownerType": "unknown"
       },
       "transactionType": "transfer",
       "hash": "",
@@ -52,48 +94,6 @@
       "symbol": "XLM",
       "amount": 200000000,
       "amountUsd": 39934522,
-      "from": {
-        "address": "",
-        "owner": "SDF",
-        "ownerType": "unknown"
-      },
-      "to": {
-        "address": "",
-        "owner": "SDF",
-        "ownerType": "unknown"
-      },
-      "transactionType": "transfer",
-      "hash": "",
-      "significance": "high"
-    },
-    {
-      "id": "whale-1783356170000-XLM-cf1fqq",
-      "timestamp": 1783356170000,
-      "blockchain": "stellar",
-      "symbol": "XLM",
-      "amount": 100000000,
-      "amountUsd": 19967261,
-      "from": {
-        "address": "",
-        "owner": "SDF",
-        "ownerType": "unknown"
-      },
-      "to": {
-        "address": "",
-        "owner": "SDF",
-        "ownerType": "unknown"
-      },
-      "transactionType": "transfer",
-      "hash": "",
-      "significance": "high"
-    },
-    {
-      "id": "whale-1783356170000-XLM-61ju0g",
-      "timestamp": 1783356170000,
-      "blockchain": "stellar",
-      "symbol": "XLM",
-      "amount": 50000000,
-      "amountUsd": 9983631,
       "from": {
         "address": "",
         "owner": "SDF",
