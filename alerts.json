@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-07-07T11:27:26.797Z",
+  "lastUpdated": "2026-07-07T13:30:58.139Z",
   "count": 200,
   "minValueUsd": 1000000,
   "alerts": [
     {
-      "id": "whale-1783402996000-XLM-sb749m",
+      "id": "whale-1783402996000-XLM-o828l6",
       "timestamp": 1783402996000,
       "blockchain": "stellar",
       "symbol": "XLM",
@@ -25,12 +25,12 @@
       "significance": "high"
     },
     {
-      "id": "whale-1783356170000-XLM-2padef",
+      "id": "whale-1783356170000-XLM-0gq969",
       "timestamp": 1783356170000,
       "blockchain": "stellar",
       "symbol": "XLM",
-      "amount": 100000000,
-      "amountUsd": 19967261,
+      "amount": 50000000,
+      "amountUsd": 9983631,
       "from": {
         "address": "",
         "owner": "SDF",
@@ -46,12 +46,12 @@
       "significance": "high"
     },
     {
-      "id": "whale-1783356170000-XLM-pzyt81",
+      "id": "whale-1783356170000-XLM-2padef",
       "timestamp": 1783356170000,
       "blockchain": "stellar",
       "symbol": "XLM",
-      "amount": 50000000,
-      "amountUsd": 9983631,
+      "amount": 100000000,
+      "amountUsd": 19967261,
       "from": {
         "address": "",
         "owner": "SDF",
