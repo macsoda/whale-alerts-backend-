@@ -1,10 +1,31 @@
 {
-  "lastUpdated": "2026-07-07T05:12:47.660Z",
+  "lastUpdated": "2026-07-07T08:40:01.264Z",
   "count": 200,
   "minValueUsd": 1000000,
   "alerts": [
     {
-      "id": "whale-1783356170000-XLM-1n40sy",
+      "id": "whale-1783402996000-XLM-mstayx",
+      "timestamp": 1783402996000,
+      "blockchain": "stellar",
+      "symbol": "XLM",
+      "amount": 105000000,
+      "amountUsd": 20452798,
+      "from": {
+        "address": "",
+        "owner": "unknown",
+        "ownerType": "unknown"
+      },
+      "to": {
+        "address": "",
+        "owner": "Kraken",
+        "ownerType": "exchange"
+      },
+      "transactionType": "transfer",
+      "hash": "",
+      "significance": "high"
+    },
+    {
+      "id": "whale-1783356170000-XLM-bb157u",
       "timestamp": 1783356170000,
       "blockchain": "stellar",
       "symbol": "XLM",
@@ -25,7 +46,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1783356170000-XLM-haco53",
+      "id": "whale-1783356170000-XLM-hlri0c",
       "timestamp": 1783356170000,
       "blockchain": "stellar",
       "symbol": "XLM",
@@ -46,7 +67,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1783356170000-XLM-w9ozzw",
+      "id": "whale-1783356170000-XLM-cf1fqq",
       "timestamp": 1783356170000,
       "blockchain": "stellar",
       "symbol": "XLM",
@@ -67,7 +88,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1783356170000-XLM-4do4kk",
+      "id": "whale-1783356170000-XLM-61ju0g",
       "timestamp": 1783356170000,
       "blockchain": "stellar",
       "symbol": "XLM",
@@ -88,7 +109,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1783356169000-XLM-ce0nx6",
+      "id": "whale-1783356169000-XLM-899jwg",
       "timestamp": 1783356169000,
       "blockchain": "stellar",
       "symbol": "XLM",
@@ -4168,27 +4189,6 @@
       "symbol": "USDC",
       "amount": 200078346,
       "amountUsd": 200071144,
-      "from": {
-        "address": "",
-        "owner": "unknown",
-        "ownerType": "unknown"
-      },
-      "to": {
-        "address": "",
-        "owner": "unknown",
-        "ownerType": "unknown"
-      },
-      "transactionType": "transfer",
-      "hash": "",
-      "significance": "very_high"
-    },
-    {
-      "id": "whale-1775652546000-ETH-esvxex",
-      "timestamp": 1775652546000,
-      "blockchain": "ethereum",
-      "symbol": "ETH",
-      "amount": 55174,
-      "amountUsd": 124397008,
       "from": {
         "address": "",
         "owner": "unknown",
