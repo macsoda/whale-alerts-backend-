@@ -1,8 +1,50 @@
 {
-  "lastUpdated": "2026-07-08T06:41:04.768Z",
+  "lastUpdated": "2026-07-08T09:10:53.210Z",
   "count": 200,
   "minValueUsd": 1000000,
   "alerts": [
+    {
+      "id": "whale-1783500992000-XLM-d7ben2",
+      "timestamp": 1783500992000,
+      "blockchain": "stellar",
+      "symbol": "XLM",
+      "amount": 55953709,
+      "amountUsd": 10249103,
+      "from": {
+        "address": "",
+        "owner": "Binance",
+        "ownerType": "exchange"
+      },
+      "to": {
+        "address": "",
+        "owner": "Binance",
+        "ownerType": "exchange"
+      },
+      "transactionType": "transfer",
+      "hash": "",
+      "significance": "high"
+    },
+    {
+      "id": "whale-1783500693000-XLM-2qio6w",
+      "timestamp": 1783500693000,
+      "blockchain": "stellar",
+      "symbol": "XLM",
+      "amount": 55849867,
+      "amountUsd": 10282232,
+      "from": {
+        "address": "",
+        "owner": "unknown",
+        "ownerType": "unknown"
+      },
+      "to": {
+        "address": "",
+        "owner": "Binance",
+        "ownerType": "exchange"
+      },
+      "transactionType": "transfer",
+      "hash": "",
+      "significance": "high"
+    },
     {
       "id": "whale-1783402996000-XLM-p1avus",
       "timestamp": 1783402996000,
@@ -4147,48 +4189,6 @@
       "symbol": "USDC",
       "amount": 250000000,
       "amountUsd": 249998942,
-      "from": {
-        "address": "",
-        "owner": "unknown",
-        "ownerType": "unknown"
-      },
-      "to": {
-        "address": "",
-        "owner": "unknown",
-        "ownerType": "unknown"
-      },
-      "transactionType": "transfer",
-      "hash": "",
-      "significance": "very_high"
-    },
-    {
-      "id": "whale-1775655856000-USDC-wkl4kf",
-      "timestamp": 1775655856000,
-      "blockchain": "stablecoin",
-      "symbol": "USDC",
-      "amount": 200000000,
-      "amountUsd": 199981900,
-      "from": {
-        "address": "",
-        "owner": "USDC",
-        "ownerType": "unknown"
-      },
-      "to": {
-        "address": "",
-        "owner": "Coinbase",
-        "ownerType": "exchange"
-      },
-      "transactionType": "transfer",
-      "hash": "",
-      "significance": "very_high"
-    },
-    {
-      "id": "whale-1775655711000-USDC-lzp00k",
-      "timestamp": 1775655711000,
-      "blockchain": "stablecoin",
-      "symbol": "USDC",
-      "amount": 200078346,
-      "amountUsd": 200071144,
       "from": {
         "address": "",
         "owner": "unknown",
