@@ -1,10 +1,31 @@
 {
-  "lastUpdated": "2026-07-08T11:14:31.263Z",
+  "lastUpdated": "2026-07-08T12:51:14.704Z",
   "count": 200,
   "minValueUsd": 1000000,
   "alerts": [
     {
-      "id": "whale-1783500992000-XLM-s6oqqf",
+      "id": "whale-1783512105000-XLM-fh1myk",
+      "timestamp": 1783512105000,
+      "blockchain": "stellar",
+      "symbol": "XLM",
+      "amount": 41796999,
+      "amountUsd": 7646397,
+      "from": {
+        "address": "",
+        "owner": "Kraken",
+        "ownerType": "exchange"
+      },
+      "to": {
+        "address": "",
+        "owner": "unknown",
+        "ownerType": "unknown"
+      },
+      "transactionType": "transfer",
+      "hash": "",
+      "significance": "high"
+    },
+    {
+      "id": "whale-1783500992000-XLM-ytl861",
       "timestamp": 1783500992000,
       "blockchain": "stellar",
       "symbol": "XLM",
@@ -25,7 +46,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1783500693000-XLM-asutcu",
+      "id": "whale-1783500693000-XLM-2uxwg7",
       "timestamp": 1783500693000,
       "blockchain": "stellar",
       "symbol": "XLM",
@@ -4181,27 +4202,6 @@
       "transactionType": "transfer",
       "hash": "",
       "significance": "high"
-    },
-    {
-      "id": "whale-1775658320000-USDC-knohua",
-      "timestamp": 1775658320000,
-      "blockchain": "stablecoin",
-      "symbol": "USDC",
-      "amount": 250000000,
-      "amountUsd": 249998942,
-      "from": {
-        "address": "",
-        "owner": "unknown",
-        "ownerType": "unknown"
-      },
-      "to": {
-        "address": "",
-        "owner": "unknown",
-        "ownerType": "unknown"
-      },
-      "transactionType": "transfer",
-      "hash": "",
-      "significance": "very_high"
     }
   ]
 }
