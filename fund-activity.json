@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-15T11:55:43.977Z",
-  "count": 105,
+  "lastUpdated": "2026-07-15T13:12:57.032Z",
+  "count": 110,
   "minValueUsd": 100000,
   "activities": [
     {
@@ -282,6 +282,48 @@
       "hash": "0x8758743d3814426a6c24ea4e3bc46f12b9e02296713c898fe15f9fa252244621",
       "from": "0x53c902a9ef069f3b85e5e71f918c4d582f3063fa",
       "to": "0xb356fc9978667552d0ee2776fcf6ce46cf5825b4"
+    },
+    {
+      "id": "fund-0xc7bc413e3d1648-USDT",
+      "timestamp": 1783843031000,
+      "fund": "DWF Labs",
+      "logo": "🔷",
+      "type": "Market Maker",
+      "action": "sell",
+      "symbol": "USDT",
+      "amount": 712000,
+      "amountUsd": 712000,
+      "hash": "0xc7bc413e3d164812ca5724eb5ba267fe1f5ef87473a8147b1da0fedc8f91753f",
+      "from": "0x53c902a9ef069f3b85e5e71f918c4d582f3063fa",
+      "to": "0x74a376edd7e4cb469c5d8868b528b89a4c1a935d"
+    },
+    {
+      "id": "fund-0x2cc5b4737215ff-USDT",
+      "timestamp": 1783800467000,
+      "fund": "DWF Labs",
+      "logo": "🔷",
+      "type": "Market Maker",
+      "action": "buy",
+      "symbol": "USDT",
+      "amount": 1000000,
+      "amountUsd": 1000000,
+      "hash": "0x2cc5b4737215ffc1993a5bbf5d7291aeba0286c94b04899453a8ea524aaa364c",
+      "from": "0x18e296053cbdf986196903e889b7dca7a73882f6",
+      "to": "0x53c902a9ef069f3b85e5e71f918c4d582f3063fa"
+    },
+    {
+      "id": "fund-0x645d28dea2051d-USDT",
+      "timestamp": 1783793483000,
+      "fund": "DWF Labs",
+      "logo": "🔷",
+      "type": "Market Maker",
+      "action": "buy",
+      "symbol": "USDT",
+      "amount": 500000,
+      "amountUsd": 500000,
+      "hash": "0x645d28dea2051d3654bb11627d88f9c49edb4e8d10e23e1f6b2f10e4601d23d5",
+      "from": "0x1ab4973a48dc892cd9971ece8e01dcc7688f8f23",
+      "to": "0x53c902a9ef069f3b85e5e71f918c4d582f3063fa"
     },
     {
       "id": "fund-0xd9eeb50538e3f6-USDC",
@@ -886,6 +928,34 @@
       "to": "0x15abb66ba754f05cbc0165a64a11cded1543de48"
     },
     {
+      "id": "fund-0x099322d1f4f8d2-USDT",
+      "timestamp": 1782220283000,
+      "fund": "DWF Labs",
+      "logo": "🔷",
+      "type": "Market Maker",
+      "action": "buy",
+      "symbol": "USDT",
+      "amount": 249900,
+      "amountUsd": 249900,
+      "hash": "0x099322d1f4f8d2d78e3ec199a3092c6094345c39e59cdcad936cf6c4e0fdb923",
+      "from": "0xba7141e20758f6c7b92d21027ce410dc05f18f70",
+      "to": "0x53c902a9ef069f3b85e5e71f918c4d582f3063fa"
+    },
+    {
+      "id": "fund-0x25c77d19767cb2-USDT",
+      "timestamp": 1782138023000,
+      "fund": "DWF Labs",
+      "logo": "🔷",
+      "type": "Market Maker",
+      "action": "sell",
+      "symbol": "USDT",
+      "amount": 1999990,
+      "amountUsd": 1999990,
+      "hash": "0x25c77d19767cb2de59a5b78612dd5df19fab0b5fd6073471f20375dce6768c34",
+      "from": "0x53c902a9ef069f3b85e5e71f918c4d582f3063fa",
+      "to": "0x96014fb0ed24de067276241d80fb4cc0a7e90389"
+    },
+    {
       "id": "fund-0x2fe8728ba778f8-USDC",
       "timestamp": 1758881927000,
       "fund": "Wintermute",
@@ -1332,76 +1402,6 @@
       "hash": "0x5df631a24ca4d545e702ff7705400e9656faef6e934e45a212acc9faad6562c6",
       "from": "0x9507c04b10486547584c37bcbd931b2a4fee9a41",
       "to": "0x4585fe77225b41b697c938b018e2ac67ac5a20c0"
-    },
-    {
-      "id": "fund-0x5df631a24ca4d5-WBTC",
-      "timestamp": 1690327151000,
-      "fund": "Jump Trading",
-      "logo": "🦘",
-      "type": "Trading Firm",
-      "action": "buy",
-      "symbol": "WBTC",
-      "amount": 3.77356535,
-      "amountUsd": 366035.83895,
-      "hash": "0x5df631a24ca4d545e702ff7705400e9656faef6e934e45a212acc9faad6562c6",
-      "from": "0x4585fe77225b41b697c938b018e2ac67ac5a20c0",
-      "to": "0x9507c04b10486547584c37bcbd931b2a4fee9a41"
-    },
-    {
-      "id": "fund-0x598fb6e1b1ff07-WETH",
-      "timestamp": 1690326971000,
-      "fund": "Jump Trading",
-      "logo": "🦘",
-      "type": "Trading Firm",
-      "action": "sell",
-      "symbol": "WETH",
-      "amount": 64.03189274940539,
-      "amountUsd": 172886.11042339454,
-      "hash": "0x598fb6e1b1ff072d28c33983b6b58e2019cef399df9c257c99120064509a3df6",
-      "from": "0x9507c04b10486547584c37bcbd931b2a4fee9a41",
-      "to": "0x4585fe77225b41b697c938b018e2ac67ac5a20c0"
-    },
-    {
-      "id": "fund-0x598fb6e1b1ff07-WBTC",
-      "timestamp": 1690326971000,
-      "fund": "Jump Trading",
-      "logo": "🦘",
-      "type": "Trading Firm",
-      "action": "buy",
-      "symbol": "WBTC",
-      "amount": 4.07519876,
-      "amountUsd": 395294.27972,
-      "hash": "0x598fb6e1b1ff072d28c33983b6b58e2019cef399df9c257c99120064509a3df6",
-      "from": "0x4585fe77225b41b697c938b018e2ac67ac5a20c0",
-      "to": "0x9507c04b10486547584c37bcbd931b2a4fee9a41"
-    },
-    {
-      "id": "fund-0x3565625682ad8a-WETH",
-      "timestamp": 1690326287000,
-      "fund": "Jump Trading",
-      "logo": "🦘",
-      "type": "Trading Firm",
-      "action": "sell",
-      "symbol": "WETH",
-      "amount": 76.32368176799798,
-      "amountUsd": 206073.94077359454,
-      "hash": "0x3565625682ad8a306ac5d4e177a082644d1dbe5def75818dab941629a7bc531f",
-      "from": "0x9507c04b10486547584c37bcbd931b2a4fee9a41",
-      "to": "0x4585fe77225b41b697c938b018e2ac67ac5a20c0"
-    },
-    {
-      "id": "fund-0x3565625682ad8a-WBTC",
-      "timestamp": 1690326287000,
-      "fund": "Jump Trading",
-      "logo": "🦘",
-      "type": "Trading Firm",
-      "action": "buy",
-      "symbol": "WBTC",
-      "amount": 4.85906036,
-      "amountUsd": 471328.85492,
-      "hash": "0x3565625682ad8a306ac5d4e177a082644d1dbe5def75818dab941629a7bc531f",
-      "from": "0x4585fe77225b41b697c938b018e2ac67ac5a20c0",
-      "to": "0x9507c04b10486547584c37bcbd931b2a4fee9a41"
     }
   ]
 }
