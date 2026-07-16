@@ -1,10 +1,52 @@
 {
-  "lastUpdated": "2026-07-16T04:06:46.055Z",
+  "lastUpdated": "2026-07-16T06:27:40.439Z",
   "count": 200,
   "minValueUsd": 1000000,
   "alerts": [
     {
-      "id": "whale-1784131712000-XLM-l5h2bg",
+      "id": "whale-1784180661000-XLM-rttr4x",
+      "timestamp": 1784180661000,
+      "blockchain": "stellar",
+      "symbol": "XLM",
+      "amount": 27908628,
+      "amountUsd": 5253750,
+      "from": {
+        "address": "",
+        "owner": "Coinbase",
+        "ownerType": "exchange"
+      },
+      "to": {
+        "address": "",
+        "owner": "Coinbase",
+        "ownerType": "exchange"
+      },
+      "transactionType": "transfer",
+      "hash": "",
+      "significance": "high"
+    },
+    {
+      "id": "whale-1784180617000-XLM-pc90ik",
+      "timestamp": 1784180617000,
+      "blockchain": "stellar",
+      "symbol": "XLM",
+      "amount": 27908628,
+      "amountUsd": 5235427,
+      "from": {
+        "address": "",
+        "owner": "unknown",
+        "ownerType": "unknown"
+      },
+      "to": {
+        "address": "",
+        "owner": "Coinbase",
+        "ownerType": "exchange"
+      },
+      "transactionType": "transfer",
+      "hash": "",
+      "significance": "high"
+    },
+    {
+      "id": "whale-1784131712000-XLM-r1u4tf",
       "timestamp": 1784131712000,
       "blockchain": "stellar",
       "symbol": "XLM",
@@ -4155,48 +4197,6 @@
       "to": {
         "address": "",
         "owner": "Aave",
-        "ownerType": "unknown"
-      },
-      "transactionType": "transfer",
-      "hash": "",
-      "significance": "very_high"
-    },
-    {
-      "id": "whale-1775691265000-USDC-ubsvd2",
-      "timestamp": 1775691265000,
-      "blockchain": "stablecoin",
-      "symbol": "USDC",
-      "amount": 102729579,
-      "amountUsd": 102691569,
-      "from": {
-        "address": "",
-        "owner": "Aave",
-        "ownerType": "unknown"
-      },
-      "to": {
-        "address": "",
-        "owner": "Unknown",
-        "ownerType": "unknown"
-      },
-      "transactionType": "transfer",
-      "hash": "",
-      "significance": "very_high"
-    },
-    {
-      "id": "whale-1775668972000-BTC-eonbsr",
-      "timestamp": 1775668972000,
-      "blockchain": "bitcoin",
-      "symbol": "BTC",
-      "amount": 1400,
-      "amountUsd": 100406980,
-      "from": {
-        "address": "",
-        "owner": "Gemini",
-        "ownerType": "exchange"
-      },
-      "to": {
-        "address": "",
-        "owner": "unknown",
         "ownerType": "unknown"
       },
       "transactionType": "transfer",
