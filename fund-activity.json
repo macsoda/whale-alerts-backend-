@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-27T21:55:55.572Z",
-  "count": 134,
+  "lastUpdated": "2026-07-27T22:53:52.576Z",
+  "count": 133,
   "minValueUsd": 100000,
   "activities": [
     {
@@ -1208,20 +1208,6 @@
       "to": "0xcb273f05ace458ad1d8595ffacc32c362ac75323"
     },
     {
-      "id": "fund-0x25efbf558d5434-USDC",
-      "timestamp": 1784316779000,
-      "fund": "Galaxy Digital",
-      "logo": "🌌",
-      "type": "Investment Firm",
-      "action": "sell",
-      "symbol": "USDC",
-      "amount": 55000000,
-      "amountUsd": 55000000,
-      "hash": "0x25efbf558d5434a84ff365dd7eaf2962f0c9c48463416445c1330618e2e298c3",
-      "from": "0x15abb66ba754f05cbc0165a64a11cded1543de48",
-      "to": "0x8fa4ee1776032b612206e754ec2382b534d4ac6f"
-    },
-    {
       "id": "fund-0x8758743d381442-USDT",
       "timestamp": 1783843355000,
       "fund": "DWF Labs",
@@ -1400,6 +1386,20 @@
       "amount": 129651,
       "amountUsd": 129651,
       "hash": "0x5611c1950de17d45755948d238797fd171d1ffd148082e70f473a222ec1b2bb0",
+      "from": "0x9507c04b10486547584c37bcbd931b2a4fee9a41",
+      "to": "0xf584f8728b874a6a5c7a8d4d387c9aae9172d621"
+    },
+    {
+      "id": "fund-0xadae59f17f3850-USDT",
+      "timestamp": 1690338983000,
+      "fund": "Jump Trading",
+      "logo": "🦘",
+      "type": "Trading Firm",
+      "action": "sell",
+      "symbol": "USDT",
+      "amount": 699994.74,
+      "amountUsd": 699994.74,
+      "hash": "0xadae59f17f3850604cd06ee2f75f99701283b9c69124b982de2d8f4460222dd3",
       "from": "0x9507c04b10486547584c37bcbd931b2a4fee9a41",
       "to": "0xf584f8728b874a6a5c7a8d4d387c9aae9172d621"
     }
