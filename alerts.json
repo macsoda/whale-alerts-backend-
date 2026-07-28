@@ -1,8 +1,29 @@
 {
-  "lastUpdated": "2026-07-28T11:29:48.894Z",
+  "lastUpdated": "2026-07-28T13:09:05.512Z",
   "count": 200,
   "minValueUsd": 1000000,
   "alerts": [
+    {
+      "id": "whale-1785243684000-XLM-hpkmdc",
+      "timestamp": 1785243684000,
+      "blockchain": "stellar",
+      "symbol": "XLM",
+      "amount": 50000000,
+      "amountUsd": 8562049,
+      "from": {
+        "address": "",
+        "owner": "unknown",
+        "ownerType": "unknown"
+      },
+      "to": {
+        "address": "",
+        "owner": "Kraken",
+        "ownerType": "exchange"
+      },
+      "transactionType": "transfer",
+      "hash": "",
+      "significance": "high"
+    },
     {
       "id": "whale-1784914572000-XLM-czes9p",
       "timestamp": 1784914572000,
@@ -4176,27 +4197,6 @@
       "to": {
         "address": "",
         "owner": "Aave",
-        "ownerType": "unknown"
-      },
-      "transactionType": "transfer",
-      "hash": "",
-      "significance": "very_high"
-    },
-    {
-      "id": "whale-1775777626000-USDC-a75z78",
-      "timestamp": 1775777626000,
-      "blockchain": "stablecoin",
-      "symbol": "USDC",
-      "amount": 102765748,
-      "amountUsd": 102740057,
-      "from": {
-        "address": "",
-        "owner": "Aave",
-        "ownerType": "unknown"
-      },
-      "to": {
-        "address": "",
-        "owner": "Unknown",
         "ownerType": "unknown"
       },
       "transactionType": "transfer",
