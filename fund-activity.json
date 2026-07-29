@@ -1,8 +1,22 @@
 {
-  "lastUpdated": "2026-07-29T22:33:09.214Z",
-  "count": 132,
+  "lastUpdated": "2026-07-29T23:36:09.175Z",
+  "count": 133,
   "minValueUsd": 100000,
   "activities": [
+    {
+      "id": "fund-0x505635d3ed2c52-USDT",
+      "timestamp": 1785367979000,
+      "fund": "Galaxy Digital",
+      "logo": "🌌",
+      "type": "Investment Firm",
+      "action": "sell",
+      "symbol": "USDT",
+      "amount": 377301.8,
+      "amountUsd": 377301.8,
+      "hash": "0x505635d3ed2c5295d054cd7cc95065d2acf266ab4688ade7601824044e8bbf26",
+      "from": "0x33566c9d8be6cf0b23795e0d380e112be9d75836",
+      "to": "0x295c8dc20683e7c4c4a7750ca70148cde23a92c3"
+    },
     {
       "id": "fund-0x8e60798570d2ff-USDC",
       "timestamp": 1785355667000,
@@ -1388,20 +1402,6 @@
       "hash": "0xadae59f17f3850604cd06ee2f75f99701283b9c69124b982de2d8f4460222dd3",
       "from": "0x9507c04b10486547584c37bcbd931b2a4fee9a41",
       "to": "0xf584f8728b874a6a5c7a8d4d387c9aae9172d621"
-    },
-    {
-      "id": "fund-0xc86395730115bd-USDT",
-      "timestamp": 1690337747000,
-      "fund": "Jump Trading",
-      "logo": "🦘",
-      "type": "Trading Firm",
-      "action": "buy",
-      "symbol": "USDT",
-      "amount": 123421.37,
-      "amountUsd": 123421.37,
-      "hash": "0xc86395730115bd0b760ac07efd053857daa1f2cf0bebfc5612b4484c4af89e5b",
-      "from": "0x9696f59e4d72e237be84ffd425dcad154bf96976",
-      "to": "0x9507c04b10486547584c37bcbd931b2a4fee9a41"
     }
   ]
 }
