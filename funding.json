@@ -1,18 +1,18 @@
 {
   "btc": {
-    "fundingRate": 0,
-    "fundingRatePercent": 0,
-    "nextFundingTime": 0,
-    "markPrice": 0,
-    "openInterest": 0
+    "fundingRate": 0.00003665,
+    "fundingRatePercent": 0.0036650000000000003,
+    "nextFundingTime": 1785340800000,
+    "markPrice": 63950.19280435,
+    "openInterest": 102048.286
   },
   "eth": {
-    "fundingRate": 0,
-    "fundingRatePercent": 0,
-    "nextFundingTime": 0,
-    "markPrice": 0,
-    "openInterest": 0
+    "fundingRate": 0.00002143,
+    "fundingRatePercent": 0.002143,
+    "nextFundingTime": 1785340800000,
+    "markPrice": 1891.45877519,
+    "openInterest": 2289822.652
   },
-  "timestamp": 1785335838282,
-  "updatedAt": "2026-07-29T14:37:18.282Z"
+  "timestamp": 1785341238184,
+  "updatedAt": "2026-07-29T16:07:18.184Z"
 }
