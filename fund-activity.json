@@ -1,8 +1,22 @@
 {
-  "lastUpdated": "2026-07-30T03:55:06.193Z",
-  "count": 131,
+  "lastUpdated": "2026-07-30T06:19:00.988Z",
+  "count": 132,
   "minValueUsd": 100000,
   "activities": [
+    {
+      "id": "fund-0x0208b6991f6a1d-USDT",
+      "timestamp": 1785391703000,
+      "fund": "DWF Labs",
+      "logo": "🔷",
+      "type": "Market Maker",
+      "action": "sell",
+      "symbol": "USDT",
+      "amount": 100000,
+      "amountUsd": 100000,
+      "hash": "0x0208b6991f6a1dd34fedb60bffde3beda8e5317ada109d4f6cdfe85313954da9",
+      "from": "0x53c902a9ef069f3b85e5e71f918c4d582f3063fa",
+      "to": "0x8a5d0bb7e2eed792dfb9605c6f94512c3f15bf95"
+    },
     {
       "id": "fund-0x505635d3ed2c52-USDT",
       "timestamp": 1785367979000,
@@ -1387,20 +1401,6 @@
       "amountUsd": 123421.37,
       "hash": "0xc86395730115bd0b760ac07efd053857daa1f2cf0bebfc5612b4484c4af89e5b",
       "from": "0x9696f59e4d72e237be84ffd425dcad154bf96976",
-      "to": "0x9507c04b10486547584c37bcbd931b2a4fee9a41"
-    },
-    {
-      "id": "fund-0x4b6531a90566ae-WETH",
-      "timestamp": 1690335671000,
-      "fund": "Jump Trading",
-      "logo": "🦘",
-      "type": "Trading Firm",
-      "action": "buy",
-      "symbol": "WETH",
-      "amount": 46.65721655257317,
-      "amountUsd": 125974.48469194755,
-      "hash": "0x4b6531a90566ae4c5b7196c1ed44cbabbd856fb2618dafd02d64fe8fd14951de",
-      "from": "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
       "to": "0x9507c04b10486547584c37bcbd931b2a4fee9a41"
     }
   ]
