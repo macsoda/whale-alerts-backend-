@@ -1,8 +1,50 @@
 {
-  "lastUpdated": "2026-08-07T18:32:35.148Z",
+  "lastUpdated": "2026-08-07T19:32:12.512Z",
   "count": 200,
   "minValueUsd": 1000000,
   "alerts": [
+    {
+      "id": "whale-1786130541000-XLM-wnq14p",
+      "timestamp": 1786130541000,
+      "blockchain": "stellar",
+      "symbol": "XLM",
+      "amount": 800000000,
+      "amountUsd": 129886453,
+      "from": {
+        "address": "",
+        "owner": "SDF",
+        "ownerType": "unknown"
+      },
+      "to": {
+        "address": "",
+        "owner": "SDF",
+        "ownerType": "unknown"
+      },
+      "transactionType": "transfer",
+      "hash": "",
+      "significance": "very_high"
+    },
+    {
+      "id": "whale-1786130541000-XLM-xcjqr0",
+      "timestamp": 1786130541000,
+      "blockchain": "stellar",
+      "symbol": "XLM",
+      "amount": 150000000,
+      "amountUsd": 24203924,
+      "from": {
+        "address": "",
+        "owner": "SDF",
+        "ownerType": "unknown"
+      },
+      "to": {
+        "address": "",
+        "owner": "SDF",
+        "ownerType": "unknown"
+      },
+      "transactionType": "transfer",
+      "hash": "",
+      "significance": "high"
+    },
     {
       "id": "whale-1785243684000-XLM-txirri",
       "timestamp": 1785243684000,
@@ -4155,48 +4197,6 @@
       "to": {
         "address": "",
         "owner": "unknown",
-        "ownerType": "unknown"
-      },
-      "transactionType": "transfer",
-      "hash": "",
-      "significance": "very_high"
-    },
-    {
-      "id": "whale-1775818087000-BTC-7f0ci8",
-      "timestamp": 1775818087000,
-      "blockchain": "bitcoin",
-      "symbol": "BTC",
-      "amount": 3000,
-      "amountUsd": 215439709,
-      "from": {
-        "address": "",
-        "owner": "unknown",
-        "ownerType": "unknown"
-      },
-      "to": {
-        "address": "",
-        "owner": "unknown",
-        "ownerType": "unknown"
-      },
-      "transactionType": "transfer",
-      "hash": "",
-      "significance": "very_high"
-    },
-    {
-      "id": "whale-1775780321000-USDC-1chlt0",
-      "timestamp": 1775780321000,
-      "blockchain": "stablecoin",
-      "symbol": "USDC",
-      "amount": 102795180,
-      "amountUsd": 102781868,
-      "from": {
-        "address": "",
-        "owner": "Unknown",
-        "ownerType": "unknown"
-      },
-      "to": {
-        "address": "",
-        "owner": "Aave",
         "ownerType": "unknown"
       },
       "transactionType": "transfer",
