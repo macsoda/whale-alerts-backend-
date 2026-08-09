@@ -1,8 +1,36 @@
 {
-  "lastUpdated": "2026-08-09T17:48:27.433Z",
+  "lastUpdated": "2026-08-09T18:16:35.077Z",
   "count": 120,
   "minValueUsd": 100000,
   "activities": [
+    {
+      "id": "fund-0xf04319ec8c7626-USDT",
+      "timestamp": 1786299167000,
+      "fund": "DWF Labs",
+      "logo": "🔷",
+      "type": "Market Maker",
+      "action": "buy",
+      "symbol": "USDT",
+      "amount": 8000000,
+      "amountUsd": 8000000,
+      "hash": "0xf04319ec8c762684c0cc275025951e4bfaf8e064f8f9273a49da1fd9a5f9414d",
+      "from": "0x56eddb7aa87536c09ccc2793473599fd21a8b17f",
+      "to": "0x53c902a9ef069f3b85e5e71f918c4d582f3063fa"
+    },
+    {
+      "id": "fund-0x7d957d3afa794d-USDT",
+      "timestamp": 1786298867000,
+      "fund": "DWF Labs",
+      "logo": "🔷",
+      "type": "Market Maker",
+      "action": "buy",
+      "symbol": "USDT",
+      "amount": 1000000,
+      "amountUsd": 1000000,
+      "hash": "0x7d957d3afa794d1ec65ef3ebd08b4efe7547e87dc44b6d9867e41e06353e9b9d",
+      "from": "0xdfd5293d8e347dfe59e90efd55b2956a1343963d",
+      "to": "0x53c902a9ef069f3b85e5e71f918c4d582f3063fa"
+    },
     {
       "id": "fund-0xed2beafa9d06b5-USDT",
       "timestamp": 1786291271000,
@@ -1066,34 +1094,6 @@
       "hash": "0xa69a1424e510e67e4d962b87f81156b0625faeae4acf35a1c3b48b5af11bf622",
       "from": "0x53c902a9ef069f3b85e5e71f918c4d582f3063fa",
       "to": "0xcb273f05ace458ad1d8595ffacc32c362ac75323"
-    },
-    {
-      "id": "fund-0x8758743d381442-USDT",
-      "timestamp": 1783843355000,
-      "fund": "DWF Labs",
-      "logo": "🔷",
-      "type": "Market Maker",
-      "action": "sell",
-      "symbol": "USDT",
-      "amount": 499990,
-      "amountUsd": 499990,
-      "hash": "0x8758743d3814426a6c24ea4e3bc46f12b9e02296713c898fe15f9fa252244621",
-      "from": "0x53c902a9ef069f3b85e5e71f918c4d582f3063fa",
-      "to": "0xb356fc9978667552d0ee2776fcf6ce46cf5825b4"
-    },
-    {
-      "id": "fund-0xc7bc413e3d1648-USDT",
-      "timestamp": 1783843031000,
-      "fund": "DWF Labs",
-      "logo": "🔷",
-      "type": "Market Maker",
-      "action": "sell",
-      "symbol": "USDT",
-      "amount": 712000,
-      "amountUsd": 712000,
-      "hash": "0xc7bc413e3d164812ca5724eb5ba267fe1f5ef87473a8147b1da0fedc8f91753f",
-      "from": "0x53c902a9ef069f3b85e5e71f918c4d582f3063fa",
-      "to": "0x74a376edd7e4cb469c5d8868b528b89a4c1a935d"
     },
     {
       "id": "fund-0x2fe8728ba778f8-USDC",
