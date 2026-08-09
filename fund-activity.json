@@ -1,8 +1,22 @@
 {
-  "lastUpdated": "2026-08-09T16:00:35.221Z",
+  "lastUpdated": "2026-08-09T16:48:03.064Z",
   "count": 120,
   "minValueUsd": 100000,
   "activities": [
+    {
+      "id": "fund-0xed2beafa9d06b5-USDT",
+      "timestamp": 1786291271000,
+      "fund": "DWF Labs",
+      "logo": "🔷",
+      "type": "Market Maker",
+      "action": "sell",
+      "symbol": "USDT",
+      "amount": 100000,
+      "amountUsd": 100000,
+      "hash": "0xed2beafa9d06b57eea870ce0a878090c03bfbb2799c01aa3d8f348563aa619a7",
+      "from": "0x53c902a9ef069f3b85e5e71f918c4d582f3063fa",
+      "to": "0xd734026199c9f4dbad706bf9a5dd747e82872846"
+    },
     {
       "id": "fund-0x9c62505ca485ab-USDT",
       "timestamp": 1786284287000,
@@ -1080,20 +1094,6 @@
       "hash": "0xc7bc413e3d164812ca5724eb5ba267fe1f5ef87473a8147b1da0fedc8f91753f",
       "from": "0x53c902a9ef069f3b85e5e71f918c4d582f3063fa",
       "to": "0x74a376edd7e4cb469c5d8868b528b89a4c1a935d"
-    },
-    {
-      "id": "fund-0x2cc5b4737215ff-USDT",
-      "timestamp": 1783800467000,
-      "fund": "DWF Labs",
-      "logo": "🔷",
-      "type": "Market Maker",
-      "action": "buy",
-      "symbol": "USDT",
-      "amount": 1000000,
-      "amountUsd": 1000000,
-      "hash": "0x2cc5b4737215ffc1993a5bbf5d7291aeba0286c94b04899453a8ea524aaa364c",
-      "from": "0x18e296053cbdf986196903e889b7dca7a73882f6",
-      "to": "0x53c902a9ef069f3b85e5e71f918c4d582f3063fa"
     },
     {
       "id": "fund-0x2fe8728ba778f8-USDC",
