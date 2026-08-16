@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-08-16T19:45:02.596Z",
-  "count": 120,
+  "lastUpdated": "2026-08-16T19:56:21.854Z",
+  "count": 119,
   "minValueUsd": 100000,
   "activities": [
     {
@@ -604,20 +604,6 @@
       "hash": "0x7c49a829a3fe2eed02079fa68cd998fc6171e5dc4f3416f36fad9c20f5fd5084",
       "from": "0x16f6d15381bee4a25b25f0d1c4161b78f7f21fde",
       "to": "0x33566c9d8be6cf0b23795e0d380e112be9d75836"
-    },
-    {
-      "id": "fund-0x947b7caa876e71-USDT",
-      "timestamp": 1786458095000,
-      "fund": "DWF Labs",
-      "logo": "🔷",
-      "type": "Market Maker",
-      "action": "sell",
-      "symbol": "USDT",
-      "amount": 2800000,
-      "amountUsd": 2800000,
-      "hash": "0x947b7caa876e719ca09beb4a614c834a99ad836508907734e139fbec09353c00",
-      "from": "0x53c902a9ef069f3b85e5e71f918c4d582f3063fa",
-      "to": "0xcb273f05ace458ad1d8595ffacc32c362ac75323"
     },
     {
       "id": "fund-0x1b21e1a4e31e61-USDC",
@@ -1402,6 +1388,20 @@
       "hash": "0xe2b16ffe26c79818b085fd59f05b59ced7bd9c5af2ab31a1b534d46893eace04",
       "from": "0x11b815efb8f581194ae79006d24e0d814b7697f6",
       "to": "0x9507c04b10486547584c37bcbd931b2a4fee9a41"
+    },
+    {
+      "id": "fund-0x651d7b36410102-WBTC",
+      "timestamp": 1690328603000,
+      "fund": "Jump Trading",
+      "logo": "🦘",
+      "type": "Trading Firm",
+      "action": "sell",
+      "symbol": "WBTC",
+      "amount": 9,
+      "amountUsd": 873000,
+      "hash": "0x651d7b36410102c43d954b1b5c042dc6b103b051eb04c91f78e65d0088a4746d",
+      "from": "0x9507c04b10486547584c37bcbd931b2a4fee9a41",
+      "to": "0xf584f8728b874a6a5c7a8d4d387c9aae9172d621"
     }
   ]
 }
