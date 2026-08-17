@@ -1,8 +1,36 @@
 {
-  "lastUpdated": "2026-08-17T08:20:06.077Z",
-  "count": 120,
+  "lastUpdated": "2026-08-17T09:03:41.144Z",
+  "count": 118,
   "minValueUsd": 100000,
   "activities": [
+    {
+      "id": "fund-0x3e85a1143a3360-USDC",
+      "timestamp": 1786956947000,
+      "fund": "Galaxy Digital",
+      "logo": "🌌",
+      "type": "Investment Firm",
+      "action": "sell",
+      "symbol": "USDC",
+      "amount": 150000,
+      "amountUsd": 150000,
+      "hash": "0x3e85a1143a33602d7d1d5f9e20387c4b02b91821bf8ae0fc0bce25ab861e9fda",
+      "from": "0x33566c9d8be6cf0b23795e0d380e112be9d75836",
+      "to": "0xbbbc5264675a9bb5883417a9e64b97898833edb7"
+    },
+    {
+      "id": "fund-0x82477e33487409-USDC",
+      "timestamp": 1786956551000,
+      "fund": "Galaxy Digital",
+      "logo": "🌌",
+      "type": "Investment Firm",
+      "action": "buy",
+      "symbol": "USDC",
+      "amount": 150000,
+      "amountUsd": 150000,
+      "hash": "0x82477e3348740934daeadc89f1e301b2cd8e9023b46529dcb84c06d5d8f37079",
+      "from": "0xa9d1e08c7793af67e9d92fe308d5697fb81d3e43",
+      "to": "0x33566c9d8be6cf0b23795e0d380e112be9d75836"
+    },
     {
       "id": "fund-0x95134cf2826093-USDT",
       "timestamp": 1786948127000,
@@ -998,62 +1026,6 @@
       "to": "0x33566c9d8be6cf0b23795e0d380e112be9d75836"
     },
     {
-      "id": "fund-0x302a5707f7fe8c-USDT",
-      "timestamp": 1786116971000,
-      "fund": "Galaxy Digital",
-      "logo": "🌌",
-      "type": "Investment Firm",
-      "action": "sell",
-      "symbol": "USDT",
-      "amount": 7454097.6391,
-      "amountUsd": 7454097.6391,
-      "hash": "0x302a5707f7fe8c0f8b1c6d1a2dfd542100dd7ea958149fd3fdd343ee88a04650",
-      "from": "0x33566c9d8be6cf0b23795e0d380e112be9d75836",
-      "to": "0x07352c753dd1f9e5d8eace2b6d96b2244110e533"
-    },
-    {
-      "id": "fund-0x2c71348854d1b4-USDT",
-      "timestamp": 1786115999000,
-      "fund": "Galaxy Digital",
-      "logo": "🌌",
-      "type": "Investment Firm",
-      "action": "buy",
-      "symbol": "USDT",
-      "amount": 4949999.6,
-      "amountUsd": 4949999.6,
-      "hash": "0x2c71348854d1b40679efe048ae52ec79adfca18ec40a2be18b94a2d41844feda",
-      "from": "0xdfd5293d8e347dfe59e90efd55b2956a1343963d",
-      "to": "0x33566c9d8be6cf0b23795e0d380e112be9d75836"
-    },
-    {
-      "id": "fund-0x893044de765cff-USDC",
-      "timestamp": 1786115963000,
-      "fund": "Galaxy Digital",
-      "logo": "🌌",
-      "type": "Investment Firm",
-      "action": "sell",
-      "symbol": "USDC",
-      "amount": 2550000,
-      "amountUsd": 2550000,
-      "hash": "0x893044de765cff341a7be545f91d3f73ec52b43dff389417d0fb531d5cfb07ab",
-      "from": "0x33566c9d8be6cf0b23795e0d380e112be9d75836",
-      "to": "0x3284ac109eb04f070b40ea2bdc644d3a00de7bdb"
-    },
-    {
-      "id": "fund-0x44e419bb698fea-USDT",
-      "timestamp": 1786115207000,
-      "fund": "Galaxy Digital",
-      "logo": "🌌",
-      "type": "Investment Firm",
-      "action": "buy",
-      "symbol": "USDT",
-      "amount": 7400000,
-      "amountUsd": 7400000,
-      "hash": "0x44e419bb698fea72a72c76da42c635bfa18b660e486f714f443fa77f9fe07879",
-      "from": "0x16f6d15381bee4a25b25f0d1c4161b78f7f21fde",
-      "to": "0x33566c9d8be6cf0b23795e0d380e112be9d75836"
-    },
-    {
       "id": "fund-0x64dde0d88c674b-USDC",
       "timestamp": 1786111955000,
       "fund": "Galaxy Digital",
@@ -1401,6 +1373,34 @@
       "amountUsd": 108487.75789333912,
       "hash": "0xe2b16ffe26c79818b085fd59f05b59ced7bd9c5af2ab31a1b534d46893eace04",
       "from": "0x11b815efb8f581194ae79006d24e0d814b7697f6",
+      "to": "0x9507c04b10486547584c37bcbd931b2a4fee9a41"
+    },
+    {
+      "id": "fund-0x651d7b36410102-WBTC",
+      "timestamp": 1690328603000,
+      "fund": "Jump Trading",
+      "logo": "🦘",
+      "type": "Trading Firm",
+      "action": "sell",
+      "symbol": "WBTC",
+      "amount": 9,
+      "amountUsd": 873000,
+      "hash": "0x651d7b36410102c43d954b1b5c042dc6b103b051eb04c91f78e65d0088a4746d",
+      "from": "0x9507c04b10486547584c37bcbd931b2a4fee9a41",
+      "to": "0xf584f8728b874a6a5c7a8d4d387c9aae9172d621"
+    },
+    {
+      "id": "fund-0x120a2a840a16a0-WBTC",
+      "timestamp": 1690328267000,
+      "fund": "Jump Trading",
+      "logo": "🦘",
+      "type": "Trading Firm",
+      "action": "buy",
+      "symbol": "WBTC",
+      "amount": 1.27164776,
+      "amountUsd": 123349.83272,
+      "hash": "0x120a2a840a16a096f4e0d1c4204f8ba231026a73d306115198420a70973d0abe",
+      "from": "0xd51a44d3fae010294c616388b506acda1bfaae46",
       "to": "0x9507c04b10486547584c37bcbd931b2a4fee9a41"
     }
   ]
