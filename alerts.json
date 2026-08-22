@@ -1,8 +1,29 @@
 {
-  "lastUpdated": "2026-08-22T15:55:01.064Z",
+  "lastUpdated": "2026-08-22T16:07:56.299Z",
   "count": 200,
   "minValueUsd": 1000000,
   "alerts": [
+    {
+      "id": "whale-1787414859000-XLM-hjambs",
+      "timestamp": 1787414859000,
+      "blockchain": "stellar",
+      "symbol": "XLM",
+      "amount": 70000000,
+      "amountUsd": 13736461,
+      "from": {
+        "address": "",
+        "owner": "Upbit",
+        "ownerType": "exchange"
+      },
+      "to": {
+        "address": "",
+        "owner": "unknown",
+        "ownerType": "unknown"
+      },
+      "transactionType": "transfer",
+      "hash": "",
+      "significance": "high"
+    },
     {
       "id": "whale-1787316054000-XLM-ftanwv",
       "timestamp": 1787316054000,
@@ -4177,27 +4198,6 @@
         "address": "",
         "owner": "OKEX",
         "ownerType": "exchange"
-      },
-      "transactionType": "transfer",
-      "hash": "",
-      "significance": "very_high"
-    },
-    {
-      "id": "whale-1775821877000-USDT-t6sor5",
-      "timestamp": 1775821877000,
-      "blockchain": "stablecoin",
-      "symbol": "USDT",
-      "amount": 109918385,
-      "amountUsd": 109896401,
-      "from": {
-        "address": "",
-        "owner": "OKEX",
-        "ownerType": "exchange"
-      },
-      "to": {
-        "address": "",
-        "owner": "unknown",
-        "ownerType": "unknown"
       },
       "transactionType": "transfer",
       "hash": "",
