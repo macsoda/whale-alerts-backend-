@@ -1,10 +1,31 @@
 {
-  "lastUpdated": "2026-08-23T17:59:43.817Z",
+  "lastUpdated": "2026-08-23T18:27:40.573Z",
   "count": 200,
   "minValueUsd": 1000000,
   "alerts": [
     {
-      "id": "whale-1787471643000-XLM-og1qdy",
+      "id": "whale-1787508149000-XLM-a3mv7j",
+      "timestamp": 1787508149000,
+      "blockchain": "stellar",
+      "symbol": "XLM",
+      "amount": 27998999,
+      "amountUsd": 5558162,
+      "from": {
+        "address": "",
+        "owner": "Coinbase",
+        "ownerType": "exchange"
+      },
+      "to": {
+        "address": "",
+        "owner": "unknown",
+        "ownerType": "unknown"
+      },
+      "transactionType": "transfer",
+      "hash": "",
+      "significance": "high"
+    },
+    {
+      "id": "whale-1787471643000-XLM-l24hnn",
       "timestamp": 1787471643000,
       "blockchain": "stellar",
       "symbol": "XLM",
@@ -25,7 +46,7 @@
       "significance": "high"
     },
     {
-      "id": "whale-1787414859000-XLM-n4uxz0",
+      "id": "whale-1787414859000-XLM-jqg95t",
       "timestamp": 1787414859000,
       "blockchain": "stellar",
       "symbol": "XLM",
@@ -4168,27 +4189,6 @@
       "symbol": "BTC",
       "amount": 826,
       "amountUsd": 59787205,
-      "from": {
-        "address": "",
-        "owner": "unknown",
-        "ownerType": "unknown"
-      },
-      "to": {
-        "address": "",
-        "owner": "Coinbase",
-        "ownerType": "exchange"
-      },
-      "transactionType": "transfer",
-      "hash": "",
-      "significance": "high"
-    },
-    {
-      "id": "whale-1775825487000-BTC-muk16k",
-      "timestamp": 1775825487000,
-      "blockchain": "bitcoin",
-      "symbol": "BTC",
-      "amount": 1262,
-      "amountUsd": 91382121,
       "from": {
         "address": "",
         "owner": "unknown",
