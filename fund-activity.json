@@ -1,8 +1,22 @@
 {
-  "lastUpdated": "2026-08-25T06:28:45.871Z",
-  "count": 118,
+  "lastUpdated": "2026-08-25T07:24:48.548Z",
+  "count": 119,
   "minValueUsd": 100000,
   "activities": [
+    {
+      "id": "fund-0x074ed6e738400f-USDC",
+      "timestamp": 1787640383000,
+      "fund": "Galaxy Digital",
+      "logo": "🌌",
+      "type": "Investment Firm",
+      "action": "sell",
+      "symbol": "USDC",
+      "amount": 2000000,
+      "amountUsd": 2000000,
+      "hash": "0x074ed6e738400f8a8bcdba1d3de12747b83055b2fbea1b0efc3fd8a2f61168ed",
+      "from": "0x33566c9d8be6cf0b23795e0d380e112be9d75836",
+      "to": "0x16f6d15381bee4a25b25f0d1c4161b78f7f21fde"
+    },
     {
       "id": "fund-0x954b90a7430052-USDT",
       "timestamp": 1787602487000,
@@ -1388,20 +1402,6 @@
       "hash": "0x651d7b36410102c43d954b1b5c042dc6b103b051eb04c91f78e65d0088a4746d",
       "from": "0x9507c04b10486547584c37bcbd931b2a4fee9a41",
       "to": "0xf584f8728b874a6a5c7a8d4d387c9aae9172d621"
-    },
-    {
-      "id": "fund-0x120a2a840a16a0-WBTC",
-      "timestamp": 1690328267000,
-      "fund": "Jump Trading",
-      "logo": "🦘",
-      "type": "Trading Firm",
-      "action": "buy",
-      "symbol": "WBTC",
-      "amount": 1.27164776,
-      "amountUsd": 123349.83272,
-      "hash": "0x120a2a840a16a096f4e0d1c4204f8ba231026a73d306115198420a70973d0abe",
-      "from": "0xd51a44d3fae010294c616388b506acda1bfaae46",
-      "to": "0x9507c04b10486547584c37bcbd931b2a4fee9a41"
     }
   ]
 }
