@@ -1,8 +1,50 @@
 {
-  "lastUpdated": "2026-08-28T12:32:55.480Z",
+  "lastUpdated": "2026-08-28T22:33:53.112Z",
   "count": 200,
   "minValueUsd": 1000000,
   "alerts": [
+    {
+      "id": "whale-1787940817000-XLM-ppy97i",
+      "timestamp": 1787940817000,
+      "blockchain": "stellar",
+      "symbol": "XLM",
+      "amount": 54999935,
+      "amountUsd": 9838855,
+      "from": {
+        "address": "",
+        "owner": "Binance",
+        "ownerType": "exchange"
+      },
+      "to": {
+        "address": "",
+        "owner": "Binance",
+        "ownerType": "exchange"
+      },
+      "transactionType": "transfer",
+      "hash": "",
+      "significance": "high"
+    },
+    {
+      "id": "whale-1787940596000-XLM-ntp7t4",
+      "timestamp": 1787940596000,
+      "blockchain": "stellar",
+      "symbol": "XLM",
+      "amount": 54999900,
+      "amountUsd": 9796711,
+      "from": {
+        "address": "",
+        "owner": "unknown",
+        "ownerType": "unknown"
+      },
+      "to": {
+        "address": "",
+        "owner": "Binance",
+        "ownerType": "exchange"
+      },
+      "transactionType": "transfer",
+      "hash": "",
+      "significance": "high"
+    },
     {
       "id": "whale-1787898977000-XLM-b5cs2y",
       "timestamp": 1787898977000,
@@ -4147,48 +4189,6 @@
       "symbol": "BTC",
       "amount": 719,
       "amountUsd": 52030580,
-      "from": {
-        "address": "",
-        "owner": "Coinbase",
-        "ownerType": "exchange"
-      },
-      "to": {
-        "address": "",
-        "owner": "unknown",
-        "ownerType": "unknown"
-      },
-      "transactionType": "transfer",
-      "hash": "",
-      "significance": "high"
-    },
-    {
-      "id": "whale-1775828817000-BTC-os912p",
-      "timestamp": 1775828817000,
-      "blockchain": "bitcoin",
-      "symbol": "BTC",
-      "amount": 719,
-      "amountUsd": 51903448,
-      "from": {
-        "address": "",
-        "owner": "Coinbase",
-        "ownerType": "exchange"
-      },
-      "to": {
-        "address": "",
-        "owner": "unknown",
-        "ownerType": "unknown"
-      },
-      "transactionType": "transfer",
-      "hash": "",
-      "significance": "high"
-    },
-    {
-      "id": "whale-1775828617000-BTC-uhknht",
-      "timestamp": 1775828617000,
-      "blockchain": "bitcoin",
-      "symbol": "BTC",
-      "amount": 719,
-      "amountUsd": 51797792,
       "from": {
         "address": "",
         "owner": "Coinbase",
