@@ -1,8 +1,50 @@
 {
-  "lastUpdated": "2026-09-04T23:22:53.615Z",
+  "lastUpdated": "2026-09-05T01:05:54.669Z",
   "count": 200,
   "minValueUsd": 1000000,
   "alerts": [
+    {
+      "id": "whale-1788569303000-XLM-2zqjul",
+      "timestamp": 1788569303000,
+      "blockchain": "stellar",
+      "symbol": "XLM",
+      "amount": 29236180,
+      "amountUsd": 5228131,
+      "from": {
+        "address": "",
+        "owner": "Coinbase",
+        "ownerType": "exchange"
+      },
+      "to": {
+        "address": "",
+        "owner": "Coinbase",
+        "ownerType": "exchange"
+      },
+      "transactionType": "transfer",
+      "hash": "",
+      "significance": "high"
+    },
+    {
+      "id": "whale-1788569260000-XLM-4084rl",
+      "timestamp": 1788569260000,
+      "blockchain": "stellar",
+      "symbol": "XLM",
+      "amount": 29236180,
+      "amountUsd": 5244048,
+      "from": {
+        "address": "",
+        "owner": "unknown",
+        "ownerType": "unknown"
+      },
+      "to": {
+        "address": "",
+        "owner": "Coinbase",
+        "ownerType": "exchange"
+      },
+      "transactionType": "transfer",
+      "hash": "",
+      "significance": "high"
+    },
     {
       "id": "whale-1787964718000-XLM-wu9qez",
       "timestamp": 1787964718000,
@@ -4160,48 +4202,6 @@
       "transactionType": "transfer",
       "hash": "",
       "significance": "high"
-    },
-    {
-      "id": "whale-1775834317000-BTC-8jbkeq",
-      "timestamp": 1775834317000,
-      "blockchain": "bitcoin",
-      "symbol": "BTC",
-      "amount": 794,
-      "amountUsd": 57990975,
-      "from": {
-        "address": "",
-        "owner": "unknown",
-        "ownerType": "unknown"
-      },
-      "to": {
-        "address": "",
-        "owner": "Coinbase",
-        "ownerType": "exchange"
-      },
-      "transactionType": "transfer",
-      "hash": "",
-      "significance": "high"
-    },
-    {
-      "id": "whale-1775833608000-USDT-w8seiq",
-      "timestamp": 1775833608000,
-      "blockchain": "stablecoin",
-      "symbol": "USDT",
-      "amount": 130000000,
-      "amountUsd": 129996750,
-      "from": {
-        "address": "",
-        "owner": "Tether",
-        "ownerType": "unknown"
-      },
-      "to": {
-        "address": "",
-        "owner": "Bitfinex",
-        "ownerType": "exchange"
-      },
-      "transactionType": "transfer",
-      "hash": "",
-      "significance": "very_high"
     }
   ]
 }
