@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-09-26T20:03:26.252Z",
-  "count": 123,
+  "lastUpdated": "2026-09-26T22:41:11.716Z",
+  "count": 120,
   "minValueUsd": 100000,
   "activities": [
     {
@@ -830,20 +830,6 @@
       "to": "0x8fa4ee1776032b612206e754ec2382b534d4ac6f"
     },
     {
-      "id": "fund-0x37a44ee2c98308-USDC",
-      "timestamp": 1790030411000,
-      "fund": "Galaxy Digital",
-      "logo": "🌌",
-      "type": "Investment Firm",
-      "action": "sell",
-      "symbol": "USDC",
-      "amount": 2750000,
-      "amountUsd": 2750000,
-      "hash": "0x37a44ee2c983088da38621c93c69d20c737c690c563baadd0eec5dd28966d29a",
-      "from": "0x33566c9d8be6cf0b23795e0d380e112be9d75836",
-      "to": "0x16f6d15381bee4a25b25f0d1c4161b78f7f21fde"
-    },
-    {
       "id": "fund-0x2b026991fa3699-USDC",
       "timestamp": 1790028695000,
       "fund": "Galaxy Digital",
@@ -856,20 +842,6 @@
       "hash": "0x2b026991fa369924b170f1a615bd9a024a7ef8a92708df1fd2f502b833784053",
       "from": "0x66be97a14ca1b8ee1a71c17053b79954e36883da",
       "to": "0x15abb66ba754f05cbc0165a64a11cded1543de48"
-    },
-    {
-      "id": "fund-0x45cf07d0e1c0e1-USDC",
-      "timestamp": 1790028395000,
-      "fund": "Galaxy Digital",
-      "logo": "🌌",
-      "type": "Investment Firm",
-      "action": "sell",
-      "symbol": "USDC",
-      "amount": 1000000,
-      "amountUsd": 1000000,
-      "hash": "0x45cf07d0e1c0e194be7907fa2b7403292453d5e100605ede600ce973301f5acc",
-      "from": "0x33566c9d8be6cf0b23795e0d380e112be9d75836",
-      "to": "0x16f6d15381bee4a25b25f0d1c4161b78f7f21fde"
     },
     {
       "id": "fund-0x21536efef50193-USDC",
@@ -1122,20 +1094,6 @@
       "hash": "0x4c5d7d1becc9c0bb54a18c42419ac25c8044cf3891d0924d0cfa9704ce38cfae",
       "from": "0x53c902a9ef069f3b85e5e71f918c4d582f3063fa",
       "to": "0xcb273f05ace458ad1d8595ffacc32c362ac75323"
-    },
-    {
-      "id": "fund-0x0daceb8c56f188-USDC",
-      "timestamp": 1786970147000,
-      "fund": "DWF Labs",
-      "logo": "🔷",
-      "type": "Market Maker",
-      "action": "buy",
-      "symbol": "USDC",
-      "amount": 250000,
-      "amountUsd": 250000,
-      "hash": "0x0daceb8c56f18809cd0867eecf0401cf73ef0d398e506fbaa82ed3f25fa116ae",
-      "from": "0xee7ae85f2fe2239e27d9c1e23fffe168d63b4055",
-      "to": "0x53c902a9ef069f3b85e5e71f918c4d582f3063fa"
     },
     {
       "id": "fund-0x2fe8728ba778f8-USDC",
@@ -1401,6 +1359,48 @@
       "amountUsd": 135055.09626,
       "hash": "0xe7218f21fb2202a718f9329e36dccb41530810831cb25117446306dd32a36455",
       "from": "0x4585fe77225b41b697c938b018e2ac67ac5a20c0",
+      "to": "0x9507c04b10486547584c37bcbd931b2a4fee9a41"
+    },
+    {
+      "id": "fund-0xcbc6f1e19bcdc0-WBTC",
+      "timestamp": 1690329467000,
+      "fund": "Jump Trading",
+      "logo": "🦘",
+      "type": "Trading Firm",
+      "action": "buy",
+      "symbol": "WBTC",
+      "amount": 1.37222659,
+      "amountUsd": 133105.97923,
+      "hash": "0xcbc6f1e19bcdc01ec895d6d71eed94439278887eba755d7ee9b0bee9e8c83b93",
+      "from": "0x4585fe77225b41b697c938b018e2ac67ac5a20c0",
+      "to": "0x9507c04b10486547584c37bcbd931b2a4fee9a41"
+    },
+    {
+      "id": "fund-0x4f6ee857b599eb-WBTC",
+      "timestamp": 1690329287000,
+      "fund": "Jump Trading",
+      "logo": "🦘",
+      "type": "Trading Firm",
+      "action": "buy",
+      "symbol": "WBTC",
+      "amount": 1.28938145,
+      "amountUsd": 125070.00065,
+      "hash": "0x4f6ee857b599ebd244f74c83fac4f9e98a4ea4ec8e6096c04a0ccf5a9fb3b98f",
+      "from": "0x4585fe77225b41b697c938b018e2ac67ac5a20c0",
+      "to": "0x9507c04b10486547584c37bcbd931b2a4fee9a41"
+    },
+    {
+      "id": "fund-0xe2b16ffe26c798-WETH",
+      "timestamp": 1690329023000,
+      "fund": "Jump Trading",
+      "logo": "🦘",
+      "type": "Trading Firm",
+      "action": "buy",
+      "symbol": "WETH",
+      "amount": 40.18065107160708,
+      "amountUsd": 108487.75789333912,
+      "hash": "0xe2b16ffe26c79818b085fd59f05b59ced7bd9c5af2ab31a1b534d46893eace04",
+      "from": "0x11b815efb8f581194ae79006d24e0d814b7697f6",
       "to": "0x9507c04b10486547584c37bcbd931b2a4fee9a41"
     }
   ]
